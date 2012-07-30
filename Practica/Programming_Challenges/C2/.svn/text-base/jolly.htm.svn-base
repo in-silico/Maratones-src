@@ -1,0 +1,26 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0050)http://uva.onlinejudge.org/external/100/10038.html -->
+<HTML><HEAD>
+<META content="text/html; charset=windows-1252" http-equiv=Content-Type>
+<META name=GENERATOR content="MSHTML 8.00.7100.4129"></HEAD>
+<BODY>
+<CENTER>
+<H2>Problem E: Jolly Jumpers</H2></CENTER>A sequence of <I>n &gt; 0</I> integers 
+is called a <I>jolly jumper</I> if the absolute values of the difference between 
+successive elements take on all the values 1 through <I>n-1</I>. For instance, 
+<P><PRE>1 4 2 3
+</PRE>is a jolly jumper, because the absolutes differences are 3, 2, and 1 
+respectively. The definition implies that any sequence of a single integer is a 
+jolly jumper. You are to write a program to determine whether or not each of a 
+number of sequences is a jolly jumper. 
+<H3>Input</H3>
+<P>Each line of input contains an integer <I>n</I> &lt;= 3000 followed by 
+<I>n</I> integers representing the sequence. 
+<H3>Output</H3>For each line of input, generate a line of output saying "Jolly" 
+or "Not jolly". 
+<H3>Sample Input</H3><PRE>4 1 4 2 3
+5 1 4 2 -1 6
+</PRE>
+<H3>Sample Output</H3><PRE>Jolly
+Not jolly
+</PRE></BODY></HTML>

@@ -1,0 +1,157 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+   <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+   <META NAME="GENERATOR" CONTENT="Mozilla/4.08 [en] (WinNT; I) [Netscape]">
+   <META NAME="Author" CONTENT="Andrew Harrington">
+   <TITLE>Problem D: Falling Leaves</TITLE>
+</HEAD>
+<BODY>
+
+<CENTER>
+<H1>
+Problem D: Falling Leaves</H1></CENTER>
+
+<CENTER><TABLE>
+<TR>
+<TD>Source file:</TD>
+
+<TD><TT>leaves.</TT>{<TT>c</TT>, <TT>cpp</TT>, <TT>java</TT>, <TT>pas</TT>}</TD>
+</TR>
+
+<TR>
+<TD>Input file:</TD>
+
+<TD><TT>leaves.in</TT></TD>
+</TR>
+
+<TR>
+<TD>Output file:</TD>
+
+<TD><TT>leaves.out</TT></TD>
+</TR>
+</TABLE></CENTER>
+
+<CENTER><IMG SRC="leaves1.gif" HEIGHT=154 WIDTH=241>
+<BR>Figure 1</CENTER>
+
+<P>Figure 1 shows a graphical representation of a binary tree of letters.&nbsp;
+People familiar with binary trees can skip over the definitions of a binary
+tree of letters, leaves of a binary tree, and a binary search tree of letters,
+and go right to <B>The problem</B>.
+<OL>A <I>binary tree of letters</I> may be one of two things:
+<OL>
+<LI>
+It may be empty.</LI>
+
+<LI>
+It may have a root <I>node.</I>&nbsp; A node has a letter as data and refers
+to a left and a right subtree.&nbsp; The left and right subtrees are also
+binary trees of letters.</LI>
+</OL>
+</OL>
+
+<OL>In the <I>graphical</I> representation of a binary tree of letters:
+<OL>
+<LI>
+Empty trees are omitted completely.</LI>
+
+<LI>
+Each node is indicated by</LI>
+
+<UL TYPE=DOT>
+<LI>
+Its letter data,</LI>
+
+<LI>
+A line segment down to the left to the left subtree, if the left subtree
+is nonempty,</LI>
+
+<LI>
+A line segment down to the right to the right subtree, if the right subtree
+is nonempty.</LI>
+</UL>
+</OL>
+
+<P>A <I>leaf</I> in a binary tree is a node whose subtrees are both
+empty.&nbsp; In the example in Figure 1, this would be the five nodes with
+data <tt>B</tt>, <tt>D</tt>, <tt>H</tt>, <tt>P</tt>, and <tt>Y</tt>.
+<P>The <I>preorder traversal of a tree of letters</I> satisfies the defining
+properties:
+<OL>
+<LI>
+If the tree is empty, then the preorder traversal is empty.</LI>
+
+<LI>
+If the tree is not empty, then the preorder traversal consists of the following,
+in order</LI>
+
+<UL TYPE=DOT>
+<LI>
+The data from the root node,</LI>
+
+<LI>
+The preorder traversal of the root's left subtree,</LI>
+
+<LI>
+The preorder traversal of the root's right subtree.</LI>
+</UL>
+</OL>
+The preorder traversal of the tree in Figure 1 is <TT>KGCBDHQMPY</TT>.
+<P>A tree like the one in Figure 1 is also a binary search tree of letters.&nbsp;
+A <I>binary search tree of letters</I> is a binary tree of letters in which
+each node satisfies:
+<OL>
+<LI>
+The root's data comes later in the alphabet than all the data in the nodes
+in the left subtree.</LI>
+
+<LI>
+The root's data comes earlier in the alphabet than all the data in the
+nodes in the right subtree.</LI>
+</OL>
+</OL>
+<B>The problem:</B>
+<P>Consider the following sequence of operations on a binary search tree
+of letters
+<BLOCKQUOTE>Remove the leaves and list the data removed
+<BR>Repeat this procedure until the tree is empty</BLOCKQUOTE>
+Starting from the tree below on the left,&nbsp; we produce the sequence
+of trees shown, and then the empty tree
+<BR><IMG SRC="leaves2.gif" HEIGHT=149 WIDTH=652>
+<BR>by removing the leaves with data
+<BLOCKQUOTE><TT>BDHPY</TT>
+<BR><TT>CM</TT>
+<BR><TT>GQ</TT>
+<BR><TT>K</TT></BLOCKQUOTE>
+Your problem is to start with such a sequence of lines of leaves from a
+binary search tree of letters and output the preorder traversal of the
+tree.
+<P>The input file will contain one or more data sets.&nbsp; Each data set
+is a sequence of one or more lines of capital letters.&nbsp; The lines
+contain the leaves removed from a binary search tree in the stages described
+above.&nbsp; The letters on a line will be listed in increasing alphabetical
+order.&nbsp; Data sets are separated by a line containing only an asterisk
+('<TT>*</TT>').&nbsp; The last data set is followed by a line containing
+only a dollar sign ('<TT>$</TT>').&nbsp; There are no blanks or empty lines
+in the input.
+<P>For each input data set, there is a unique binary search tree that would
+produce the sequence of leaves.&nbsp; The output is a line containing only
+the preorder traversal of that tree, with no blanks.
+<P><B>Example input:</B>
+<BLOCKQUOTE><TT>BDHPY</TT>
+<BR><TT>CM</TT>
+<BR><TT>GQ</TT>
+<BR><TT>K</TT>
+<BR><TT>*</TT>
+<BR><TT>AC</TT>
+<BR><TT>B</TT>
+<BR><TT>$</TT></BLOCKQUOTE>
+<B>Example output:</B>
+<BLOCKQUOTE>
+<PRE><TT>KGCBDHQMPY
+BAC</TT></PRE>
+</BLOCKQUOTE>
+<I><FONT SIZE=-1>Last modified Tue Oct 24 00:17:27 2000</FONT></I>
+</BODY>
+</HTML>

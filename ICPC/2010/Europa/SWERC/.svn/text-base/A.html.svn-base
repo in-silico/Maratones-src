@@ -1,0 +1,168 @@
+<html><head><title>4954 - Lawn mower</title></head><body><table cellpadding=3 cellspacing=0 border=1 align=center><tr valign=center><td ROWSPAN=2 align=center valign=center><font size=5 color=0000A0><b><img src="icono.gif"></b></font></td><td COLSPAN=5 width=500 align=center><font size=5 color=0000A0><b>4954 - Lawn mower</b></font><br><a href="http://acmicpc-live-archive.uva.es/nuevoportal/region.php?r=sw&year=2010"><b>Europe - Southwestern - 2010/2011</b></a></font></td></tr><tr valign=center><td width=100 align=center><a href="http://acmicpc-live-archive.uva.es/nuevoportal/data/p4954.pdf"><b>PDF</b></a></td><td width=100>&nbsp;</td><td width=100 align=center><a href="http://acmicpc-live-archive.uva.es/nuevoportal/mailer.php?problem=4954"><b>Submit</b></a></td><td width=100>&nbsp;</td><td width=100 align=center><a href="http://acmicpc-live-archive.uva.es/nuevoportal/rankprob.php?p=4954"><b>Ranking</b></a></td></tr></table><p>&nbsp;</p>
+<!--Converted with LaTeX2HTML 2008 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Lawn mower</TITLE>
+<META NAME="description" CONTENT="Lawn mower">
+<META NAME="keywords" CONTENT="htmlatex">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2008">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="htmlatex.css">
+
+</HEAD>
+
+<BODY LANG="EN" BGCOLOR=#FFFFFF>
+
+<H1><BR CLEAR=ALL><CENTER><TABLE BGCOLOR=#0000ff><TR><TD><B><FONT SIZE=5 COLOR=#FFff00>&nbsp;<A NAME="SECTION0001000000000000000000">
+Lawn mower</A>&nbsp;</FONT></B></TABLE></CENTER>
+</H1>
+
+<P>
+The International Collegiate Soccer<SUP>1</SUP></A> Competition (ICSC) is famous for its well-kept rectangular stadiums. 
+The grass playing fields in ICSC stadiums are always 100 meters long, and 75 meters wide. The grass is mowed every week with special 
+lawn mowers, always using the same strategy: first, they make a series of passes along the length of the field, and then they do the 
+same along the width of the field. All passes are straight lines, parallel to the sides of the field.
+
+<P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ $\epsfbox{p4954.eps}$
+ -->
+<IMG
+ WIDTH="958" HEIGHT="409" ALIGN="BOTTOM" BORDER="0"
+ SRC="p4954.jpg"
+ ALT="\epsfbox{p4954.eps}">
+</DIV>
+
+<P>
+The ICSC has hired a new lawn-mower, Guido. Guido is very chaotic, and instead of covering the field incrementally, he likes to choose 
+random starting positions for each of his passes. But he is afraid of not doing a good job and being fired by the ICSC, so he has asked 
+you to help him. Write a program to make sure that the grass in the field is perfectly cut: all parts of the field have to be mowed at 
+least once when the mower goes from end to end, and again when the mower goes from side to side.
+
+<P>
+
+<H2><FONT size=4 COLOR=#ff0000><A NAME="SECTION0001001000000000000000">
+Input</A>&nbsp;</FONT>
+</H2>
+
+<P>
+Each test case contains 3 lines. The first line contains two integers, <SPAN CLASS="MATH"><I>n</I><SUB>x</SUB></SPAN> (<!-- MATH
+ $0 < n_x < 1\,000$
+ -->
+<SPAN CLASS="MATH">0 &lt; <I>n</I><SUB>x</SUB> &lt; 1&nbsp;000</SPAN>)
+and <SPAN CLASS="MATH"><I>n</I><SUB>y</SUB></SPAN> (<!-- MATH
+ $0 < n_y < 1\,000$
+ -->
+<SPAN CLASS="MATH">0 &lt; <I>n</I><SUB>y</SUB> &lt; 1&nbsp;000</SPAN>), and a real number <SPAN CLASS="MATH"><I>w</I></SPAN> (<!-- MATH
+ $0 < w \le 50$
+ -->
+<SPAN CLASS="MATH">0 &lt; <I>w</I><IMG
+ WIDTH="18" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="4954img2.png"
+ ALT="$ \le$">50</SPAN>), which represents the width of the cut of that particular lawn 
+mower. The next line describes the end-to-end passes (along the length of the field), and contains <SPAN CLASS="MATH"><I>n</I><SUB>x</SUB></SPAN> real numbers <SPAN CLASS="MATH"><I>x</I><SUB>i</SUB></SPAN>
+(<!-- MATH
+ $0 \le x_i \le 75$
+ -->
+<SPAN CLASS="MATH">0<IMG
+ WIDTH="18" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="4954img2.png"
+ ALT="$ \le$"><I>x</I><SUB>i</SUB><IMG
+ WIDTH="18" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="4954img2.png"
+ ALT="$ \le$">75</SPAN>) describing the starting positions of the mower's center in Guido's end-to-end passes. The last line describes 
+the side-to-side passes, with <SPAN CLASS="MATH"><I>n</I><SUB>y</SUB></SPAN> real numbers <SPAN CLASS="MATH"><I>y</I><SUB>i</SUB></SPAN>
+(<!-- MATH
+ $0 \le y_i \le 100$
+ -->
+<SPAN CLASS="MATH">0<IMG
+ WIDTH="18" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="4954img2.png"
+ ALT="$ \le$"><I>y</I><SUB>i</SUB><IMG
+ WIDTH="18" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="4954img2.png"
+ ALT="$ \le$">100</SPAN>).
+
+<P>
+The end of the test cases is signalled with a line that contains the numbers `<TT>0 0 0.0</TT>'. You should generate no output for this 
+line, as it is not a test case.
+
+<P>
+Real numbers for <SPAN CLASS="MATH"><I>w</I></SPAN>, <SPAN CLASS="MATH"><I>x</I><SUB>i</SUB></SPAN> and <SPAN CLASS="MATH"><I>y</I><SUB>i</SUB></SPAN> can have up to 7 digits after the decimal point, and any cut will also include its boundaries. 
+For example, if a 2.0-meter wide cut is performed along the 10.0-meter mark, then a strip of grass from 9.0 to 11.0 (including both) 
+will be considered ``cut''.
+
+<P>
+
+<H2><FONT size=4 COLOR=#ff0000><A NAME="SECTION0001002000000000000000">
+Output</A>&nbsp;</FONT>
+</H2>
+
+<P>
+Print `<TT>YES</TT>' if Guido has done a good job, or `<TT>NO</TT>' if some part of the field has not been mowed at least once when the 
+mower was travelling along the length of the field, and again when it was travelling along the width.
+
+<P>
+
+<H2><FONT size=4 COLOR=#ff0000><A NAME="SECTION0001003000000000000000">
+Sample Input</A>&nbsp;</FONT>
+</H2>
+
+<P>
+<PRE>
+8 11 10.0
+0.0 10.0 20.0 30.0 40.0 50.0 60.0 70.0
+0.0 10.0 20.0 30.0 40.0 50.0 60.0 70.0 80.0 90.0 100.0
+8 10 10.0
+0.0 10.0 20.0 30.0 40.0 50.0 60.0 70.0
+0.0 10.0 30.0 40.0 50.0 60.0 70.0 80.0 90.0 100.0
+4 5 20.0
+70.0 10.0 30.0 50.0
+30.0 10.0 90.0 50.0 70.0
+4 5 20.0
+60.0 10.0 30.0 50.0
+30.0 10.0 90.0 50.0 70.0
+0 0 0.0
+</PRE> 
+
+<P>
+
+<H2><FONT size=4 COLOR=#ff0000><A NAME="SECTION0001004000000000000000">
+Sample Output</A>&nbsp;</FONT>
+</H2>
+
+<P>
+<PRE>
+YES
+NO
+YES
+NO
+</PRE> 
+
+<P>
+
+
+<P>
+<BR><HR><H4>Footnotes</H4>
+<DL>
+<SUP>1</SUP>
+The ICSC is sponsored by the Association for Sports Machinery (ASM), which started out in the US, 
+so they prefer to use the term `soccer' instead of `football'.
+
+
+</DL>
+<BR><HR>
+
+</BODY>
+</HTML>
+</HTML>
+<hr><ADDRESS>Southwestern 2010-2011</ADDRESS><p></body></html>

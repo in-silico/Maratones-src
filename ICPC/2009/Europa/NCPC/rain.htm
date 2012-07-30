@@ -1,0 +1,54 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!-- saved from url=(0050)http://uva.onlinejudge.org/external/116/11692.html -->
+<HTML><HEAD><TITLE>D - Rain Fall</TITLE>
+<META content="text/html; charset=iso-8859-1" http-equiv=Content-Type><LINK 
+rel=stylesheet type=text/css href="rain_files/problem.css">
+<META name=GENERATOR content="MSHTML 8.00.7600.16490"></HEAD>
+<BODY>
+<H1>Problem D - Rain Fall</H1>
+<H3>Time limit: X seconds</H3><!-- author: Mikael Goldmann -->
+<P>Rainfall is measured in millimeters. The rain is collected in a vertical 
+transparent tube with millimeter markings, and once the rain has stopped 
+falling, one can check the height of the water in the tube. 
+<P>In our problem, the tube unfortunately has a leak at height <IT>L</IT> 
+millimeters (mm). If the water level is above the leak then water drains from 
+the tube at a rate of <I>K</I> millimeters per hour (mm/h). 
+<P>We want to figure out how much rain fell during a particular rainfall. <IT>We 
+assume that the tube is high enough that it does not overflow. We also assume 
+that rain falls at an (unknown) uniform rate during a rainfall, and that water 
+does not evaporate from the tube. The height of the leak itself is also 
+negligible.</IT> 
+<H2>Input</H2>
+<P>The first line of the input file contains an integer N (N&lt;40) which 
+denotes the total number of test cases. The description of each test case is 
+given below:<BR><BR>A line with five positive numbers: <I>L</I> <I>K</I> 
+<I>T<SUB>1</SUB></I> <I>T<SUB>2</SUB></I> <I>H</I> where 
+<UL>
+  <LI><I>L</I> is where the leak is (mm) 
+  <LI><I>K</I> is the rate at which water leaks (mm/h) 
+  <LI><I>T<SUB>1</SUB></I> is the duration of the rainfall (h) 
+  <LI><I>T<SUB>2</SUB></I> is the time between the end of the rainfall and the 
+  observation of the water level (h) 
+  <LI><I>H</I> is the water level in the tube when we observe it (mm) 
+</LI></UL>Each number is at least 0.01 and at most 1000.00, and each is given 
+with two decimals. 
+<H2>Output</H2>
+<P>For each test case print one line with two floating point numbers 
+<I>F<SUB>1</SUB></I> <I>F<SUB>2</SUB></I> where <I>F<SUB>1</SUB></I> is the 
+smallest rainfall in millimeters that would result in the given observation, and 
+<I>F<SUB>2</SUB></I> is the largest rainfall in millimeters that would result in 
+the given observation. Values with either absolute or relative error smaller 
+than <I>10<SUP>-6</SUP></I> are acceptable. 
+<DIV class=sample>
+<H2>Sample Input</H2><PRE>2
+80.00 0.50 2.00 1.50 80.00
+150.00 1.00 100.00 150.00 100.00
+
+</PRE></DIV>
+<DIV class=sample>
+<H2>Sample Output</H2><PRE>80.000000 80.759403
+100.000000 100.000000
+
+</PRE></DIV>
+<DIV class=source>The 2009 ACM Nordic Collegiate Programming Contest 
+</DIV></BODY></HTML>

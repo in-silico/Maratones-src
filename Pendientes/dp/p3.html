@@ -1,0 +1,132 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+           "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<meta name="GENERATOR" content="TtH 3.89">
+ <style type="text/css"> div.p { margin-top: 7pt;}</style>
+ <style type="text/css"><!--
+ td div.comp { margin-top: -0.6ex; margin-bottom: -1ex;}
+ td div.comb { margin-top: -0.6ex; margin-bottom: -.6ex;}
+ td div.hrcomp { line-height: 0.9; margin-top: -0.8ex; margin-bottom: -1ex;}
+ td div.norm {line-height:normal;}
+ span.roman {font-family: serif; font-style: normal; font-weight: normal;} 
+ span.overacc2 {position: relative;  left: .8em; top: -1.2ex;}
+ span.overacc1 {position: relative;  left: .6em; top: -1.2ex;} --></style>
+ 
+
+<title>D - Hill Driving</title>
+
+ <h2><a name="tth_sEc1">D</a>&nbsp;&nbsp;Hill Driving</h2>
+
+<div class="p"><!----></div>
+You're driving your car in the local hills and returning to your home
+town. You'd like to get back as quickly as possible; however, you
+notice that you don't have much fuel left. You know the most efficient
+route to take. Some parts of this route go downhill, and some go
+uphill. The different parts have different lengths and slopes. How
+quickly can you reach home with the little fuel you have left?
+
+<div class="p"><!----></div>
+We will assume a very simple model for the fuel consumption of your
+car. Fuel consumption (per unit distance travelled) will increase
+linearly with your driving speed v. However, there is an offset
+which depends on the slope s of the hill. For example, when going
+downhill along a particular road, you might be able to go at 10&nbsp;km/h without expending any
+fuel; on the other hand, if you were travelling that same road uphill, you
+would expend fuel at the same rate as if you were driving 10&nbsp;km/h faster along a flat
+road. More specifically, the car's fuel consumption c in liters per
+kilometer is given by
+
+<br clear="all" /><table border="0" width="100%"><tr><td>
+<table align="center" cellspacing="0"  cellpadding="2"><tr><td nowrap="nowrap" align="center">
+ c = </td><td nowrap="nowrap" align="center">
+max<br />
+</td><td nowrap="nowrap">(0,&#945;&nbsp;v + &#946;&nbsp;s),</td></tr></table>
+</td><td width="1%">(1)</td></tr></table>
+
+
+where &#945; is the standard fuel consumption rate on a flat road, v
+is your speed in km/h, s is the slope of the road, and &#946; is a positive
+constant. Acceleration and deceleration do not cost fuel and can be
+done instantaneously.
+
+<div class="p"><!----></div>
+Note that your car has a maximum (safe) speed which cannot be
+exceeded.
+
+<div class="p"><!----></div>
+
+<h3>Input</h3>
+On the first line a positive integer: the number of test cases, at
+most 100. After that per test case:
+
+<div class="p"><!----></div>
+
+<ul>
+<li> One line with four floating point numbers &#945;
+(0.1 &#8804; &#945; &#8804; 100), &#946; (0.1  &#8804; &#946; &#8804; 100),
+v<sub><span class="roman">max</span></sub> (10  &#8804; v<sub><span class="roman">max</span></sub>  &#8804; 200) and f (0  &#8804; f &#8804; 50): the standard (flat road) fuel consumption rate of your car, the
+slope factor, the maximum speed of your car in km/h, and the amount of
+fuel you have left in liters, respectively.
+<div class="p"><!----></div>
+</li>
+
+<li> One line with an integer r (1  &#8804; r  &#8804; 10&nbsp;000): the number of
+  road segments.
+<div class="p"><!----></div>
+</li>
+
+<li> r lines with two floating point numbers x<sub>i</sub> and y<sub>i</sub>
+  (1  &#8804; x<sub>i</sub>  &#8804; 1&nbsp;000, &#8722;1&nbsp;000  &#8804; y  &#8804; 1&nbsp;000) each: the
+  horizontal distance and height change (both in meters) of the i-th road
+  segment. Each road segment has constant slope.
+<div class="p"><!----></div>
+</li>
+</ul>
+
+<div class="p"><!----></div>
+
+<h3>Output</h3>
+Per test case:
+
+<ul>
+<li> One line with a floating point number: the fastest time in hours
+  in which you can reach town. It is guaranteed that if it is possible
+  to reach town at all, it will always be possible in less than 24
+  hours. If it is impossible to reach town, the line must contain
+  "<tt>IMPOSSIBLE</tt>" instead.
+<div class="p"><!----></div>
+</li>
+</ul>
+
+<div class="p"><!----></div>
+Your output should have a relative or absolute error of at most
+10<sup>&#8722;6</sup>.
+
+<div class="p"><!----></div>
+
+<h3>Sample in- and output</h3>
+
+<table border="1">
+<tr><td width="0"><b>Input</b> </td><td width="0"><b>Output</b> </td></tr>
+<tr><td width="0" valign="top">
+<pre>3
+10.0&nbsp;1.0&nbsp;150&nbsp;0.0
+1
+100.0&nbsp;-100.0
+10.0&nbsp;100.0&nbsp;150&nbsp;1.0
+2
+100&nbsp;0
+100&nbsp;100
+0.5&nbsp;0.1&nbsp;100&nbsp;10
+3
+1000&nbsp;0
+100&nbsp;10
+100&nbsp;-10
+</pre>
+</td><td width="0" valign="top">
+<pre>1.414214
+IMPOSSIBLE
+0.072120
+</pre>
+</td></tr></table>
+</html>

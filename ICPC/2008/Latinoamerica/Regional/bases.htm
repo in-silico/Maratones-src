@@ -1,0 +1,78 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0070)http://acmicpc-live-archive.uva.es/nuevoportal/data/problem.php -->
+<HTML><HEAD><TITLE>4211 - Bases</TITLE>
+<META content="text/html; charset=windows-1252" http-equiv=Content-Type>
+<META name=GENERATOR content="MSHTML 8.00.7600.16490"></HEAD>
+<BODY>
+<TABLE border=1 cellSpacing=0 cellPadding=3 align=center>
+  <TBODY>
+  <TR vAlign=center>
+    <TD vAlign=center rowSpan=2 align=middle><FONT color=#0000a0 
+      size=5><B><IMG src="problem_files/icono.gif"></B></FONT></TD>
+    <TD width=500 colSpan=5 align=middle><FONT color=#0000a0 size=5><B>4211 - 
+      Bases</B></FONT><BR><A 
+      href="http://acmicpc-live-archive.uva.es/nuevoportal/region.php?r=sa&amp;year=2008"><B>Latin 
+      America - South America - 2008/2009</B></A></FONT></TD></TR>
+  <TR vAlign=center>
+    <TD width=100 align=middle><A 
+      href="http://acmicpc-live-archive.uva.es/nuevoportal/data/p4211.pdf"><B>PDF</B></A></TD>
+    <TD width=100>&nbsp;</TD>
+    <TD width=100 align=middle><A 
+      href="http://acmicpc-live-archive.uva.es/nuevoportal/mailer.php?problem=4211"><B>Submit</B></A></TD>
+    <TD width=100>&nbsp;</TD>
+    <TD width=100 align=middle><A 
+      href="http://acmicpc-live-archive.uva.es/nuevoportal/rankprob.php?p=4211"><B>Ranking</B></A></TD></TR></TBODY></TABLE>
+<P>&nbsp;</P><!--h1 align="center">Bases</h1-->
+<P>What do you get if you multiply 6 by 9? The answer, of course, is 42, but 
+only if you do the calculations in base 13. 
+<P>Given an integer <I>B</I> &#8805; 2, the <EM>base <I>B</I> numbering system</EM> is 
+a manner of writing integers using only digits between 0 and <I>B</I> -1, 
+inclusive. In a number written in base <I>B</I>, the rightmost digit has its 
+value multiplied by 1, the second rightmost digit has its value multiplied by 
+<I>B</I>, the third rightmost digit has its value multiplied by 
+<I>B</I><SUP>2</SUP>, and so on. 
+<P>Some equations are true or false depending on the base they are considered 
+in. The equation 2+2=4, for instance, is true for any <I>B</I> &#8805; 5 - it does not 
+hold in base 4, for instance, since there is no digit '4' in base 4. On the 
+other hand, an equation like 2+2=5 is never true. 
+<P>Write a program that given an equation determines for which bases it holds. 
+<P>
+<H3>Input</H3>
+<P>Each line of the input contains a test case; each test case is an equation of 
+the form "<TT>EXPR=EXPR</TT>", where both "<TT>EXPR</TT>" are arithmetic 
+expressions with at most 17 characters. 
+<P>All expressions are valid, and contain only the characters '<TT>+</TT>', 
+'<TT>*</TT>' and the digits from '<TT>0</TT>' to '<TT>9</TT>'. No expressions 
+contain leading plus signs, and no numbers in it have leading zeros. 
+<P>The end of input is indicated by a line containing only "<TT>=</TT>". 
+<P>
+<H3>Output</H3>
+<P>For each test case in the input your program should produce a single line in 
+the output, indicating for which bases the given equation holds. 
+<P>If the expression is true for infinitely many bases, print "<TT>B+</TT>", 
+where <I>B</I> is the first base for which the equation holds. 
+<P>If the expression is valid only for a finite set of bases, print them in 
+ascending order, separated by single spaces. 
+<P>If the expression is not true in any base, print the character '<TT>*</TT>'. 
+<P>
+<TABLE border=1 cellPadding=10 width="100%">
+  <TBODY>
+  <TR>
+    <TD vAlign=top width="50%"><B>Sample input</B<BR><PRE>6*9=42
+10000+3*5*334=3*5000+10+0
+2+2=3
+2+2=4
+0*0=0
+=
+</PRE></B></TD>
+    <TD vAlign=top width="50%"><B>Output for the sample input</B<BR><PRE>13
+6 10
+*
+5+
+2+
+</PRE></B></TD></TR></TBODY></TABLE>
+<P><FONT size=-2>ACM ICPC :: South American Regional 2008</FONT> 
+<HR>
+
+<ADDRESS>South America 2008-2009</ADDRESS>
+<P></P></BODY></HTML>

@@ -1,0 +1,63 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD>
+<META content="text/html; charset=windows-1252" http-equiv=Content-Type>
+<META name=GENERATOR content="MSHTML 8.00.7100.4129"></HEAD>
+<BODY>
+<CENTER>
+<H2>Problem G: Interpreter</H2></CENTER><BR>A certain computer has 10 registers 
+and 1000 words of RAM. Each register or RAM location holds a 3-digit integer 
+between 0 and 999. Instructions are encoded as 3-digit integers and stored in 
+RAM. The encodings are as follows: 
+<UL>
+  <LI>100 means <I>halt</I> 
+  <LI>2dn means <I>set register d to n (between 0 and 9)</I> 
+  <LI>3dn means <I>add n to register d</I> 
+  <LI>4dn means <I>multiply register d by n</I> 
+  <LI>5ds means <I>set register d to the value of register s</I> 
+  <LI>6ds means <I>add the value of register s to register d</I> 
+  <LI>7ds means <I>multiply register d by the value of register s</I> 
+  <LI>8da means <I>set register d to the value in RAM whose address is in 
+  register a</I> 
+  <LI>9sa means <I>set the value in RAM whose address is in register a to the 
+  value of register s</I> 
+  <LI>0ds means <I>goto the location in register d unless register s contains 
+  0</I> </LI></UL>
+<P>All registers initially contain 000. The initial content of the RAM is read 
+from standard input. The first instruction to be executed is at RAM address 0. 
+All results are reduced modulo 1000. 
+<H3>Input</H3>
+<P><B>The input begins with a single positive integer on a line by itself 
+indicating the number of the cases following, each of them as described below. 
+This line is followed by a blank line, and there is also a blank line between 
+two consecutive inputs. </B>
+<P>
+<P>The input to your program consists of up to 1000 3-digit unsigned integers, 
+representing the contents of consecutive RAM locations starting at 0. 
+Unspecified RAM locations are initialized to 000. 
+<H3>Output</H3>
+<P><B>For each test case, the output must follow the description below. The 
+outputs of two consecutive cases will be separated by a blank line. </B>
+<P>
+<P>The output from your program is a single integer: the number of instructions 
+executed up to and including the <I>halt</I> instruction. You may assume that 
+the program does halt. 
+<H3>Sample Input</H3><PRE>1
+
+299
+492
+495
+399
+492
+495
+399
+283
+279
+689
+078
+100
+000
+000
+000
+</PRE>
+<H3>Sample Output</H3><PRE>16
+</PRE></BODY></HTML>

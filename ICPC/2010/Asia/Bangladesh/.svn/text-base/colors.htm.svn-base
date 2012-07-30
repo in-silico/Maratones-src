@@ -1,0 +1,613 @@
+
+<!-- saved from url=(0059)http://uva.onlinejudge.org/contests/252-52411035/11798.html -->
+<HTML xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns="http://www.w3.org/TR/REC-html40"><HEAD><META http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+<META name="ProgId" content="Word.Document">
+<META name="Generator" content="Microsoft Word 11">
+<META name="Originator" content="Microsoft Word 11">
+<LINK rel="File-List" href="http://uva.onlinejudge.org/contests/252-52411035/e_files/filelist.xml">
+<LINK rel="Edit-Time-Data" href="http://uva.onlinejudge.org/contests/252-52411035/e_files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<TITLE>E</TITLE>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Manzurur Khan</o:Author>
+  <o:LastAuthor>shahriar</o:LastAuthor>
+  <o:Revision>3</o:Revision>
+  <o:TotalTime>0</o:TotalTime>
+  <o:LastPrinted>2010-06-14T16:32:00Z</o:LastPrinted>
+  <o:Created>2010-06-14T16:07:00Z</o:Created>
+  <o:LastSaved>2010-06-14T16:32:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>284</o:Words>
+  <o:Characters>1621</o:Characters>
+  <o:Company>ACM ICPC</o:Company>
+  <o:Lines>13</o:Lines>
+  <o:Paragraphs>3</o:Paragraphs>
+  <o:CharactersWithSpaces>1902</o:CharactersWithSpaces>
+  <o:Version>11.9999</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Zoom>150</w:Zoom>
+  <w:DefaultTableStyle Number="0">Normal</w:DefaultTableStyle>
+  <w:DrawingGridHorizontalSpacing>0 pt</w:DrawingGridHorizontalSpacing>
+  <w:DrawingGridVerticalSpacing>0 pt</w:DrawingGridVerticalSpacing>
+  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>
+  <w:DisplayVerticalDrawingGridEvery>0</w:DisplayVerticalDrawingGridEvery>
+  <w:UseMarginsForDrawingGridOrigin/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DrawingGridHorizontalOrigin>0 pt</w:DrawingGridHorizontalOrigin>
+  <w:DrawingGridVerticalOrigin>0 pt</w:DrawingGridVerticalOrigin>
+  <w:Compatibility>
+   <w:SpaceForUL/>
+   <w:BalanceSingleByteDoubleByteWidth/>
+   <w:DoNotLeaveBackslashAlone/>
+   <w:ULTrailSpace/>
+   <w:AdjustLineHeightInTable/>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:UseWord2002TableStyleRules/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+ </w:LatentStyles>
+</xml><![endif]-->
+<STYLE>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Vrinda;
+	panose-1:1 1 6 0 1 1 1 1 1 1;
+	mso-font-charset:0;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:65539 0 0 0 1 0;}
+@font-face
+	{font-family:"Liberation Serif";
+	mso-font-alt:"MS PMincho";
+	mso-font-charset:128;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:0 0 0 0 0 0;}
+@font-face
+	{font-family:"DejaVu Sans";
+	mso-font-alt:"Arial Unicode MS";
+	mso-font-charset:128;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:0 0 0 0 0 0;}
+@font-face
+	{font-family:"Liberation Sans";
+	mso-font-alt:"Arial Unicode MS";
+	mso-font-charset:128;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:0 0 0 0 0 0;}
+@font-face
+	{font-family:"Courier 10 Pitch";
+	mso-font-alt:"MS Mincho";
+	mso-font-charset:128;
+	mso-generic-font-family:auto;
+	mso-font-pitch:auto;
+	mso-font-signature:0 0 0 0 0 0;}
+@font-face
+	{font-family:"\@Liberation Serif";
+	mso-font-charset:128;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:0 0 0 0 0 0;}
+@font-face
+	{font-family:"\@DejaVu Sans";
+	mso-font-charset:128;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:0 0 0 0 0 0;}
+@font-face
+	{font-family:"\@Liberation Sans";
+	mso-font-charset:128;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:0 0 0 0 0 0;}
+@font-face
+	{font-family:"\@Courier 10 Pitch";
+	mso-font-charset:128;
+	mso-generic-font-family:auto;
+	mso-font-pitch:auto;
+	mso-font-signature:0 0 0 0 0 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:none;
+	mso-hyphenate:none;
+	font-size:12.0pt;
+	font-family:"Liberation Serif";
+	mso-fareast-font-family:"DejaVu Sans";
+	mso-hansi-font-family:"Liberation Serif";
+	mso-bidi-font-family:Vrinda;
+	mso-font-kerning:1.0pt;}
+h2
+	{mso-style-parent:Heading;
+	mso-style-next:"Body Text";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:.4in;
+	text-indent:-.4in;
+	mso-pagination:none;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	mso-list:l0 level2 lfo2;
+	mso-hyphenate:none;
+	tab-stops:list .4in;
+	font-size:14.0pt;
+	font-family:"Liberation Sans";
+	mso-fareast-font-family:"DejaVu Sans";
+	mso-hansi-font-family:"Liberation Sans";
+	mso-bidi-font-family:"DejaVu Sans";
+	mso-font-kerning:1.0pt;
+	font-style:italic;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:no-line-numbers;
+	mso-hyphenate:none;
+	tab-stops:center 249.3pt right 498.6pt;
+	font-size:12.0pt;
+	font-family:"Liberation Serif";
+	mso-fareast-font-family:"DejaVu Sans";
+	mso-hansi-font-family:"Liberation Serif";
+	mso-bidi-font-family:Vrinda;
+	mso-font-kerning:1.0pt;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:no-line-numbers;
+	mso-hyphenate:none;
+	tab-stops:center 249.3pt right 498.6pt;
+	font-size:12.0pt;
+	font-family:"Liberation Serif";
+	mso-fareast-font-family:"DejaVu Sans";
+	mso-hansi-font-family:"Liberation Serif";
+	mso-bidi-font-family:Vrinda;
+	mso-font-kerning:1.0pt;}
+p.MsoCaption, li.MsoCaption, div.MsoCaption
+	{margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	mso-pagination:no-line-numbers;
+	mso-hyphenate:none;
+	font-size:12.0pt;
+	font-family:"Liberation Serif";
+	mso-fareast-font-family:"DejaVu Sans";
+	mso-hansi-font-family:"Liberation Serif";
+	mso-bidi-font-family:Vrinda;
+	mso-font-kerning:1.0pt;
+	font-style:italic;}
+p.MsoList, li.MsoList, div.MsoList
+	{mso-style-parent:"Body Text";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	mso-pagination:none;
+	mso-hyphenate:none;
+	font-size:12.0pt;
+	font-family:"Liberation Serif";
+	mso-fareast-font-family:"DejaVu Sans";
+	mso-hansi-font-family:"Liberation Serif";
+	mso-bidi-font-family:Vrinda;
+	mso-font-kerning:1.0pt;}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	mso-pagination:none;
+	mso-hyphenate:none;
+	font-size:12.0pt;
+	font-family:"Liberation Serif";
+	mso-fareast-font-family:"DejaVu Sans";
+	mso-hansi-font-family:"Liberation Serif";
+	mso-bidi-font-family:Vrinda;
+	mso-font-kerning:1.0pt;}
+p.Heading, li.Heading, div.Heading
+	{mso-style-name:Heading;
+	mso-style-next:"Body Text";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	mso-pagination:none;
+	page-break-after:avoid;
+	mso-hyphenate:none;
+	font-size:14.0pt;
+	font-family:"Liberation Sans";
+	mso-fareast-font-family:"DejaVu Sans";
+	mso-hansi-font-family:"Liberation Sans";
+	mso-bidi-font-family:"DejaVu Sans";
+	mso-font-kerning:1.0pt;}
+p.Index, li.Index, div.Index
+	{mso-style-name:Index;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:no-line-numbers;
+	mso-hyphenate:none;
+	font-size:12.0pt;
+	font-family:"Liberation Serif";
+	mso-fareast-font-family:"DejaVu Sans";
+	mso-hansi-font-family:"Liberation Serif";
+	mso-bidi-font-family:Vrinda;
+	mso-font-kerning:1.0pt;}
+p.TableContents, li.TableContents, div.TableContents
+	{mso-style-name:"Table Contents";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:no-line-numbers;
+	mso-hyphenate:none;
+	font-size:12.0pt;
+	font-family:"Liberation Serif";
+	mso-fareast-font-family:"DejaVu Sans";
+	mso-hansi-font-family:"Liberation Serif";
+	mso-bidi-font-family:Vrinda;
+	mso-font-kerning:1.0pt;}
+p.SampleIO, li.SampleIO, div.SampleIO
+	{mso-style-name:SampleIO;
+	mso-style-parent:"Table Contents";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:16.4pt;
+	margin-bottom:.0001pt;
+	mso-pagination:no-line-numbers;
+	mso-hyphenate:none;
+	font-size:12.0pt;
+	font-family:"Courier 10 Pitch";
+	mso-fareast-font-family:"DejaVu Sans";
+	mso-hansi-font-family:"Courier 10 Pitch";
+	mso-bidi-font-family:Vrinda;
+	mso-font-kerning:1.0pt;}
+p.Constraints, li.Constraints, div.Constraints
+	{mso-style-name:Constraints;
+	mso-style-parent:"Body Text";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:16.55pt;
+	mso-pagination:none;
+	mso-hyphenate:none;
+	font-size:12.0pt;
+	font-family:"Liberation Serif";
+	mso-fareast-font-family:"DejaVu Sans";
+	mso-hansi-font-family:"Liberation Serif";
+	mso-bidi-font-family:Vrinda;
+	mso-font-kerning:1.0pt;}
+ /* Page Definitions */
+ @page
+	{mso-footnote-separator:url("e_files/header.html") fs;
+	mso-footnote-continuation-separator:url("e_files/header.html") fcs;
+	mso-endnote-separator:url("e_files/header.html") es;
+	mso-endnote-continuation-separator:url("e_files/header.html") ecs;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:56.7pt 56.7pt 84.65pt 56.7pt;
+	mso-header-margin:.5in;
+	mso-footer-margin:56.7pt;
+	mso-footer:url("e_files/header.html") f1;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:1;
+	mso-list-template-ids:1;}
+@list l0:level1
+	{mso-level-number-format:none;
+	mso-level-suffix:none;
+	mso-level-text:"";
+	mso-level-tab-stop:.3in;
+	mso-level-number-position:left;
+	margin-left:.3in;
+	text-indent:-.3in;}
+@list l0:level2
+	{mso-level-number-format:none;
+	mso-level-suffix:none;
+	mso-level-text:"";
+	mso-level-tab-stop:.4in;
+	mso-level-number-position:left;
+	margin-left:.4in;
+	text-indent:-.4in;}
+@list l0:level3
+	{mso-level-number-format:none;
+	mso-level-suffix:none;
+	mso-level-text:"";
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	margin-left:.5in;
+	text-indent:-.5in;}
+@list l0:level4
+	{mso-level-number-format:none;
+	mso-level-suffix:none;
+	mso-level-text:"";
+	mso-level-tab-stop:.6in;
+	mso-level-number-position:left;
+	margin-left:.6in;
+	text-indent:-.6in;}
+@list l0:level5
+	{mso-level-number-format:none;
+	mso-level-suffix:none;
+	mso-level-text:"";
+	mso-level-tab-stop:.7in;
+	mso-level-number-position:left;
+	margin-left:.7in;
+	text-indent:-.7in;}
+@list l0:level6
+	{mso-level-number-format:none;
+	mso-level-suffix:none;
+	mso-level-text:"";
+	mso-level-tab-stop:.8in;
+	mso-level-number-position:left;
+	margin-left:.8in;
+	text-indent:-.8in;}
+@list l0:level7
+	{mso-level-number-format:none;
+	mso-level-suffix:none;
+	mso-level-text:"";
+	mso-level-tab-stop:.9in;
+	mso-level-number-position:left;
+	margin-left:.9in;
+	text-indent:-.9in;}
+@list l0:level8
+	{mso-level-number-format:none;
+	mso-level-suffix:none;
+	mso-level-text:"";
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	margin-left:1.0in;
+	text-indent:-1.0in;}
+@list l0:level9
+	{mso-level-number-format:none;
+	mso-level-suffix:none;
+	mso-level-text:"";
+	mso-level-tab-stop:1.1in;
+	mso-level-number-position:left;
+	margin-left:1.1in;
+	text-indent:-1.1in;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</STYLE>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="3074">
+  <o:colormenu v:ext="edit" fillcolor="none [4]" strokecolor="none [1]"
+   shadowcolor="none [2]"/>
+ </o:shapedefaults></xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</HEAD><BODY bgcolor="white" lang="EN-US" style="tab-interval:35.45pt;line-break:strict">
+
+<DIV class="Section1">
+
+<TABLE class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" style="margin-left:2.6pt;border-collapse:collapse;mso-padding-alt:2.75pt 2.75pt 2.75pt 2.75pt">
+ <TBODY><TR style="mso-yfti-irow:0;mso-yfti-firstrow:yes;height:59.05pt">
+  <TD width="90" rowspan="3" style="width:67.6pt;border:solid black 1.0pt;
+  border-right:none;mso-border-top-alt:solid black .25pt;mso-border-left-alt:
+  solid black .25pt;mso-border-bottom-alt:solid black .25pt;background:#B3B3B3;
+  padding:2.75pt 2.75pt 2.75pt 2.75pt;height:59.05pt">
+  <P class="TableContents" align="center" style="text-align:center"><B><SPAN style="font-size:72.0pt">E<O:P></O:P></SPAN></B></P>
+  </TD>
+  <TD width="575" colspan="2" style="width:431.1pt;border:solid black 1.0pt;
+  mso-border-alt:solid black .25pt;padding:2.75pt 2.75pt 2.75pt 2.75pt;
+  height:59.05pt">
+  <P class="TableContents" align="center" style="text-align:center"><SPAN style="font-size:36.0pt">Colorful Board 2<O:P></O:P></SPAN></P>
+  </TD>
+ </TR>
+ <TR style="mso-yfti-irow:1;height:18.55pt">
+  <TD width="279" valign="top" style="width:209.1pt;border-top:none;border-left:
+  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
+  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
+  padding:2.75pt 2.75pt 2.75pt 2.75pt;height:18.55pt">
+  <P class="TableContents" align="right" style="text-align:right"><SPAN style="font-size:10.0pt">Input<O:P></O:P></SPAN></P>
+  </TD>
+  <TD width="296" valign="top" style="width:222.0pt;border:solid black 1.0pt;
+  border-top:none;mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:
+  solid black .25pt;mso-border-right-alt:solid black .25pt;padding:2.75pt 2.75pt 2.75pt 2.75pt;
+  height:18.55pt">
+  <P class="TableContents"><SPAN style="font-size:10.0pt">Standard Input<O:P></O:P></SPAN></P>
+  </TD>
+ </TR>
+ <TR style="mso-yfti-irow:2;mso-yfti-lastrow:yes;height:.7pt">
+  <TD width="279" valign="top" style="width:209.1pt;border-top:none;border-left:
+  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
+  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
+  padding:2.75pt 2.75pt 2.75pt 2.75pt;height:.7pt">
+  <P class="TableContents" align="right" style="text-align:right"><SPAN style="font-size:10.0pt">Output<O:P></O:P></SPAN></P>
+  </TD>
+  <TD width="296" valign="top" style="width:222.0pt;border:solid black 1.0pt;
+  border-top:none;mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:
+  solid black .25pt;mso-border-right-alt:solid black .25pt;padding:2.75pt 2.75pt 2.75pt 2.75pt;
+  height:.7pt">
+  <P class="TableContents"><SPAN style="font-size:10.0pt">Standard Output<O:P></O:P></SPAN></P>
+  </TD>
+ </TR>
+</TBODY></TABLE>
+
+<P class="MsoNormal" style="margin-left:16.55pt"><O:P>&nbsp;</O:P></P>
+
+<P class="MsoNormal" style="margin-top:1.4pt;margin-right:0in;margin-bottom:1.4pt;
+margin-left:17.25pt;text-align:justify;text-indent:11.65pt;mso-line-height-alt:
+5.0pt"><!--[if gte vml 1]><v:shapetype id="_x0000_t75" coordsize="21600,21600"
+ o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f"
+ stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_s1026" type="#_x0000_t75" style='position:absolute;
+ left:0;text-align:left;margin-left:0;margin-top:0;width:169.85pt;height:184.75pt;
+ z-index:1;mso-wrap-distance-left:7.2pt;mso-wrap-distance-right:0;
+ mso-position-horizontal:left' filled="t">
+ <v:fill color2="black"/>
+ <v:imagedata src="e_files/image001.jpg" o:title=""/>
+ <w:wrap type="square" side="largest"/>
+</v:shape><![endif]--><IMG width="226" height="246" src="./color_files/p11798.jpg" align="left" hspace="5" style="margin-left:5px;
+margin-right:-5px;margin-left:5px;margin-right:-5px" v:shapes="_x0000_s1026"><SPAN style="mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:&quot;Times New Roman&quot;">You
+are given a rectangular board. You are asked to draw <B><I>M</I></B> horizontal
+lines and <B><I>N</I></B> vertical lines in that board, so that the whole board
+will be divided into (<B><I>M</I>+1</B>) × (<B><I>N</I>+1</B>) cells. So there
+will be <B><I>M</I> + 1</B> rows each of which will exactly contain <B><I>N</I>
++ 1</B> cells or columns. The <I>y</I><SUP>th</SUP> cell of <I>x</I><SUP>th</SUP>
+row can be called as cell(<I>x</I>, <I>y</I>). The distance between two
+different cells is the summation of row difference and column difference of
+those two cells. So the distance between cell(<I>x</I><SUB>1</SUB>, <I>y</I><SUB>1</SUB>)
+and cell(<I>x</I><SUB>2</SUB>, <I>y</I><SUB>2</SUB>) is |<I>x</I><SUB>1</SUB> –
+<I>x</I><SUB>2</SUB>| + |<I>y</I><SUB>1</SUB> – <I>y</I><SUB>2</SUB>|. For
+example, the distance between cell(2, 3) and cell(3, 2) is |2 – 3| + |3 – 2| =
+1 + 1 = 2.<O:P></O:P></SPAN></P>
+
+<P class="MsoNormal" style="margin-top:1.4pt;margin-right:0in;margin-bottom:1.4pt;
+margin-left:17.25pt;text-align:justify;text-indent:11.65pt;mso-line-height-alt:
+5.0pt"><SPAN style="mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;">After that you have to color every cells of the board. For
+that you are given <B style="mso-bidi-font-weight:normal"><I>K</I></B>
+different colors. To make the board more beautiful you have to make sure that
+no two adjacent cells contain the same color, in other word no two cells having
+the same color can have the distance 1 in between them. To make the board even
+more beautiful you have to make sure no two cells having the same color can
+have the odd distance between them. So if you color cell(3, 5) with red, you cannot
+color cell(5, 8) with red, as the distance between them is 5, which is odd.
+Note that you can keep some color unused, but you can’t keep some cell
+uncolored.<O:P></O:P></SPAN></P>
+
+<H2 style="margin-left:16.55pt;text-indent:0in">Input</H2>
+
+<P class="MsoNormal" style="margin-top:1.4pt;margin-right:0in;margin-bottom:1.4pt;
+margin-left:16.55pt;text-align:justify;mso-line-height-alt:5.0pt"><SPAN style="mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:&quot;Times New Roman&quot;">Input
+will start with an integer <B><I>T (T &#8804; 50000) </I></B>which indicates
+the number of test cases. Each of the next <B><I>T</I></B> lines will contain
+three space separated integers <B><I>M</I> (0 &#8804; <I>M</I> &#8804; 19)</B>,
+<B><I>N </I>(0 &#8804; <I>N</I> &#8804; 19)</B> and <B>K (1 &#8804; <I>K</I> &#8804;
+50)</B>.<O:P></O:P></SPAN></P>
+
+<H2 style="margin-left:16.55pt;text-indent:0in">Output</H2>
+
+<P class="MsoNormal" style="margin-top:1.4pt;margin-right:0in;margin-bottom:1.4pt;
+margin-left:16.55pt;text-align:justify"><SPAN style="mso-fareast-font-family:
+&quot;Times New Roman&quot;;mso-bidi-font-family:&quot;Times New Roman&quot;">For each test case,
+output a single line in the form “</SPAN><B><SPAN style="font-family:&quot;Courier New&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:&quot;Times New Roman&quot;">Case
+</SPAN></B><B><I><SPAN style="mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-bidi-font-family:&quot;Times New Roman&quot;">#</SPAN></I></B><B><SPAN style="font-family:&quot;Courier New&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-bidi-font-family:&quot;Times New Roman&quot;">: </SPAN></B><B><I><SPAN style="mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:&quot;Times New Roman&quot;">P</SPAN></I></B><SPAN style="mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:&quot;Times New Roman&quot;">”,
+where # will be replaced by the case number and <B><I>P</I></B> will be replaced
+by the number of valid ways you can draw the given board. The result can be
+very large you should output the result <B>modulo 1000000007</B>.<O:P></O:P></SPAN></P>
+
+<P class="MsoBodyText" style="margin-left:16.4pt"><O:P>&nbsp;</O:P></P>
+
+<P class="MsoBodyText" style="margin-left:16.4pt;page-break-before:always"><O:P>&nbsp;</O:P></P>
+
+<TABLE class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" style="margin-left:2.75pt;border-collapse:collapse;mso-padding-alt:2.75pt 2.75pt 2.75pt 2.75pt">
+ <TBODY><TR style="mso-yfti-irow:0;mso-yfti-firstrow:yes">
+  <TD width="332" valign="top" style="width:249.25pt;border:solid black 1.0pt;
+  border-right:none;mso-border-top-alt:solid black .25pt;mso-border-left-alt:
+  solid black .25pt;mso-border-bottom-alt:solid black .25pt;padding:2.75pt 2.75pt 2.75pt 2.75pt">
+  <P class="TableContents" style="margin-left:16.4pt"><B>Sample Input<O:P></O:P></B></P>
+  </TD>
+  <TD width="332" valign="top" style="width:249.35pt;border:solid black 1.0pt;
+  mso-border-alt:solid black .25pt;padding:2.75pt 2.75pt 2.75pt 2.75pt">
+  <P class="TableContents" style="margin-left:16.4pt"><B>Sample Output<O:P></O:P></B></P>
+  </TD>
+ </TR>
+ <TR style="mso-yfti-irow:1;mso-yfti-lastrow:yes">
+  <TD width="332" valign="top" style="width:249.25pt;border-top:none;border-left:
+  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
+  mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:solid black .25pt;
+  padding:2.75pt 2.75pt 2.75pt 2.75pt">
+  <P class="MsoNormal" style="margin-top:1.4pt;margin-right:-.15pt;margin-bottom:
+  1.4pt;margin-left:17.5pt;mso-line-height-alt:5.0pt"><SPAN style="font-family:
+  &quot;Courier New&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+  &quot;Courier New&quot;">4<BR>
+  0 0 1<BR>
+  0 0 2<BR>
+  5 5 2<BR>
+  5 5 1<O:P></O:P></SPAN></P>
+  </TD>
+  <TD width="332" valign="top" style="width:249.35pt;border:solid black 1.0pt;
+  border-top:none;mso-border-left-alt:solid black .25pt;mso-border-bottom-alt:
+  solid black .25pt;mso-border-right-alt:solid black .25pt;padding:2.75pt 2.75pt 2.75pt 2.75pt">
+  <P class="MsoNormal" style="margin-top:1.4pt;margin-right:-.15pt;margin-bottom:
+  1.4pt;margin-left:17.5pt;mso-line-height-alt:5.0pt"><SPAN style="font-family:
+  &quot;Courier New&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+  &quot;Courier New&quot;">Case 1: 1<BR>
+  Case 2: 2<BR>
+  Case 3: 2<BR>
+  Case 4: 0<O:P></O:P></SPAN></P>
+  <P class="SampleIO" style="margin-top:0in;margin-right:-.15pt;margin-bottom:
+  0in;margin-left:17.5pt;margin-bottom:.0001pt"><O:P>&nbsp;</O:P></P>
+  </TD>
+ </TR>
+</TBODY></TABLE>
+
+<P class="MsoBodyText"><O:P>&nbsp;</O:P></P>
+
+<P class="MsoBodyText" style="page-break-before:always"><O:P>&nbsp;</O:P></P>
+
+</DIV>
+
+
+
+
+</BODY></HTML>

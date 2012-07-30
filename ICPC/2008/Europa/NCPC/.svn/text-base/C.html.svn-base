@@ -1,0 +1,170 @@
+<html><head>
+<!--Converted with LaTeX2HTML 2K.1beta (1.48)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+
+
+<title>Code Theft</title>
+<meta name="description" content="Code Theft">
+<meta name="keywords" content="htmlatex">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta name="Generator" content="LaTeX2HTML v2K.1beta">
+<meta http-equiv="Content-Style-Type" content="text/css">
+
+<link rel="STYLESHEET" href="C_files/htmlatex.html">
+
+</head><body bgcolor="#ffffff" lang="EN">
+
+<h1><br clear="ALL"><center><table bgcolor="#0000ff"><tbody><tr><td><b><font color="#ffff00" size="5">&nbsp;<a name="SECTION0001000000000000000000">
+Code Theft</a>&nbsp;</font></b></td></tr></tbody></table></center>
+</h1>
+
+<p>
+</p><div align="CENTER">
+<!-- MATH
+ $\epsfbox{p115xx.eps}$
+ -->
+<img src="C_files/p11557.jpg" alt="\epsfbox{p115xx.eps}" align="right" border="0" height="250" width="250">
+<tex2html_verbatim_mark>
+</tex2html_verbatim_mark></div>
+
+<p>
+While reviewing code recently being checked into the repository, Jim
+discovered that some employees now and then seemed to copy code right
+from the Internet into the company code base. This would be a potential
+disaster as the company then risks getting sued by copyright holders of
+the original code. The obvious solution, talking to the employees and
+kindly ask them not to submit any stolen code, seemed to solve the
+problem. Still, it was decided that a screening process should be
+introduced to detect newly stolen code.
+
+</p><p>
+The screening would work as follows: Every time new code was checked in,
+the full contents of the changed files where matched against a
+repository of known open source code. For each file the longest match,
+in number of consecutive lines, should be reported.
+
+</p><p>
+Comparison is done line by line. Empty lines, and lines only containing
+space, are ignored during comparison and not counted.
+Leading and trailing spaces should be ignored completely and consecutive
+space characters inside the lines are treated as one single space.
+The comparison is case-sensitive.
+
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001001000000000000000">
+Input</a>&nbsp;</font>
+</h2>
+The input file contains several test cases, each of them    as described below.
+
+<p>
+Test data starts with the number <!-- MATH
+ $0 \le N \le 100$
+ -->
+<span class="MATH">0<img src="C_files/11557img2.png" alt="$ \le$" align="MIDDLE" border="0" height="31" width="18"><i>N</i><img src="C_files/11557img2.png" alt="$ \le$" align="MIDDLE" border="0" height="31" width="18">100</span>
+<tex2html_verbatim_mark> of code fragments in the
+repository. Then follows, for each code fragment, one line
+containing the file name that the fragment was fetched from
+and the contents of the fragment on subsequent lines. File names
+will neither contain whitespace nor be guaranteed to be unique. The name
+is at most 254 characters long.
+Each fragment is terminated by <tt>***END***</tt> on
+a line by its own. This line is not considered being part of the
+fragment.
+
+</tex2html_verbatim_mark></p><p>
+After the fragments in the repository have all been listed, comes the
+actual code snippet to find matches for. This snippet is also
+terminated by <tt>***END***</tt> on a line by its own.
+
+</p><p>
+Lines are guaranteed to be no longer than <span class="MATH">254</span>
+<tex2html_verbatim_mark> characters. No code
+fragment will be longer than <span class="MATH">10000</span>
+<tex2html_verbatim_mark> lines. Any code and file name lines
+will only contain the ASCII characters 32-126. 
+The total size of the input file will not exceed <span class="MATH">10<sup>6</sup></span>
+<tex2html_verbatim_mark> characters.
+
+</tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001002000000000000000">
+Output</a>&nbsp;</font>
+</h2>
+
+<p>
+For each test case, write to the output, on a line by itself, the number of matching consecutive lines
+(empty lines not counted) in a longest match from the repository,
+followed by a space-separated list of the file names of each
+fragments containing a match of this length, given in the order that the
+matching fragments were presented in the repository description.
+If no fragments match, write the number 0 on a line of its own.
+
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001003000000000000000">
+Sample Input</a>&nbsp;</font>
+</h2>
+<pre>2
+HelloWorld.c
+int Main() {
+    printf("Hello %d\n",i);
+}
+***END***
+Add.c
+int Main() {
+  for (int i=0; i&lt;10; i++)
+    sum += i;
+  printf("SUM %d", sum);
+}
+***END***
+int Main() {
+  printf("Hello %d\n",i);
+  printf("THE END\n");
+}
+***END***
+2
+HelloWorld1.bas
+10 PRINT "*******************"
+20 PRINT "*******************"
+30 PRINT "--- HELLO WORLD ---"
+40 PRINT "*******************"
+50 PRINT "*******************"
+***END***
+HelloWorld2.bas
+10  PRINT   "-------------------"
+20  PRINT   "*******************"
+30  PRINT   "--- HELLO WORLD ---"
+40  PRINT   "*******************"
+50  PRINT   "-------------------"
+***END***
+10 REM Hello ver 1.0 (c) Acme 2008
+20 PRINT "*******************"
+30 PRINT "--- HELLO WORLD ---"
+40 PRINT "*******************"
+50 END
+***END***
+</pre> 
+
+<p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001004000000000000000">
+Sample Output</a>&nbsp;</font>
+</h2>
+<pre>2 HelloWorld.c
+3 HelloWorld1.bas HelloWorld2.bas
+</pre> 
+
+<p>
+
+
+</p><p>
+<br></p><hr>
+
+</body></html>

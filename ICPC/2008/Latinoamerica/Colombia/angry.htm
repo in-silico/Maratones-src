@@ -1,0 +1,177 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!--Converted with LaTeX2HTML 2K.1beta (1.48)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others --><HTML><HEAD><TITLE>Angry Programmer</TITLE>
+<META name=description content="Angry Programmer">
+<META name=keywords content=htmlatex>
+<META name=resource-type content=document>
+<META name=distribution content=global>
+<META content="text/html; charset=iso-8859-1" http-equiv=Content-Type>
+<META name=GENERATOR content="MSHTML 8.00.7100.4129">
+<META content=text/css http-equiv=Content-Style-Type><LINK rel=STYLESHEET 
+href="htmlatex.css"></HEAD>
+<BODY lang=EN bgColor=#ffffff>
+<H1><BR clear=all>
+<CENTER>
+<TABLE bgColor=#0000ff>
+  <TBODY>
+  <TR>
+    <TD><B><FONT color=#ffff00 size=5>&nbsp;<A 
+      name=SECTION0001000000000000000000> Angry 
+  Programmer</A>&nbsp;</FONT></B></TR></TBODY></TABLE></CENTER></H1>You, a 
+programmer of an important software house, have been fired because you didn't 
+solve an important problem that was assigned to you. You are very furious and 
+want to take revenge on your boss, breaking the communication between his 
+computer and the central server. 
+<P>
+<P>
+<P><BR>The computer of your boss and the central server are in the same network, 
+which is composed of many machines (computers) and wires linking pairs of those 
+machines. There is at most one wire between any pair of machines and there can 
+be pairs of machines without a wire between them. 
+<P>
+<P>
+<P><BR>To accomplish your objective, you can destroy machines and wires, but you 
+can't destroy neither the computer of your boss nor the central server, because 
+those machines are monitored by security cameras. You have estimated the cost of 
+blowing up each machine and the cost of cutting each wire in the network. 
+<P>
+<P>
+<P><BR>You want to determine the minimum cost of interrupting the communication 
+between your boss' computer and the central server. Two computers <SPAN 
+class=MATH><I>A</I></SPAN> <TEX2HTML_VERBATIM_MARK>and <SPAN 
+class=MATH><I>B</I></SPAN> <TEX2HTML_VERBATIM_MARK>can communicate if there is a 
+sequence of undestroyed machines <!-- MATH
+ $x_{1}, \dots,x_{n}$
+ --><SPAN 
+class=MATH><I>x</I><SUB>1</SUB>,..., <I>x</I><SUB>n</SUB></SPAN> 
+<TEX2HTML_VERBATIM_MARK>such that <SPAN class=MATH><I>x</I><SUB>1</SUB> = 
+<I>A</I></SPAN> <TEX2HTML_VERBATIM_MARK>, <SPAN class=MATH><I>x</I><SUB>n</SUB> 
+= <I>B</I></SPAN> <TEX2HTML_VERBATIM_MARK>and <SPAN 
+class=MATH><I>x</I><SUB>i</SUB></SPAN> <TEX2HTML_VERBATIM_MARK>is linked with 
+<SPAN class=MATH><I>x</I><SUB>i+1</SUB></SPAN> <TEX2HTML_VERBATIM_MARK>with an 
+uncut wire (for each <!-- MATH
+ $1 \leq i \leq n-1$
+ --><SPAN class=MATH>1 <IMG 
+border=0 alt="$ \leq$" align=middle 
+src="http://uva.onlinejudge.org/contests/211-7b52419c/11506img1.png" width=18 
+height=31> <I>i</I> <IMG border=0 alt="$ \leq$" align=middle 
+src="http://uva.onlinejudge.org/contests/211-7b52419c/11506img1.png" width=18 
+height=31> <I>n</I> - 1</SPAN> <TEX2HTML_VERBATIM_MARK>). 
+<P>
+<H2><FONT color=#ff0000 size=4><A 
+name=SECTION0001001000000000000000>Input</A>&nbsp;</FONT> </H2>
+<P>The input consists of several test cases. Each test case is represented as 
+follows: 
+<P>
+<UL>
+  <LI>A line with two integers <SPAN class=MATH><I>M</I></SPAN> 
+  <TEX2HTML_VERBATIM_MARK>and <SPAN class=MATH><I>W</I></SPAN> 
+  <TEX2HTML_VERBATIM_MARK>(<!-- MATH
+ $2 \leq M \leq 50$
+ --> <SPAN class=MATH>2 
+  <IMG border=0 alt="$ \leq$" align=middle 
+  src="http://uva.onlinejudge.org/contests/211-7b52419c/11506img1.png" width=18 
+  height=31> <I>M</I> <IMG border=0 alt="$ \leq$" align=middle 
+  src="http://uva.onlinejudge.org/contests/211-7b52419c/11506img1.png" width=18 
+  height=31> 50</SPAN> <TEX2HTML_VERBATIM_MARK>, <!-- MATH
+ $0 \leq W \leq 1000$
+ --><SPAN class=MATH>0 <IMG border=0 
+  alt="$ \leq$" align=middle 
+  src="http://uva.onlinejudge.org/contests/211-7b52419c/11506img1.png" width=18 
+  height=31> <I>W</I> <IMG border=0 alt="$ \leq$" align=middle 
+  src="http://uva.onlinejudge.org/contests/211-7b52419c/11506img1.png" width=18 
+  height=31> 1000</SPAN> <TEX2HTML_VERBATIM_MARK>), representing (respectively) 
+  the number of machines and the number of wires in the network. 
+  <LI><SPAN class=MATH><I>M</I> - 2</SPAN> <TEX2HTML_VERBATIM_MARK>lines, one 
+  per machine (different from the boss' machine and the central server), 
+  containing the following information separated by spaces: 
+  <UL>
+    <LI>An integer <SPAN class=MATH><I>i</I></SPAN> <TEX2HTML_VERBATIM_MARK>(<!-- MATH
+ $2 \leq i \leq M - 1$
+ --> <SPAN 
+    class=MATH>2 <IMG border=0 alt="$ \leq$" align=middle 
+    src="http://uva.onlinejudge.org/contests/211-7b52419c/11506img1.png" 
+    width=18 height=31> <I>i</I> <IMG border=0 alt="$ \leq$" align=middle 
+    src="http://uva.onlinejudge.org/contests/211-7b52419c/11506img1.png" 
+    width=18 height=31> <I>M</I> - 1</SPAN> <TEX2HTML_VERBATIM_MARK>) with the 
+    identifier of the machine. Assume that the boss' machine has id <SPAN 
+    class=MATH>1</SPAN> <TEX2HTML_VERBATIM_MARK>and that the central server has 
+    id <SPAN class=MATH><I>M</I></SPAN> <TEX2HTML_VERBATIM_MARK>. 
+    <LI>An integer <SPAN class=MATH><I>c</I></SPAN> <TEX2HTML_VERBATIM_MARK>(<!-- MATH
+ $0 \leq c \leq 100000$
+ --> <SPAN 
+    class=MATH>0 <IMG border=0 alt="$ \leq$" align=middle 
+    src="http://uva.onlinejudge.org/contests/211-7b52419c/11506img1.png" 
+    width=18 height=31> <I>c</I> <IMG border=0 alt="$ \leq$" align=middle 
+    src="http://uva.onlinejudge.org/contests/211-7b52419c/11506img1.png" 
+    width=18 height=31> 100000</SPAN> <TEX2HTML_VERBATIM_MARK>) specifying the 
+    cost of destroying the machine. </LI></UL>
+  <LI><SPAN class=MATH><I>W</I></SPAN> <TEX2HTML_VERBATIM_MARK>lines, one per 
+  wire, containing the following information separated by spaces: 
+  <UL>
+    <LI>Two integers <SPAN class=MATH><I>j</I></SPAN> 
+    <TEX2HTML_VERBATIM_MARK>and <SPAN class=MATH><I>k</I></SPAN> 
+    <TEX2HTML_VERBATIM_MARK>(<!-- MATH
+ $1 \leq j < k \leq M$
+ --> <SPAN 
+    class=MATH>1 <IMG border=0 alt="$ \leq$" align=middle 
+    src="http://uva.onlinejudge.org/contests/211-7b52419c/11506img1.png" 
+    width=18 height=31> <I>j</I> &lt; <I>k</I> <IMG border=0 alt="$ \leq$" 
+    align=middle 
+    src="http://uva.onlinejudge.org/contests/211-7b52419c/11506img1.png" 
+    width=18 height=31> <I>M</I></SPAN> <TEX2HTML_VERBATIM_MARK>) specifying the 
+    identifiers of the machines linked by the wire. Remember that the wire is 
+    bidirectional. 
+    <LI>An integer <SPAN class=MATH><I>d</I></SPAN> <TEX2HTML_VERBATIM_MARK>(<!-- MATH
+ $0 \leq d \leq 100000$
+ --> <SPAN 
+    class=MATH>0 <IMG border=0 alt="$ \leq$" align=middle 
+    src="http://uva.onlinejudge.org/contests/211-7b52419c/11506img1.png" 
+    width=18 height=31> <I>d</I> <IMG border=0 alt="$ \leq$" align=middle 
+    src="http://uva.onlinejudge.org/contests/211-7b52419c/11506img1.png" 
+    width=18 height=31> 100000</SPAN> <TEX2HTML_VERBATIM_MARK>) specifying the 
+    cost of cutting the wire. </LI></UL></LI></UL>
+<P>
+<P>
+<P><BR>The end of the input is specified by a line with the string ``<TT>0 
+0</TT>''. 
+<P>
+<P>
+<P><BR>Suppose that the machines have distinct identifiers. 
+<P>
+<H2><FONT color=#ff0000 size=4><A 
+name=SECTION0001002000000000000000>Output</A>&nbsp;</FONT> </H2>
+<P>For each test case, print a line with the minimum cost of interrupting the 
+communication between the computer of your boss and the central server. 
+<P>
+<H2><FONT color=#ff0000 size=4><A name=SECTION0001003000000000000000>Sample 
+Input</A>&nbsp;</FONT> </H2>
+<P><PRE>4 4
+3 5
+2 2
+1 2 3
+1 3 3
+2 4 1
+3 4 3
+4 4
+3 2
+2 2
+1 2 3
+1 3 3
+2 4 1
+3 4 3
+0 0
+</PRE>
+<P>
+<H2><FONT color=#ff0000 size=4><A name=SECTION0001004000000000000000>Sample 
+Output</A>&nbsp;</FONT> </H2><PRE>4
+3
+</PRE>
+<P>
+<P><BR>
+<HR>
+
+<ADDRESS>Colombia'2008 </ADDRESS></BODY></HTML>

@@ -1,0 +1,110 @@
+
+<!-- saved from url=(0059)http://uva.onlinejudge.org/contests/250-0601c47b/11788.html -->
+<HTML><HEAD><META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<META name="autor" content="GinesGM, Murcia 10/05/10... hell to all virus creators!!!">
+
+<TITLE>The League Will Be Decided Tomorrow!</TITLE>
+</HEAD><BODY lang="EN">
+<DIV align="center"><CENTER>
+
+<TABLE border="0" bgcolor="#0060F0">
+<TBODY>
+  <TR>
+    <TD><FONT color="#C0FFFF" size="5"><B> C - The League Will Be Decided Tomorrow! </B></FONT></TD>
+  </TR>
+</TBODY>
+</TABLE>
+</CENTER></DIV>
+
+<H2><A name="SECTION1"><FONT color="#0070e8">Background</FONT></A></H2>
+
+<P>We are at the last day of the national football league. Only one point separates Madrid
+and Barcelona in the classification! Both teams are drawing their respective matches. It
+is now 45th minute of the second half. CR9 steals the ball and starts a fast
+counterattack... dribbles all defenders... passes the goalkeeper... reaches the penalty
+point... shoots at empty net and...</P>
+
+<P>And what?</P>
+
+<H2><A name="SECTION1"><FONT color="#0070e8">The Problem</FONT></A></H2>
+
+<P>You have to foresee if CR9 (i.e., footballisti<STRONG>C</STRONG> <STRONG>R</STRONG>obot
+series <STRONG>9</STRONG>) will score a goal or not.</P>
+
+<P>CR9 shoots the ball when it is at the penalty mark; hence, it is on the ground and at
+exactly 11 metres from the goal. We have taken precise measures of the shot: the
+horizontal angle is <EM>A</EM> degrees; the initial vertical angle is <EM>B</EM> degrees;
+and the initial speed of the ball is <EM>C</EM> metres/second.</P>
+
+<P>You can assume that the ball is a perfect sphere of 11 cm of radius, and the goal is a
+rectangle of width 7.32 m, and height 2.44 m. Consider that the standard gravity on earth
+is 9.81 m/s<SUP>2</SUP>; there is no air friction or spinning effect.</P>
+
+<P>Let us consider the (ideal) trajectory of the centre of the ball, and the rectangle
+that represents the goal. We will foresee "<STRONG>goal</STRONG>" if the
+trajectory passes through the rectangle, before the ball touches the ground. We will
+foresee "<STRONG>out</STRONG>" if the trajectory never passes through the
+rectangle, for example, it passes above, left or right of the rectangle. In other case, we
+will foresee "<STRONG>bounce</STRONG>"; that is, the trajectory could pass
+through the rectangle after bouncing in the ground (for some suitable <EM>bouncing</EM>
+coefficient).</P>
+
+<H2><A name="SECTION2"><FONT color="#0070e8">The Input</FONT></A></H2>
+
+<P>The input will contain several test cases.</P>
+
+<P>For each test case, there is a line with three real numbers, <EM>A</EM>, <EM>B</EM> and
+<EM>C</EM>, separated by blank spaces, where: 
+
+</P><UL>
+  <LI><EM>A</EM> is the horizontal angle in degrees. It will be 0 if CR9 shoots straight to
+    the goal, and 180 is he shoots in the opposite direction.</LI>
+  <LI><EM>B</EM> is the initial vertical angle in degrees. It will be between 0 and 90, not
+    inclusive.</LI>
+
+  <LI><EM>C</EM> is the initial speed of the ball, given in metres/second. It always be
+    greater than 0.</LI>
+</UL>
+
+<P>These numbers will have no more than 3 decimal digits. The input will finish with a
+case where the three numbers are 0.</P>
+
+<H2><A name="SECTION2"><FONT color="#0070e8">The Output</FONT></A></H2>
+
+<P>For each test case (except for the case with three zeros), the output should contain a
+single line with the text: "goal", "bounce" or "out".</P>
+
+<H2><A name="SECTION3"><FONT color="#0070e8">Sample Input</FONT></A></H2>
+
+<PRE>-15.1 40 12.2
+18 40 10
+19 40 10
+-8.76 8.50 30
+5 22.25 18.55
+0 0 0
+</PRE>
+
+<H2><A name="SECTION4"><FONT color="#0070e8">Sample Output</FONT></A></H2>
+
+<PRE>goal
+bounce
+out
+goal
+out
+</PRE>
+
+<HR>
+
+<P align="right"><FONT color="#000040"><SMALL><SMALL><A href="http://dis.um.es/contest" target="_blank">OMP'10</A><BR>
+<A href="http://www.um.es/informatica" target="_blank">Facultad de Informatica<BR>
+</A><A href="http://www.um.es/" target="_blank">Universidad de Murcia (SPAIN)</A></SMALL></SMALL></FONT></P><FONT color="#000040">
+
+</FONT>
+
+
+
+
+
+
+
+</BODY></HTML>

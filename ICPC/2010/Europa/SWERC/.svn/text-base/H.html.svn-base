@@ -1,0 +1,215 @@
+<html><head><title>4961 - Assembly line</title></head><body><table cellpadding=3 cellspacing=0 border=1 align=center><tr valign=center><td ROWSPAN=2 align=center valign=center><font size=5 color=0000A0><b><img src="icono.gif"></b></font></td><td COLSPAN=5 width=500 align=center><font size=5 color=0000A0><b>4961 - Assembly line</b></font><br><a href="http://acmicpc-live-archive.uva.es/nuevoportal/region.php?r=sw&year=2010"><b>Europe - Southwestern - 2010/2011</b></a></font></td></tr><tr valign=center><td width=100 align=center><a href="http://acmicpc-live-archive.uva.es/nuevoportal/data/p4961.pdf"><b>PDF</b></a></td><td width=100>&nbsp;</td><td width=100 align=center><a href="http://acmicpc-live-archive.uva.es/nuevoportal/mailer.php?problem=4961"><b>Submit</b></a></td><td width=100>&nbsp;</td><td width=100 align=center><a href="http://acmicpc-live-archive.uva.es/nuevoportal/rankprob.php?p=4961"><b>Ranking</b></a></td></tr></table><p>&nbsp;</p>
+<!--Converted with LaTeX2HTML 2008 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Assembly line</TITLE>
+<META NAME="description" CONTENT="Assembly line">
+<META NAME="keywords" CONTENT="htmlatex">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2008">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="htmlatex.css">
+
+</HEAD>
+
+<BODY LANG="EN" BGCOLOR=#FFFFFF>
+
+<H1><BR CLEAR=ALL><CENTER><TABLE BGCOLOR=#0000ff><TR><TD><B><FONT SIZE=5 COLOR=#FFff00>&nbsp;<A NAME="SECTION0001000000000000000000">
+Assembly line</A>&nbsp;</FONT></B></TABLE></CENTER>
+</H1>
+
+<P>
+The last worker in a production line at the factory of Automated
+Composed Machinery is worried. She knows that her job hangs in the balance unless
+her productivity increases. Her work consists of assembling a set
+of pieces in a given sequence, but the time spent on assembling pieces <SPAN CLASS="MATH"><I>a</I></SPAN>
+and <SPAN CLASS="MATH"><I>b</I></SPAN> and then <SPAN CLASS="MATH"><I>c</I></SPAN> may not the same as that on assembling pieces <SPAN CLASS="MATH"><I>b</I></SPAN>
+and <SPAN CLASS="MATH"><I>c</I></SPAN>, and then assembling <SPAN CLASS="MATH"><I>a</I></SPAN> with the resulting component. Only two consecutive pieces may be assembled at a time, 
+and once they are assembled
+they behave as another piece in terms of the time needed for further assembly.
+
+<P>
+In order to aid her, you need to find the optimal way to assemble all components.
+The input to your program will be a set of symbols representing (types of) pieces, and a
+so-called assembly table representing the time it takes to assemble them, as well as the type of the resulting
+component. For instance, we may have two symbols <SPAN CLASS="MATH">{<I>a</I>, <I>b</I>}</SPAN>, and the following table:
+<DIV ALIGN="CENTER">
+<TABLE COLS=3 BORDER FRAME=BOX RULES=GROUPS>
+<COLGROUP><COL ALIGN=LEFT><COLGROUP><COL ALIGN=LEFT><COLGROUP><COL ALIGN=LEFT>
+<TBODY>
+<TR><TD></TD><TD VALIGN=BASELINE ALIGN=LEFT NOWRAP> <SPAN CLASS="MATH"><I>a</I></SPAN> </TD><TD VALIGN=BASELINE ALIGN=LEFT NOWRAP> <SPAN CLASS="MATH"><I>b</I></SPAN></TD></TR>
+</TBODY><TBODY>
+<TR><TD VALIGN=BASELINE ALIGN=LEFT NOWRAP><SPAN CLASS="MATH"><I>a</I></SPAN> </TD><TD VALIGN=BASELINE ALIGN=LEFT NOWRAP> <SPAN CLASS="MATH">3</SPAN><code>-</code><SPAN CLASS="MATH"><I>b</I></SPAN> </TD><TD VALIGN=BASELINE ALIGN=LEFT NOWRAP> <SPAN CLASS="MATH">5</SPAN><code>-</code><SPAN CLASS="MATH"><I>b</I></SPAN></TD></TR>
+</TBODY><TBODY>
+<TR><TD VALIGN=BASELINE ALIGN=LEFT NOWRAP><SPAN CLASS="MATH"><I>b</I></SPAN> </TD><TD VALIGN=BASELINE ALIGN=LEFT NOWRAP> <SPAN CLASS="MATH">6</SPAN><code>-</code><SPAN CLASS="MATH"><I>a</I></SPAN> </TD><TD VALIGN=BASELINE ALIGN=LEFT NOWRAP> <SPAN CLASS="MATH">2</SPAN><code>-</code><SPAN CLASS="MATH"><I>b</I></SPAN></TD></TR>
+</TBODY>
+</TABLE>
+
+</DIV>
+
+<P>
+
+<P>
+This means, for example, that two pieces of type <SPAN CLASS="MATH"><I>a</I></SPAN> and <SPAN CLASS="MATH"><I>a</I></SPAN> may be assembled in <SPAN CLASS="MATH">3</SPAN> minutes,
+and the result is a component of type <SPAN CLASS="MATH"><I>b</I></SPAN>, in that the time required
+to assemble it again with another piece of, say, type <SPAN CLASS="MATH"><I>a</I></SPAN> is <SPAN CLASS="MATH">6</SPAN> minutes, and so on.
+Note that the table is not symmetric, i.e. assembling <SPAN CLASS="MATH"><I>b</I></SPAN> and <SPAN CLASS="MATH"><I>a</I></SPAN> may be
+more time-consuming than <SPAN CLASS="MATH"><I>a</I></SPAN> and <SPAN CLASS="MATH"><I>b</I></SPAN>.
+
+<P>
+For a sequence of components labelled <SPAN CLASS="MATH"><I>aba</I></SPAN>, the two possible solutions are:
+
+<UL>
+<LI><!-- MATH
+ $(ab)a = ba = a$
+ -->
+<SPAN CLASS="MATH">(<I>ab</I>)<I>a</I> = <I>ba</I> = <I>a</I></SPAN> with time <!-- MATH
+ $\textit{time}(ab) + \textit{time}(ba) = 5+6 = 11$
+ -->
+<SPAN CLASS="MATH"><I>time</I>(<I>ab</I>) + <I>time</I>(<I>ba</I>) = 5 + 6 = 11</SPAN>.
+</LI>
+<LI><!-- MATH
+ $a(ba) = aa = b$
+ -->
+<SPAN CLASS="MATH"><I>a</I>(<I>ba</I>) = <I>aa</I> = <I>b</I></SPAN> with time <!-- MATH
+ $\textit{time}(ba) + \textit{time}(aa) = 6+3 = 9$
+ -->
+<SPAN CLASS="MATH"><I>time</I>(<I>ba</I>) + <I>time</I>(<I>aa</I>) = 6 + 3 = 9</SPAN>.
+</LI>
+</UL>
+So the result for this case would be a piece of type <SPAN CLASS="MATH"><I>b</I></SPAN> in <SPAN CLASS="MATH">9</SPAN> minutes (denoted <SPAN CLASS="MATH">9</SPAN><code>-</code><SPAN CLASS="MATH"><I>b</I></SPAN>).
+
+<P>
+
+<H2><FONT size=4 COLOR=#ff0000><A NAME="SECTION0001001000000000000000">
+Input</A>&nbsp;</FONT>
+</H2>
+
+<P>
+The input consists of several test cases. Each test case begins with a
+line containing a natural number <SPAN CLASS="MATH"><I>k</I></SPAN> (<!-- MATH
+ $1 \le k \le 26$
+ -->
+<SPAN CLASS="MATH">1<IMG
+ WIDTH="18" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="4961img1.png"
+ ALT="$ \le$"><I>k</I><IMG
+ WIDTH="18" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="4961img1.png"
+ ALT="$ \le$">26</SPAN>), followed by a line with <SPAN CLASS="MATH"><I>k</I></SPAN> symbols (characters in <code>[a-z]</code>)
+separated by spaces. The following <SPAN CLASS="MATH"><I>k</I></SPAN> lines contain the
+assembly table: the <SPAN CLASS="MATH"><I>i</I></SPAN>-th line has <SPAN CLASS="MATH"><I>k</I></SPAN> pairs of the form <!-- MATH
+ $\textit{time}$
+ -->
+<SPAN CLASS="MATH"><I>time</I></SPAN><code>-</code><!-- MATH
+ $\textit{result}$
+ -->
+<SPAN CLASS="MATH"><I>result</I></SPAN>, where
+<!-- MATH
+ $\textit{time}$
+ -->
+<SPAN CLASS="MATH"><I>time</I></SPAN> is an integer between <SPAN CLASS="MATH">0</SPAN> and <!-- MATH
+ $1\,000\,000$
+ -->
+<SPAN CLASS="MATH">1&nbsp;000&nbsp;000</SPAN> inclusive, and <!-- MATH
+ $\textit{result}$
+ -->
+<SPAN CLASS="MATH"><I>result</I></SPAN> a symbol belonging to
+the preceding set.
+The <SPAN CLASS="MATH"><I>j</I></SPAN>-th pair in the <SPAN CLASS="MATH"><I>i</I></SPAN>-th line represents the time to compose pieces of types represented by
+the <SPAN CLASS="MATH"><I>i</I></SPAN>-th and <SPAN CLASS="MATH"><I>j</I></SPAN>-th symbols, along with the type of the resulting piece. After the table,
+  a line with an integer <SPAN CLASS="MATH"><I>n</I></SPAN> indicates the number of lines that follow, each line being
+a string of at most <SPAN CLASS="MATH">200</SPAN> symbols. Each of these lines is a sequence of components that need
+to be assembled together in the right order.
+
+<P>
+The input will finish with a line containing `<TT>0</TT>', which should not be
+processed.
+
+<P>
+
+<H2><FONT size=4 COLOR=#ff0000><A NAME="SECTION0001002000000000000000">
+Output</A>&nbsp;</FONT>
+</H2>
+
+<P>
+For each test case, print <SPAN CLASS="MATH"><I>n</I></SPAN> lines, each with an integer
+<!-- MATH
+ $\textit{time}$
+ -->
+<SPAN CLASS="MATH"><I>time</I></SPAN> and a symbol <!-- MATH
+ $\textit{result}$
+ -->
+<SPAN CLASS="MATH"><I>result</I></SPAN> in the format <!-- MATH
+ $\textit{time}$
+ -->
+<SPAN CLASS="MATH"><I>time</I></SPAN><code>-</code><!-- MATH
+ $\textit{result}$
+ -->
+<SPAN CLASS="MATH"><I>result</I></SPAN>. Each
+line represents the minimum time and the type of the resulting piece
+for the corresponding case in the input.
+In case of a tie among several possible results with the same minimum time, choose from among those the piece whose
+type letter appears first in the line that contained the <SPAN CLASS="MATH"><I>k</I></SPAN> symbols at the beginning of the test
+case.
+(For example, if that line was <SPAN CLASS="MATH"><I>a</I> &nbsp;<I>c</I> &nbsp;<I>b</I></SPAN> and both <SPAN CLASS="MATH"><I>c</I></SPAN> and <SPAN CLASS="MATH"><I>b</I></SPAN> can be obtained with minimum cost <SPAN CLASS="MATH">5</SPAN>,
+print <SPAN CLASS="MATH">5</SPAN><code>-</code><SPAN CLASS="MATH"><I>c</I></SPAN>).
+
+<P>
+There must be an empty line between the output of different test cases.
+
+<P>
+
+<H2><FONT size=4 COLOR=#ff0000><A NAME="SECTION0001003000000000000000">
+Sample Input</A>&nbsp;</FONT>
+</H2>
+
+<P>
+<PRE>
+2
+a b
+3-b 5-b
+6-a 2-b
+2
+aba
+bba
+2
+m e
+5-e 4-m
+3-e 4-m
+1
+eme
+0
+</PRE> 
+
+<P>
+
+<H2><FONT size=4 COLOR=#ff0000><A NAME="SECTION0001004000000000000000">
+Sample Output</A>&nbsp;</FONT>
+</H2>
+
+<P>
+<PRE>
+9-b
+8-a
+
+7-m
+</PRE> 
+
+<P>
+
+
+<P>
+<BR><HR>
+
+</BODY>
+</HTML>
+</HTML>
+<hr><ADDRESS>Southwestern 2010-2011</ADDRESS><p></body></html>

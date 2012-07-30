@@ -1,0 +1,1085 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 9">
+<meta name=Originator content="Microsoft Word 9">
+<link rel=File-List href="./i_files/filelist.xml">
+<link rel=Edit-Time-Data href="./i_files/editdata.mso">
+<link rel=OLE-Object-Data href="./i_files/oledata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>The 2004 ACM Asia Programming Contest Dhaka, sponsored by IBM</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Shahriar Manzoor</o:Author>
+  <o:LastAuthor>Shahriar Manzoor</o:LastAuthor>
+  <o:Revision>4</o:Revision>
+  <o:TotalTime>49</o:TotalTime>
+  <o:LastPrinted>2005-10-01T19:40:00Z</o:LastPrinted>
+  <o:Created>2010-10-20T17:01:00Z</o:Created>
+  <o:LastSaved>2010-10-21T01:14:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>110</o:Words>
+  <o:Characters>630</o:Characters>
+  <o:Lines>5</o:Lines>
+  <o:Paragraphs>1</o:Paragraphs>
+  <o:CharactersWithSpaces>773</o:CharactersWithSpaces>
+  <o:Version>9.3821</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:View>Print</w:View>
+  <w:Zoom>120</w:Zoom>
+  <w:AutoHyphenation/>
+  <w:PunctuationKerning/>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:"MS Mincho";
+	panose-1:2 2 6 9 4 2 5 8 3 4;
+	mso-font-alt:"\FF2D\FF33 \660E\671D";
+	mso-font-charset:128;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-1610612033 1757936891 16 0 131231 0;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:1627421319 -2147483648 8 0 66047 0;}
+@font-face
+	{font-family:"Liberation Serif";
+	mso-font-alt:"Times New Roman";
+	mso-font-charset:128;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:0 0 0 0 0 0;}
+@font-face
+	{font-family:"\@MS Mincho";
+	panose-1:2 2 6 9 4 2 5 8 3 4;
+	mso-font-charset:128;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-1610612033 1757936891 16 0 131231 0;}
+@font-face
+	{font-family:Algerian;
+	panose-1:4 2 7 5 4 10 2 6 7 2;
+	mso-font-charset:0;
+	mso-generic-font-family:decorative;
+	mso-font-pitch:variable;
+	mso-font-signature:3 0 0 0 1 0;}
+@font-face
+	{font-family:"Arial Rounded MT Bold";
+	panose-1:2 15 7 4 3 5 4 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:3 0 0 0 1 0;}
+@font-face
+	{font-family:"DejaVu Sans";
+	mso-font-alt:"Times New Roman";
+	mso-font-charset:0;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 0 0 0 0 0;}
+@font-face
+	{font-family:Calibri;
+	mso-font-alt:Arial;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-520092929 1073786111 9 0 415 0;}
+@font-face
+	{font-family:"Beaconsfield Bold";
+	mso-font-alt:"Times New Roman";
+	mso-font-charset:0;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 0 0 0 0 0;}
+@font-face
+	{font-family:"Nimbus Sans L";
+	mso-font-charset:0;
+	mso-generic-font-family:auto;
+	mso-font-pitch:auto;
+	mso-font-signature:0 0 0 0 0 0;}
+@font-face
+	{font-family:OpenSymbol;
+	mso-font-charset:0;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 0 0 0 0 0;}
+@font-face
+	{font-family:"Courier 10 Pitch";
+	mso-font-alt:"MS Mincho";
+	mso-font-charset:128;
+	mso-generic-font-family:auto;
+	mso-font-pitch:auto;
+	mso-font-signature:0 0 0 0 0 0;}
+@font-face
+	{font-family:"\@Liberation Serif";
+	mso-font-charset:128;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:0 0 0 0 0 0;}
+@font-face
+	{font-family:"\@Courier 10 Pitch";
+	mso-font-charset:128;
+	mso-generic-font-family:auto;
+	mso-font-pitch:auto;
+	mso-font-signature:0 0 0 0 0 0;}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:none;
+	mso-hyphenate:none;
+	text-autospace:ideograph-other;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"DejaVu Sans";
+	mso-bidi-font-family:Tahoma;
+	mso-font-kerning:1.5pt;
+	mso-fareast-language:EN-ZA;}
+h1
+	{mso-style-parent:Standard;
+	mso-style-next:Standard;
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	mso-pagination:widow-orphan;
+	mso-outline-level:1;
+	mso-hyphenate:none;
+	text-autospace:ideograph-other;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:black;
+	mso-font-kerning:1.5pt;
+	mso-fareast-language:EN-ZA;
+	font-weight:normal;
+	font-style:italic;}
+h2
+	{mso-style-parent:Standard;
+	mso-style-next:Standard;
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	mso-hyphenate:none;
+	tab-stops:143.25pt;
+	text-autospace:ideograph-other;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-font-kerning:1.5pt;
+	mso-fareast-language:EN-ZA;
+	font-weight:normal;}
+h3
+	{mso-style-parent:Standard;
+	mso-style-next:Standard;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:3;
+	mso-hyphenate:none;
+	text-autospace:ideograph-other;
+	font-size:13.0pt;
+	font-family:Arial;
+	mso-font-kerning:1.5pt;
+	mso-ansi-language:SV;
+	mso-fareast-language:EN-ZA;
+	font-weight:bold;}
+h4
+	{mso-style-parent:Standard;
+	mso-style-next:Standard;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:4;
+	mso-hyphenate:none;
+	text-autospace:ideograph-other;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:black;
+	mso-font-kerning:1.5pt;
+	mso-fareast-language:EN-ZA;
+	font-weight:normal;}
+h5
+	{mso-style-parent:Standard;
+	mso-style-next:Standard;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	mso-outline-level:5;
+	mso-hyphenate:none;
+	text-autospace:ideograph-other;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:black;
+	mso-font-kerning:1.5pt;
+	mso-fareast-language:EN-ZA;
+	font-weight:normal;}
+h6
+	{mso-style-parent:Standard;
+	mso-style-next:Standard;
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	mso-line-height-alt:41.0pt;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:6;
+	mso-hyphenate:none;
+	text-autospace:ideograph-other;
+	font-size:54.5pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:Algerian;
+	mso-text-raise:-5.0pt;
+	mso-font-kerning:1.5pt;
+	mso-ansi-language:SV;
+	mso-fareast-language:EN-ZA;
+	font-weight:normal;}
+p.MsoHeading7, li.MsoHeading7, div.MsoHeading7
+	{mso-style-parent:Standard;
+	mso-style-next:Standard;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:7;
+	mso-hyphenate:none;
+	text-autospace:none;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";
+	mso-font-kerning:1.5pt;
+	mso-fareast-language:EN-ZA;
+	font-weight:bold;}
+p.MsoHeading8, li.MsoHeading8, div.MsoHeading8
+	{mso-style-parent:Standard;
+	mso-style-next:Standard;
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:8;
+	mso-hyphenate:none;
+	text-autospace:ideograph-other;
+	font-size:20.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Beaconsfield Bold";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.5pt;
+	mso-fareast-language:EN-ZA;
+	mso-bidi-font-weight:bold;}
+p.MsoHeading9, li.MsoHeading9, div.MsoHeading9
+	{mso-style-parent:Standard;
+	mso-style-next:Standard;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:9;
+	mso-hyphenate:none;
+	text-autospace:ideograph-other;
+	font-size:16.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-font-kerning:1.5pt;
+	mso-fareast-language:EN-ZA;
+	font-weight:bold;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-parent:Standard;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	mso-hyphenate:none;
+	tab-stops:center 3.0in right 6.0in;
+	text-autospace:ideograph-other;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-font-kerning:1.5pt;
+	mso-fareast-language:EN-ZA;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-parent:Standard;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	mso-hyphenate:none;
+	tab-stops:center 3.0in right 6.0in;
+	text-autospace:ideograph-other;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-font-kerning:1.5pt;
+	mso-fareast-language:EN-ZA;}
+p.MsoCaption, li.MsoCaption, div.MsoCaption
+	{mso-style-parent:Standard;
+	margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	mso-pagination:no-line-numbers;
+	mso-hyphenate:none;
+	text-autospace:ideograph-other;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"DejaVu Sans";
+	mso-bidi-font-family:Tahoma;
+	mso-font-kerning:1.5pt;
+	mso-fareast-language:EN-ZA;
+	font-style:italic;}
+p.MsoList, li.MsoList, div.MsoList
+	{mso-style-parent:"Text body";
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	mso-pagination:widow-orphan;
+	mso-hyphenate:none;
+	text-autospace:ideograph-other;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"MS Mincho";
+	mso-bidi-font-family:Tahoma;
+	mso-font-kerning:1.5pt;
+	mso-ansi-language:EN-GB;
+	mso-fareast-language:EN-ZA;}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	mso-pagination:none;
+	mso-hyphenate:none;
+	text-autospace:ideograph-other;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"DejaVu Sans";
+	mso-bidi-font-family:Tahoma;
+	mso-font-kerning:1.5pt;
+	mso-fareast-language:EN-ZA;}
+p.MsoBodyText2, li.MsoBodyText2, div.MsoBodyText2
+	{mso-style-parent:Standard;
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	mso-pagination:widow-orphan;
+	mso-hyphenate:none;
+	text-autospace:ideograph-other;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:black;
+	mso-font-kerning:1.5pt;
+	mso-fareast-language:EN-ZA;
+	mso-bidi-font-weight:bold;}
+p.MsoPlainText, li.MsoPlainText, div.MsoPlainText
+	{mso-style-parent:Standard;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	mso-hyphenate:none;
+	text-autospace:ideograph-other;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";
+	mso-font-kerning:1.5pt;
+	mso-ansi-language:SV;
+	mso-fareast-language:EN-ZA;}
+p
+	{mso-style-parent:Standard;
+	margin-top:14.0pt;
+	margin-right:0in;
+	margin-bottom:14.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-hyphenate:none;
+	text-autospace:ideograph-other;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-font-kerning:1.5pt;
+	mso-fareast-language:EN-ZA;}
+pre
+	{mso-style-parent:Standard;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	mso-hyphenate:none;
+	tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+	text-autospace:ideograph-other;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Courier New";
+	mso-font-kerning:1.5pt;
+	mso-fareast-language:EN-ZA;}
+p.Standard, li.Standard, div.Standard
+	{mso-style-name:Standard;
+	mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	mso-hyphenate:none;
+	text-autospace:ideograph-other;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-font-kerning:1.5pt;
+	mso-fareast-language:EN-ZA;}
+p.Heading, li.Heading, div.Heading
+	{mso-style-name:Heading;
+	mso-style-parent:Standard;
+	mso-style-next:Standard;
+	margin-top:11.95pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	mso-pagination:none;
+	page-break-after:avoid;
+	mso-hyphenate:none;
+	text-autospace:none;
+	font-size:14.0pt;
+	font-family:"Nimbus Sans L";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.5pt;
+	mso-fareast-language:EN-ZA;}
+p.Textbody, li.Textbody, div.Textbody
+	{mso-style-name:"Text body";
+	mso-style-parent:Standard;
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	mso-pagination:widow-orphan;
+	mso-hyphenate:none;
+	text-autospace:ideograph-other;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"MS Mincho";
+	mso-font-kerning:1.5pt;
+	mso-ansi-language:EN-GB;
+	mso-fareast-language:EN-ZA;}
+p.Index, li.Index, div.Index
+	{mso-style-name:Index;
+	mso-style-parent:Standard;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan no-line-numbers;
+	mso-hyphenate:none;
+	text-autospace:ideograph-other;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:Tahoma;
+	mso-font-kerning:1.5pt;
+	mso-fareast-language:EN-ZA;}
+p.ListParagraph, li.ListParagraph, div.ListParagraph
+	{mso-style-name:"List Paragraph";
+	mso-style-parent:Standard;
+	margin-top:10.0pt;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	mso-pagination:widow-orphan;
+	mso-hyphenate:none;
+	text-autospace:ideograph-other;
+	font-size:10.0pt;
+	font-family:Calibri;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.5pt;
+	mso-fareast-language:EN-ZA;}
+p.NoSpacing, li.NoSpacing, div.NoSpacing
+	{mso-style-name:"No Spacing";
+	mso-style-parent:Standard;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	mso-hyphenate:none;
+	text-autospace:ideograph-other;
+	font-size:10.0pt;
+	font-family:Calibri;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.5pt;
+	mso-fareast-language:EN-ZA;}
+p.TableContents, li.TableContents, div.TableContents
+	{mso-style-name:"Table Contents";
+	mso-style-parent:Standard;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:no-line-numbers;
+	mso-hyphenate:none;
+	text-autospace:ideograph-other;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"DejaVu Sans";
+	mso-font-kerning:1.5pt;
+	mso-fareast-language:EN-ZA;}
+p.TableHeading, li.TableHeading, div.TableHeading
+	{mso-style-name:"Table Heading";
+	mso-style-parent:"Table Contents";
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:no-line-numbers;
+	mso-hyphenate:none;
+	text-autospace:ideograph-other;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"DejaVu Sans";
+	mso-font-kerning:1.5pt;
+	mso-fareast-language:EN-ZA;
+	font-weight:bold;}
+p.Framecontents, li.Framecontents, div.Framecontents
+	{mso-style-name:"Frame contents";
+	mso-style-parent:"Text body";
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	mso-pagination:widow-orphan;
+	mso-hyphenate:none;
+	text-autospace:ideograph-other;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"MS Mincho";
+	mso-font-kerning:1.5pt;
+	mso-ansi-language:EN-GB;
+	mso-fareast-language:EN-ZA;}
+p.BalloonText, li.BalloonText, div.BalloonText
+	{mso-style-name:"Balloon Text";
+	mso-style-parent:Standard;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:none;
+	mso-hyphenate:none;
+	text-autospace:ideograph-other;
+	font-size:8.0pt;
+	font-family:Tahoma;
+	mso-fareast-font-family:"DejaVu Sans";
+	mso-font-kerning:1.5pt;
+	mso-fareast-language:EN-ZA;}
+p.SampleIO, li.SampleIO, div.SampleIO
+	{mso-style-name:SampleIO;
+	mso-style-parent:"Table Contents";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:16.4pt;
+	margin-bottom:.0001pt;
+	mso-pagination:no-line-numbers;
+	mso-hyphenate:none;
+	text-autospace:ideograph-other;
+	font-size:12.0pt;
+	font-family:"Courier 10 Pitch";
+	mso-fareast-font-family:"DejaVu Sans";
+	mso-hansi-font-family:"Courier 10 Pitch";
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;
+	mso-fareast-language:EN-ZA;}
+p.Constraints, li.Constraints, div.Constraints
+	{mso-style-name:Constraints;
+	mso-style-parent:"Body Text";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:16.55pt;
+	mso-pagination:none;
+	mso-hyphenate:none;
+	text-autospace:ideograph-other;
+	font-size:12.0pt;
+	font-family:"Liberation Serif";
+	mso-fareast-font-family:"DejaVu Sans";
+	mso-hansi-font-family:"Liberation Serif";
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;
+	mso-fareast-language:EN-ZA;}
+span.WW8Num2z0
+	{mso-style-name:WW8Num2z0;
+	mso-style-parent:"";
+	mso-ascii-font-family:Wingdings;
+	mso-hansi-font-family:Wingdings;
+	mso-bidi-font-family:OpenSymbol;}
+span.WW8Num3z0
+	{mso-style-name:WW8Num3z0;
+	mso-style-parent:"";
+	mso-ascii-font-family:Symbol;
+	mso-hansi-font-family:Symbol;
+	mso-bidi-font-family:Symbol;}
+span.WW8Num5z0
+	{mso-style-name:WW8Num5z0;
+	mso-style-parent:"";
+	mso-ascii-font-family:Symbol;
+	mso-hansi-font-family:Symbol;}
+span.WW8Num5z1
+	{mso-style-name:WW8Num5z1;
+	mso-style-parent:"";
+	mso-ascii-font-family:"Courier New";
+	mso-hansi-font-family:"Courier New";
+	mso-bidi-font-family:"Courier New";}
+span.WW8Num5z2
+	{mso-style-name:WW8Num5z2;
+	mso-style-parent:"";
+	mso-ascii-font-family:Wingdings;
+	mso-hansi-font-family:Wingdings;}
+span.WW8Num6z0
+	{mso-style-name:WW8Num6z0;
+	mso-style-parent:"";
+	mso-ansi-font-size:10.0pt;
+	mso-ascii-font-family:Symbol;
+	mso-hansi-font-family:Symbol;}
+span.WW8Num6z1
+	{mso-style-name:WW8Num6z1;
+	mso-style-parent:"";
+	mso-ansi-font-size:10.0pt;
+	mso-ascii-font-family:"Courier New";
+	mso-hansi-font-family:"Courier New";}
+span.WW8Num6z2
+	{mso-style-name:WW8Num6z2;
+	mso-style-parent:"";
+	mso-ansi-font-size:10.0pt;
+	mso-ascii-font-family:Wingdings;
+	mso-hansi-font-family:Wingdings;}
+span.WW8Num7z0
+	{mso-style-name:WW8Num7z0;
+	mso-style-parent:"";
+	mso-ascii-font-family:"Courier New";
+	mso-hansi-font-family:"Courier New";
+	mso-bidi-font-family:"Courier New";}
+span.WW8Num7z2
+	{mso-style-name:WW8Num7z2;
+	mso-style-parent:"";
+	mso-ascii-font-family:Wingdings;
+	mso-hansi-font-family:Wingdings;}
+span.WW8Num7z3
+	{mso-style-name:WW8Num7z3;
+	mso-style-parent:"";
+	mso-ascii-font-family:Symbol;
+	mso-hansi-font-family:Symbol;}
+span.WW8Num12z0
+	{mso-style-name:WW8Num12z0;
+	mso-style-parent:"";
+	mso-ansi-font-size:10.0pt;
+	mso-ascii-font-family:Symbol;
+	mso-hansi-font-family:Symbol;}
+span.WW8Num12z1
+	{mso-style-name:WW8Num12z1;
+	mso-style-parent:"";
+	mso-ansi-font-size:10.0pt;
+	mso-ascii-font-family:"Courier New";
+	mso-hansi-font-family:"Courier New";}
+span.WW8Num12z2
+	{mso-style-name:WW8Num12z2;
+	mso-style-parent:"";
+	mso-ansi-font-size:10.0pt;
+	mso-ascii-font-family:Wingdings;
+	mso-hansi-font-family:Wingdings;}
+span.WW8Num13z0
+	{mso-style-name:WW8Num13z0;
+	mso-style-parent:"";
+	mso-ansi-font-size:10.0pt;
+	mso-ascii-font-family:Symbol;
+	mso-hansi-font-family:Symbol;}
+span.WW8Num13z1
+	{mso-style-name:WW8Num13z1;
+	mso-style-parent:"";
+	mso-ansi-font-size:10.0pt;
+	mso-ascii-font-family:"Courier New";
+	mso-hansi-font-family:"Courier New";}
+span.WW8Num13z2
+	{mso-style-name:WW8Num13z2;
+	mso-style-parent:"";
+	mso-ansi-font-size:10.0pt;
+	mso-ascii-font-family:Wingdings;
+	mso-hansi-font-family:Wingdings;}
+span.WW8Num15z0
+	{mso-style-name:WW8Num15z0;
+	mso-style-parent:"";
+	mso-ansi-font-size:10.0pt;
+	mso-ascii-font-family:Symbol;
+	mso-hansi-font-family:Symbol;}
+span.WW8Num15z1
+	{mso-style-name:WW8Num15z1;
+	mso-style-parent:"";
+	mso-ansi-font-size:10.0pt;
+	mso-ascii-font-family:"Courier New";
+	mso-hansi-font-family:"Courier New";}
+span.WW8Num15z2
+	{mso-style-name:WW8Num15z2;
+	mso-style-parent:"";
+	mso-ansi-font-size:10.0pt;
+	mso-ascii-font-family:Wingdings;
+	mso-hansi-font-family:Wingdings;}
+span.StyleArial16pt
+	{mso-style-name:"Style Arial 16 pt";
+	mso-ansi-font-size:16.0pt;
+	mso-ascii-font-family:Arial;
+	mso-hansi-font-family:Arial;
+	mso-bidi-font-family:Arial;
+	font-weight:bold;}
+span.Internetlink
+	{mso-style-name:"Internet link";
+	color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+span.style101
+	{mso-style-name:style101;
+	mso-ansi-font-size:8.0pt;
+	mso-bidi-font-size:8.0pt;
+	mso-ascii-font-family:"Courier New";
+	mso-hansi-font-family:"Courier New";
+	mso-bidi-font-family:"Courier New";
+	font-weight:bold;}
+span.StrongEmphasis
+	{mso-style-name:"Strong Emphasis";
+	font-weight:bold;}
+span.style31
+	{mso-style-name:style31;
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	mso-ascii-font-family:"Courier New";
+	mso-hansi-font-family:"Courier New";
+	mso-bidi-font-family:"Courier New";
+	font-weight:bold;}
+span.NoSpacingChar
+	{mso-style-name:"No Spacing Char";
+	mso-ascii-font-family:Calibri;
+	mso-hansi-font-family:Calibri;
+	mso-ansi-language:EN-US;
+	mso-bidi-language:EN-US;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-ansi-font-size:12.0pt;
+	color:black;
+	mso-bidi-language:AR-SA;
+	font-style:italic;}
+span.HTMLPreformattedChar
+	{mso-style-name:"HTML Preformatted Char";
+	mso-ascii-font-family:"Courier New";
+	mso-fareast-font-family:"Courier New";
+	mso-hansi-font-family:"Courier New";
+	mso-bidi-font-family:"Courier New";
+	mso-bidi-language:AR-SA;}
+span.NumberingSymbols
+	{mso-style-name:"Numbering Symbols";
+	mso-style-parent:"";}
+span.apple-style-span
+	{mso-style-name:apple-style-span;}
+span.apple-converted-space
+	{mso-style-name:apple-converted-space;}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-ansi-font-size:8.0pt;
+	mso-bidi-font-size:8.0pt;
+	mso-ascii-font-family:Tahoma;
+	mso-hansi-font-family:Tahoma;}
+span.BodyTextChar
+	{mso-style-name:"Body Text Char";
+	mso-ascii-font-family:"Liberation Serif";
+	mso-hansi-font-family:"Liberation Serif";
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;}
+ /* Page Definitions */
+@page
+	{mso-footnote-separator:url("./i_files/header.htm") fs;
+	mso-footnote-continuation-separator:url("./i_files/header.htm") fcs;
+	mso-endnote-separator:url("./i_files/header.htm") es;
+	mso-endnote-continuation-separator:url("./i_files/header.htm") ecs;}
+@page Section1
+	{size:595.25pt 841.85pt;
+	margin:.9in .7in .6in .7in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-page-numbers:1;
+	mso-title-page:yes;
+	mso-header:url("./i_files/header.htm") h1;
+	mso-footer:url("./i_files/header.htm") f1;
+	mso-first-header:url("./i_files/header.htm") fh1;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+@list l0
+	{mso-list-id:2;
+	mso-list-template-ids:2;
+	mso-list-name:WW8Num2;}
+@list l0:level2
+	{mso-level-tab-stop:.75in;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.25in;}
+@list l0:level3
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	margin-left:1.0in;
+	text-indent:-.25in;}
+@list l0:level4
+	{mso-level-tab-stop:1.25in;
+	mso-level-number-position:left;
+	margin-left:1.25in;
+	text-indent:-.25in;}
+@list l0:level5
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	margin-left:1.5in;
+	text-indent:-.25in;}
+@list l0:level6
+	{mso-level-tab-stop:1.75in;
+	mso-level-number-position:left;
+	margin-left:1.75in;
+	text-indent:-.25in;}
+@list l0:level7
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	margin-left:2.0in;
+	text-indent:-.25in;}
+@list l0:level8
+	{mso-level-tab-stop:2.25in;
+	mso-level-number-position:left;
+	margin-left:2.25in;
+	text-indent:-.25in;}
+@list l0:level9
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	margin-left:2.5in;
+	text-indent:-.25in;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="12290"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=EN-US style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<table border=0 cellspacing=0 cellpadding=0 style='margin-left:2.55pt;
+ border-collapse:collapse;mso-padding-alt:2.75pt 2.75pt 2.75pt 2.75pt'>
+ <tr style='height:59.05pt'>
+  <td width=90 rowspan=3 style='width:67.5pt;border:solid black .25pt;
+  border-right:none;padding:2.75pt 2.75pt 2.75pt 2.75pt;height:59.05pt'>
+  <p class=TableContents align=center style='margin-top:6.0pt;text-align:center;
+  layout-grid-mode:char'><b><span style='font-size:72.0pt'>I</span></b><b><span
+  style='font-size:72.0pt;mso-font-kerning:1.0pt'><o:p></o:p></span></b></p>
+  </td>
+  <td width=573 colspan=2 style='width:429.9pt;border:solid black .25pt;
+  padding:2.75pt 2.75pt 2.75pt 2.75pt;height:59.05pt'>
+  <p class=TableContents align=center style='margin-top:6.0pt;text-align:center;
+  layout-grid-mode:char'><span style='font-size:36.0pt'>N + NOD (N)</span><span
+  style='font-size:36.0pt;mso-font-kerning:1.0pt'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='height:18.55pt'>
+  <td width=278 valign=top style='width:208.45pt;border-top:none;border-left:
+  solid black .25pt;border-bottom:solid black .25pt;border-right:none;
+  padding:2.75pt 2.75pt 2.75pt 2.75pt;height:18.55pt'>
+  <p class=TableContents align=right style='margin-top:6.0pt;text-align:right;
+  layout-grid-mode:char'><span style='font-size:10.0pt'>Input</span><span
+  style='font-size:10.0pt;mso-font-kerning:1.0pt'><o:p></o:p></span></p>
+  </td>
+  <td width=295 valign=top style='width:221.45pt;border:solid black .25pt;
+  border-top:none;padding:2.75pt 2.75pt 2.75pt 2.75pt;height:18.55pt'>
+  <p class=TableContents style='margin-top:6.0pt;layout-grid-mode:char'><span
+  style='font-size:10.0pt'>Standard Input</span><span style='font-size:10.0pt;
+  mso-font-kerning:1.0pt'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='height:1.15pt'>
+  <td width=278 valign=top style='width:208.45pt;border-top:none;border-left:
+  solid black .25pt;border-bottom:solid black .25pt;border-right:none;
+  padding:2.75pt 2.75pt 2.75pt 2.75pt;height:1.15pt'>
+  <p class=TableContents align=right style='margin-top:6.0pt;text-align:right;
+  layout-grid-mode:char'><span style='font-size:10.0pt'>Output</span><span
+  style='font-size:10.0pt;mso-font-kerning:1.0pt'><o:p></o:p></span></p>
+  </td>
+  <td width=295 valign=top style='width:221.45pt;border:solid black .25pt;
+  border-top:none;padding:2.75pt 2.75pt 2.75pt 2.75pt;height:1.15pt'>
+  <p class=TableContents style='margin-top:6.0pt;layout-grid-mode:char'><span
+  style='font-size:10.0pt'>Standard Output</span><span style='font-size:10.0pt;
+  mso-font-kerning:1.0pt'><o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:0in;
+margin-left:16.55pt;margin-bottom:.0001pt'><span style='font-family:"Liberation Serif";
+mso-fareast-font-family:"DejaVu Sans";mso-hansi-font-family:"Liberation Serif";
+mso-font-kerning:1.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt'><!--[if gte vml 1]><v:shapetype
+ id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t"
+ path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="Picture_x0020_5" o:spid="_x0000_s1028" type="#_x0000_t75"
+ style='position:absolute;margin-left:0;margin-top:4.1pt;width:195.75pt;
+ height:86.3pt;z-index:1;visibility:visible;mso-position-horizontal:left'>
+ <v:imagedata src="./i_files/image001.png" o:title=""/>
+ <v:textbox style='mso-rotate-with-shape:t'/>
+ <w:wrap type="square"/>
+</v:shape><![endif]--><![if !vml]><img width=261 height=116
+src="./i_files/image002.jpg" align=left hspace=12 v:shapes="Picture_x0020_5"><![endif]><span
+style='mso-bidi-font-family:"Times New Roman"'>Consider an integer sequence <b
+style='mso-bidi-font-weight:normal'>N</b> where,<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt'><b style='mso-bidi-font-weight:
+normal'><span style='mso-bidi-font-family:"Times New Roman"'>N<sub>0</sub> = 1<br>
+N<sub>i</sub> = N<sub>i-1</sub> + NOD(N<sub>i-1</sub>)- for i &gt; 0<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-top:6.0pt'><span style='mso-bidi-font-family:
+"Times New Roman"'>Here, NOD(<b style='mso-bidi-font-weight:normal'>x</b>) =
+number of divisors of <b style='mso-bidi-font-weight:normal'>x</b>.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt'><span style='mso-bidi-font-family:
+"Times New Roman"'>So the first few terms of this sequence are <i
+style='mso-bidi-font-style:normal'>1 2 4 7 9 12 18…<o:p></o:p></i></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;text-align:justify'><span
+style='mso-bidi-font-family:"Times New Roman"'>Given two integers <b
+style='mso-bidi-font-weight:normal'>A</b> and B, find out the number of
+integers in the above sequence that lies within the range [<b style='mso-bidi-font-weight:
+normal'>A, B</b>].<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:14.0pt;mso-bidi-font-family:Calibri'>Input</span></b><b
+style='mso-bidi-font-weight:normal'><span style='mso-bidi-font-family:Calibri'><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;text-align:justify'><span
+style='mso-bidi-font-family:Calibri'>The first line of input is an integer </span><b
+style='mso-bidi-font-weight:normal'><span style='font-family:"Courier New"'>T
+(T &lt; 100000),</span></b><span style='mso-bidi-font-family:Calibri'> that
+indicates the number of test cases. Each case contains two integers, </span><b
+style='mso-bidi-font-weight:normal'><span style='font-family:"Courier New"'>A</span></b><span
+style='mso-bidi-font-family:Calibri'> followed by </span><b style='mso-bidi-font-weight:
+normal'><span style='font-family:"Courier New"'>B (1 <span style='mso-bidi-font-weight:
+bold;mso-bidi-font-style:italic'>&#8804;</span> A <span style='mso-bidi-font-weight:
+bold;mso-bidi-font-style:italic'>&#8804;</span> B <span style='mso-bidi-font-weight:
+bold;mso-bidi-font-style:italic'>&#8804;</span> 1000000)</span></b><span
+style='mso-bidi-font-family:Calibri'>.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:14.0pt;mso-bidi-font-family:Calibri'>Output</span></b><b
+style='mso-bidi-font-weight:normal'><span style='mso-bidi-font-family:Calibri'><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;text-align:justify'><span
+style='mso-bidi-font-family:Calibri'>For each case, output the case number
+first followed by the required result.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;text-align:justify'><span
+style="mso-spacerun: yes"> </span><span style='mso-bidi-font-family:Calibri'><o:p></o:p></span></p>
+
+<table border=0 cellspacing=0 cellpadding=0 width=665 style='width:498.7pt;
+ margin-left:2.75pt;border-collapse:collapse;mso-padding-alt:2.75pt 2.75pt 2.75pt 2.75pt'>
+ <tr>
+  <td width=332 valign=top style='width:249.25pt;border:solid black .25pt;
+  border-right:none;padding:2.75pt 2.75pt 2.75pt 2.75pt'>
+  <p class=TableContents style='margin-top:6.0pt;layout-grid-mode:char'><b><span
+  style='font-size:14.0pt'>Sample Input</span></b><b><span style='font-size:
+  14.0pt;mso-font-kerning:1.0pt'><o:p></o:p></span></b></p>
+  </td>
+  <td width=333 valign=top style='width:249.45pt;border:solid black .25pt;
+  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
+  <p class=TableContents style='margin-top:6.0pt;layout-grid-mode:char'><b><span
+  style='font-size:14.0pt'>Sample Output</span></b><b><span style='font-size:
+  14.0pt;mso-font-kerning:1.0pt'><o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=332 valign=top style='width:249.25pt;border-top:none;border-left:
+  solid black .25pt;border-bottom:solid black .25pt;border-right:none;
+  padding:2.75pt 2.75pt 2.75pt 2.75pt'>
+  <p class=MsoNormal><span style='font-family:"Courier New"'>3<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-family:"Courier New"'>1 18<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-family:"Courier New"'>1 100<o:p></o:p></span></p>
+  <p class=SampleIO style='margin-left:0in'><span style='font-family:"Courier New"'>3000
+  4000</span></p>
+  </td>
+  <td width=333 valign=top style='width:249.45pt;border:solid black .25pt;
+  border-top:none;padding:2.75pt 2.75pt 2.75pt 2.75pt'>
+  <p class=MsoNormal><span style='font-family:"Courier New"'>Case 1: 7<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-family:"Courier New"'>Case 2: 20<o:p></o:p></span></p>
+  <p class=SampleIO style='margin-left:0in'><span style='font-family:"Courier New"'>Case
+  3: 87</span></p>
+  </td>
+ </tr>
+</table>
+
+
+<div class=MsoNormal align=center style='text-align:center;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'>
+
+<hr size=2 width="100%" align=center>
+
+</div>
+
+
+<p class=MsoNormal style='text-align:justify;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-family:Arial'>Problemsetter: Sohel Hafiz, Special Thanks: Shamim
+Hafiz <o:p></o:p></span></p>
+
+<p class=Standard style='margin-top:6.0pt;tab-stops:143.25pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+</div>
+
+</body>
+
+</html>

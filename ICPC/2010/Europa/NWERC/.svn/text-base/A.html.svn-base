@@ -1,0 +1,105 @@
+<html><head><title>4944 - Fair Division</title></head><body><table cellpadding=3 cellspacing=0 border=1 align=center><tr valign=center><td ROWSPAN=2 align=center valign=center><font size=5 color=0000A0><b><img src="icono.gif"></b></font></td><td COLSPAN=5 width=500 align=center><font size=5 color=0000A0><b>4944 - Fair Division</b></font><br><a href="http://acmicpc-live-archive.uva.es/nuevoportal/region.php?r=nw&year=2010"><b>Europe - Northwestern - 2010/2011</b></a></font></td></tr><tr valign=center><td width=100>&nbsp;</td><td width=100>&nbsp;</td><td width=100 align=center><a href="http://acmicpc-live-archive.uva.es/nuevoportal/mailer.php?problem=4944"><b>Submit</b></a></td><td width=100>&nbsp;</td><td width=100 align=center><a href="http://acmicpc-live-archive.uva.es/nuevoportal/rankprob.php?p=4944"><b>Ranking</b></a></td></tr></table><p>&nbsp;</p><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+           "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<meta name="GENERATOR" content="TtH 3.89">
+ <style type="text/css"> div.p { margin-top: 7pt;}</style>
+ <style type="text/css"><!--
+ td div.comp { margin-top: -0.6ex; margin-bottom: -1ex;}
+ td div.comb { margin-top: -0.6ex; margin-bottom: -.6ex;}
+ td div.hrcomp { line-height: 0.9; margin-top: -0.8ex; margin-bottom: -1ex;}
+ td div.norm {line-height:normal;}
+ span.roman {font-family: serif; font-style: normal; font-weight: normal;} 
+ span.overacc2 {position: relative;  left: .8em; top: -1.2ex;}
+ span.overacc1 {position: relative;  left: .6em; top: -1.2ex;} --></style>
+ 
+
+<title>A - Fair Division</title>
+
+ <h2><a name="tth_sEc1">A</a>&nbsp;&nbsp;Fair Division</h2>
+
+<div class="p"><!----></div>
+It's your friend's birthday, and you and some other people decided to buy him
+a copy of StarCraft II, because who wouldn't want to have that?
+
+<div class="p"><!----></div>
+You agreed to divide the costs as fairly as possible. Since some of you
+have more money available than others, you also agreed that nobody has to pay more
+than he can afford. Every contribution will be a multiple of 1 cent, i.e., nobody can pay
+fractions of a cent.
+
+<div class="p"><!----></div>
+Everybody writes down the maximum amount he is able to contribute.
+Taking into account these maximum amounts from everybody, you share the cost
+of the present as fairly as possible.  That means, you minimize the largest distance of
+the contributions to [1/n]-th of the total cost. In case of a
+tie, minimize the second largest distance, and so on.  Since the smallest unit of
+contribution is 1 cent, there might be more than one possible division of the cost.
+In that case, persons with a higher maximum amount pay more. If there is still
+ambiguity, those who come first in the list pay more.
+
+<div class="p"><!----></div>
+Since you bought the present, it is your task to figure out how much everybody
+has to pay (including you).
+
+<div class="p"><!----></div>
+
+<h3>Input</h3>
+
+<div class="p"><!----></div>
+On the first line a positive integer: the number of test cases, at
+most 100. After that per test case:
+
+<div class="p"><!----></div>
+
+<ul>
+<li> One line with two integers p and n: the price of the present in cents (1  &#8804; p  &#8804; 1&nbsp;000&nbsp;000) and
+  the number of people (2 &#8804; n &#8804; 100) who contribute to the present (including you).
+<div class="p"><!----></div>
+</li>
+
+<li> One line with n integers a<sub>i</sub> (1  &#8804; a<sub>i</sub>  &#8804; 1&nbsp;000&nbsp;000), where
+  a<sub>i</sub> is the maximum amount, in cents, that the i-th person on the list is able to contribute.
+<div class="p"><!----></div>
+</li>
+</ul>
+
+<div class="p"><!----></div>
+
+<h3>Output</h3>
+
+<div class="p"><!----></div>
+Per test case:
+
+<div class="p"><!----></div>
+
+<ul>
+<li> One line with n integers: the amounts each person has to
+contribute according to the scheme. If the total cost cannot be divided according to the above rules,
+the line must contain "<tt>IMPOSSIBLE</tt>" instead.
+<div class="p"><!----></div>
+</li>
+</ul>
+
+<div class="p"><!----></div>
+
+<h3>Sample in- and output</h3>
+
+<table border="1">
+<tr><td width="0"><b>Input</b> </td><td width="0"><b>Output</b> </td></tr>
+<tr><td width="0" valign="top">
+<pre>3
+20&nbsp;4
+10&nbsp;10&nbsp;4&nbsp;4
+7&nbsp;3
+1&nbsp;1&nbsp;4
+34&nbsp;5
+9&nbsp;8&nbsp;9&nbsp;9&nbsp;4
+</pre>
+</td><td width="0" valign="top">
+<pre>6&nbsp;6&nbsp;4&nbsp;4
+IMPOSSIBLE
+8&nbsp;7&nbsp;8&nbsp;7&nbsp;4
+</pre>
+</td></tr></table>
+</html>
+<hr><ADDRESS>Northwestern 2010-2011</ADDRESS><p></body></html>

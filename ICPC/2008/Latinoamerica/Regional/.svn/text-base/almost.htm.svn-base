@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Almost Shortest Path</title></head><body>
+<h1 align="center">Almost Shortest Path</h1>     <p> Finding the shortest path that goes from a starting point to a destination point given a set of points and route lengths connecting them is an already well known problem, and it's even part of our daily lives, as shortest path programs are widely available nowadays.  <p> Most people usually like very much these applications as they make their lives easier. Well, maybe not that much easier.  <p> Now that almost everyone can have access to GPS navigation devices able to calculate shortest paths, most routes that form the shortest path are getting slower because of heavy traffic. As most people try to follow the same path, it's not worth it anymore to follow these directions.  <p> With this in his mind, your boss asks you to develop a new application that only he will have access to, thus saving him time whenever he has a meeting or any urgent event. He asks you that the program must answer not the shortest path, but the almost shortest path. He defines the almost shortest path as the shortest path that goes from a starting point to a destination point such that no route between two consecutive points belongs to any shortest path from the starting point to the destination.  <p> For example, suppose the figure below represents the map given, with circles representing location points, and lines representing direct, one-way routes with lengths indicated.  The starting point is marked as <tt>S</tt> and the destination point is marked as <tt>D</tt>. The bold lines belong to a shortest path (in this case there are two shortest paths, each with total length 4). Thus, the almost shortest path would be the one indicated by dashed lines (total length 5), as no route between two consecutive points belongs to any shortest path. Notice that there could exist more than one possible answer, for instance if the route with length 3 had length 1. There could exist no possible answer as well.  <p>  <center><img src="images/almost_fig.gif"/></center>
+  <p>  <h3>Input</h3> The input contains several test cases. The first line of a test case contains two integers <i>N</i> (2   &le; <i>N</i>   &le; 500) and <i>M</i> (1   &le; <i>M</i>   &le; 10<sup>4</sup>), separated by a single space, indicating respectively the number of points in the map and the number of existing one-way routes connecting two points directly. Each point is identified by an integer between 0 and <i>N</i> -1.  The second line contains two integers <i>S</i> and <i>D</i>, separated by a single space, indicating respectively the starting and the destination points (<i>S</i>   &ne; <i>D</i>; 0   &le; <i>S</i>, <i>D</i>  &lt;  <i>N</i>). Each one of the following <i>M</i> lines contains three integers <i>U</i>, <i>V</i> and <i>P</i> (<i>U</i>   &ne; <i>V</i>; 0   &le; <i>U</i>, <i>V</i>  &lt;  <i>N</i>; 1   &le; <i>P</i>   &le; 10<sup>3</sup>), separated by single spaces, indicating the existence of a one-way route from <i>U</i> to <i>V</i> with distance <i>P</i>.  There is at most one route from a given point <i>U</i> to a given point <i>V</i>, but notice that the existence of a route from <i>U</i> to <i>V</i> does not imply there is a route from <i>V</i> to <i>U</i>, and, if such road exists, it can have a different length. The end of input is indicated by a line containing only two zeros separated by a single space.  <p>  <h3>Output</h3>  <p> For each test case in the input, your program must print a single line, containing  <tt>-1</tt> if it is not possible to match the requirements, or an integer representing the length of the almost shortest path found.  <p> <table width="100%" border="1" cellpadding="10"><tr><td width="50%" valign="top"><b>Sample input</b<br><pre>
+7 9
+0 6
+0 1 1
+0 2 1
+0 3 2
+0 4 3
+1 5 2
+2 6 4
+3 6 2
+4 6 4
+5 6 1
+4 6
+0 2
+0 1 1
+1 2 1
+1 3 1
+3 2 1
+2 0 3
+3 0 2
+6 8
+0 1
+0 1 1
+0 2 2
+0 3 3
+2 5 3
+3 4 2
+4 1 1
+5 1 1
+3 0 1
+0 0
+</td><td width="50%" valign="top"><b>Output for the sample input</b<br><pre>
+5
+-1
+6
+</td></tr></table>
+<p><font size="-2">ACM ICPC :: South American Regional 2008</font>
+</body></html>

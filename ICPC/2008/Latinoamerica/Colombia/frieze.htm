@@ -1,0 +1,131 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!--Converted with LaTeX2HTML 2K.1beta (1.48)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others --><HTML><HEAD><TITLE>Frieze Patterns</TITLE>
+<META name=description content="Frieze Patterns">
+<META name=keywords content=htmlatex>
+<META name=resource-type content=document>
+<META name=distribution content=global>
+<META content="text/html; charset=iso-8859-1" http-equiv=Content-Type>
+<META name=GENERATOR content="MSHTML 8.00.7100.4129">
+<META content=text/css http-equiv=Content-Style-Type><LINK rel=STYLESHEET 
+href="htmlatex.css"></HEAD>
+<BODY lang=EN bgColor=#ffffff>
+<H1><BR clear=all>
+<CENTER>
+<TABLE bgColor=#0000ff>
+  <TBODY>
+  <TR>
+    <TD><B><FONT color=#ffff00 size=5>&nbsp;<A 
+      name=SECTION0001000000000000000000> Frieze 
+  Patterns</A>&nbsp;</FONT></B></TR></TBODY></TABLE></CENTER></H1>John is an 
+architect with a rare interest in math. Recently, he discovered some curious way 
+to describe friezes, those decorative borders constructed from repetitive 
+patterns. Indeed, what John discovered were <SPAN class=textit>frieze 
+patterns</SPAN>, mathematical objects consisting of an infinite set of numbers 
+arranged in a triangular grid: <PRE>                     1   1   1   1   1   1   .
+                       2   1   3   1   .   .   .
+                         1   2   2   1   .   .   .
+                           1   1   1   1   1   1   .
+</PRE>
+<P>
+<P><BR>A frieze pattern has <SPAN class=MATH><I>k</I></SPAN> 
+<TEX2HTML_VERBATIM_MARK>(<SPAN class=MATH><I>k</I> <IMG border=0 alt="$ \geq$" 
+align=middle 
+src="http://uva.onlinejudge.org/contests/211-7b52419c/11511img1.png" width=18 
+height=31> 2</SPAN> <TEX2HTML_VERBATIM_MARK>) rows, each one consisting of an 
+infinite set of numbers. The first and the last row are exclusively composed by 
+ones. Each set of four adjacent numbers <PRE>                                    A
+                                  B   C
+                                    D
+</PRE>satisfies the relationship <SPAN class=MATH><I>B</I>*<I>C</I> = 
+<I>A</I>*<I>D</I> + 1</SPAN> <TEX2HTML_VERBATIM_MARK>. It is not difficult to 
+see that the complete pattern is determined by the values of the first column 
+and this rule. The example above shows some of the first values of a frieze 
+pattern. As a matter of fact, a frieze pattern all of whose values are integer 
+numbers is called an <SPAN class=textit>integer frieze pattern</SPAN>. 
+<P>
+<P>
+<P><BR>John has the idea of using integer frieze patterns in his designs (for 
+example, using colors instead of numbers), and he knows, from a given sequence 
+of integer values for the first column, if an integer frieze pattern follows. 
+For this setting, he wants to know the value of a position in an integer frieze 
+pattern, given the values of the first column. 
+<P>
+<H2><FONT color=#ff0000 size=4><A 
+name=SECTION0001001000000000000000>Input</A>&nbsp;</FONT> </H2>The input 
+consists of several test cases. The first line of each test case is an integer 
+value <SPAN class=MATH><I>N</I></SPAN> <TEX2HTML_VERBATIM_MARK>, <!-- MATH
+ $2 < N \leq 1000$
+ --><SPAN class=MATH>2 &lt; <I>N</I> <IMG border=0 
+alt="$ \leq$" align=middle 
+src="http://uva.onlinejudge.org/contests/211-7b52419c/11511img2.png" width=18 
+height=31> 1000</SPAN> <TEX2HTML_VERBATIM_MARK>, that specifies the number of 
+rows of the pattern. The second line of each test case corresponds to a pair of 
+integer numbers <SPAN class=MATH><I>i</I>, <I>j</I></SPAN> 
+<TEX2HTML_VERBATIM_MARK>, with <SPAN class=MATH>1 &lt; <I>i</I> &lt; 
+<I>N</I></SPAN> <TEX2HTML_VERBATIM_MARK>and <SPAN class=MATH>1 &lt; <I>j</I> 
+&lt; 10<SUP>8</SUP></SPAN> <TEX2HTML_VERBATIM_MARK>, which specify the row and 
+the position in the row of the value to be reported. The last line contains N 
+values, <!-- MATH
+ $v_1, v_2, ..., v_N$
+ --><SPAN 
+class=MATH><I>v</I><SUB>1</SUB>, <I>v</I><SUB>2</SUB>,..., 
+<I>v</I><SUB>N</SUB></SPAN> <TEX2HTML_VERBATIM_MARK>, with <!-- MATH
+ $0<v_i\leq 1000$
+ --><SPAN class=MATH>0 &lt; <I>v</I><SUB>i</SUB> 
+<IMG border=0 alt="$ \leq$" align=middle 
+src="http://uva.onlinejudge.org/contests/211-7b52419c/11511img2.png" width=18 
+height=31> 1000</SPAN> <TEX2HTML_VERBATIM_MARK>(for each <!-- MATH
+ $1 \leq i \leq N$
+ --><SPAN class=MATH>1 <IMG border=0 alt="$ \leq$" 
+align=middle 
+src="http://uva.onlinejudge.org/contests/211-7b52419c/11511img2.png" width=18 
+height=31> <I>i</I> <IMG border=0 alt="$ \leq$" align=middle 
+src="http://uva.onlinejudge.org/contests/211-7b52419c/11511img2.png" width=18 
+height=31> <I>N</I></SPAN> <TEX2HTML_VERBATIM_MARK>), that correspond to the 
+values of the first element in each row (notice that <!-- MATH
+ $v_1 = v_N = 1$
+ --><SPAN class=MATH><I>v</I><SUB>1</SUB> = 
+<I>v</I><SUB>N</SUB> = 1</SPAN> <TEX2HTML_VERBATIM_MARK>). It is guaranteed that 
+every described frieze pattern contains only integer values. 
+<P>
+<P>
+<P><BR>The end of the input is recognized by a number <SPAN class=MATH>0</SPAN> 
+<TEX2HTML_VERBATIM_MARK>in the place that should correspond to the number of 
+rows of a pattern. 
+<P>
+<P>
+<P><BR>
+<P>
+<H2><FONT color=#ff0000 size=4><A 
+name=SECTION0001002000000000000000>Output</A>&nbsp;</FONT> </H2>
+<P>Each line of the output corresponds to a test case. The line must include a 
+unique integer value corresponding to the value in the position <SPAN 
+class=MATH>(<I>i</I>, <I>j</I>)</SPAN> <TEX2HTML_VERBATIM_MARK>of the frieze 
+pattern. 
+<P>
+<P>
+<P><BR>
+<P>
+<H2><FONT color=#ff0000 size=4><A name=SECTION0001003000000000000000>Sample 
+Input</A>&nbsp;</FONT> </H2><PRE>4
+2 3
+1 2 1 1
+6
+5 9
+1 1 1 1 2 1
+0
+</PRE>
+<P>
+<H2><FONT color=#ff0000 size=4><A name=SECTION0001004000000000000000>Sample 
+Output</A>&nbsp;</FONT> </H2><PRE>3
+4
+</PRE>
+<P>
+<P><BR>
+<HR>
+
+<ADDRESS>Colombia'2008 </ADDRESS></BODY></HTML>

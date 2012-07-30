@@ -1,0 +1,77 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!--Converted with LaTeX2HTML 96.1 (Feb 5, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds --><HTML><HEAD><TITLE>Minesweeper</TITLE>
+<META content="text/html; charset=windows-1252" http-equiv=Content-Type>
+<META name=GENERATOR content="MSHTML 8.00.7100.4129"></HEAD>
+<BODY lang=EN bgColor=#ffffff>
+<H1><BR clear=all>
+<CENTER>
+<TABLE bgColor=#0060f0>
+  <TBODY>
+  <TR>
+    <TD><B><FONT color=#c0ffff size=5>&nbsp;<A 
+      name=SECTION0001000000000000000000>Problem B: 
+      Minesweeper</A></FONT>&nbsp;</B></TR></TBODY></TABLE></CENTER></H1>
+<P>
+<H2><FONT color=#0070e8><A name=SECTION0001002000000000000000>The 
+Problem</A></FONT></H2>
+<P>Have you ever played Minesweeper? It's a cute little game which comes within 
+a certain Operating System which name we can't really remember. Well, the goal 
+of the game is to find where are all the mines within a MxN field. To help you, 
+the game shows a number in a square which tells you how many mines there are 
+adjacent to that square. For instance, supose the following 4x4 field with 2 
+mines (which are represented by an * character): <PRE>*...
+....
+.*..
+....
+</PRE>If we would represent the same field placing the hint numbers described 
+above, we would end up with: <PRE>*100
+2210
+1*10
+1110
+</PRE>As you may have already noticed, each square may have at most 8 adjacent 
+squares. </U></U>
+<H2><FONT color=#0070e8><A name=SECTION0001003000000000000000>The 
+Input</A></FONT></H2>
+<P>The input will consist of an arbitrary number of fields. The first line of 
+each field contains two integers n and m (0 &lt; n,m &lt;= 100) which stands for 
+the number of lines and columns of the field respectively. The next n lines 
+contains exactly m characters and represent the field. Each safe square is 
+represented by an "." character (without the quotes) and each mine square is 
+represented by an "*" character (also without the quotes). The first field line 
+where n = m = 0 represents the end of input and should not be processed. 
+<H2><FONT color=#0070e8><A name=SECTION0001004000000000000000>The 
+Output</A></FONT></H2>
+<P>For each field, you must print the following message in a line alone: <PRE>Field #x:</PRE>Where x stands for the number of the field (starting from 
+1). The next n lines should contain the field with the "." characters replaced 
+by the number of adjacent mines to that square. There must be an empty line 
+between field outputs. 
+<H2><FONT color=#0070e8><A name=SECTION0001005000000000000000>Sample 
+Input</A></FONT></H2>
+<P><PRE>4 4
+*...
+....
+.*..
+....
+3 5
+**...
+.....
+.*...
+0 0
+</PRE>
+<P>
+<H2><FONT color=#0070e8><A name=SECTION0001006000000000000000>Sample 
+Output</A></FONT></H2>
+<P><PRE>Field #1:
+*100
+2210
+1*10
+1110
+
+Field #2:
+**100
+33200
+1*100
+</PRE>
+<HR>
+<B>© 2001 Universidade do Brasil (UFRJ). Internal Contest Warmup 2001. 
+</B></BODY></HTML>

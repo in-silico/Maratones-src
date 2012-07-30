@@ -1,0 +1,38 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!-- saved from url=(0050)http://uva.onlinejudge.org/external/116/11689.html -->
+<HTML><HEAD><TITLE>A - Soda Surpler</TITLE>
+<META content="text/html; charset=iso-8859-1" http-equiv=Content-Type><LINK 
+rel=stylesheet type=text/css href="soda_files/problem.css">
+<META name=GENERATOR content="MSHTML 8.00.7600.16490"></HEAD>
+<BODY>
+<H1>Problem A - Soda Surpler</H1>
+<H3>Time limit: X seconds</H3><!-- author: Andreas Bj\"orklund --><IMG 
+src="soda_files/p11689.jpg"> 
+<P>Tim is an absolutely obsessive soda drinker, he simply cannot get enough. 
+Most annoyingly though, he almost never has any money, so his only obvious legal 
+way to obtain more soda is to take the money he gets when he recycles empty soda 
+bottles to buy new ones. In addition to the empty bottles resulting from his own 
+consumption he sometimes find empty bottles in the street. One day he was extra 
+thirsty, so he actually drank sodas until he couldn't afford a new one. 
+<H2>Input</H2>
+<P>The first line of the input file contains an integer N (N&lt;15) which 
+denotes the total number of test cases. The description of each test case is 
+given below:<BR><BR>Three non-negative integers <I>e,f,c</I>, where 
+<I>e&lt;1000</I> equals the number of empty soda bottles in Tim's possession at 
+the start of the day, <I>f&lt;1000</I> the number of empty soda bottles found 
+during the day, and <I>1&lt;c&lt;2000</I> the number of empty bottles required 
+to buy a new soda. 
+<H2>Output</H2>
+<P>For each test case print how many sodas did Tim drink on his extra thirsty 
+day? Look at the sample output for details. 
+<DIV class=sample>
+<H2>Sample Input</H2><PRE>2
+9 0 3
+5 5 2
+</PRE></DIV>
+<DIV class=sample>
+<H2>Sample Output</H2><PRE>4
+9
+</PRE></DIV>
+<DIV class=source>The 2009 ACM Nordic Collegiate Programming Contest 
+</DIV></BODY></HTML>

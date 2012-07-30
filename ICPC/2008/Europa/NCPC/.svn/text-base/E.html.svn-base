@@ -1,0 +1,137 @@
+<html><head>
+<!--Converted with LaTeX2HTML 2K.1beta (1.48)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+
+
+<title>Event Planning</title>
+<meta name="description" content="Event Planning">
+<meta name="keywords" content="htmlatex">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta name="Generator" content="LaTeX2HTML v2K.1beta">
+<meta http-equiv="Content-Style-Type" content="text/css">
+
+<link rel="STYLESHEET" href="E_files/htmlatex.html">
+
+</head><body bgcolor="#ffffff" lang="EN">
+
+<h1><br clear="ALL"><center><table bgcolor="#0000ff"><tbody><tr><td><b><font color="#ffff00" size="5">&nbsp;<a name="SECTION0001000000000000000000">
+Event Planning</a>&nbsp;</font></b></td></tr></tbody></table></center>
+</h1>
+
+<p>
+</p><div align="CENTER">
+<!-- MATH
+ $\epsfbox{p115xx.eps}$
+ -->
+<img src="E_files/p11559.jpg" alt="\epsfbox{p115xx.eps}" align="right" border="0" height="300" width="300">
+<tex2html_verbatim_mark>
+</tex2html_verbatim_mark></div>
+
+<p>
+As you didn't show up to the yearly general meeting of the Nordic Club of Pin
+Collectors, you were unanimously elected to organize this years excursion 
+to Pin City.  You are free to choose from a number of weekends this autumn, and
+have to find a suitable hotel to stay at, preferably as cheap as possible.
+
+</p><p>
+You have some constraints:  The total cost of the trip must be within budget,
+of course.  All participants must stay at the same hotel, to avoid last
+years catastrophe, where some members got lost in the city, never being seen
+again.
+
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001001000000000000000">
+Input</a>&nbsp;</font>
+</h2>
+The input file contains several test cases, each of them    as described below.
+
+<p>
+The first line of input consists of four integers:
+<!-- MATH
+ $1 \leq N \leq 200$
+ -->
+<span class="MATH">1 <img src="E_files/11559img2.png" alt="$ \leq$" align="MIDDLE" border="0" height="31" width="18"> <i>N</i> <img src="E_files/11559img2.png" alt="$ \leq$" align="MIDDLE" border="0" height="31" width="18"> 200</span>
+<tex2html_verbatim_mark>, the number of participants, 
+<!-- MATH
+ $1 \leq B \leq 500000$
+ -->
+<span class="MATH">1 <img src="E_files/11559img2.png" alt="$ \leq$" align="MIDDLE" border="0" height="31" width="18"> <i>B</i> <img src="E_files/11559img2.png" alt="$ \leq$" align="MIDDLE" border="0" height="31" width="18"> 500000</span>
+<tex2html_verbatim_mark>, the budget, 
+<!-- MATH
+ $1 \leq H \leq 18$
+ -->
+<span class="MATH">1 <img src="E_files/11559img2.png" alt="$ \leq$" align="MIDDLE" border="0" height="31" width="18"> <i>H</i> <img src="E_files/11559img2.png" alt="$ \leq$" align="MIDDLE" border="0" height="31" width="18"> 18</span>
+<tex2html_verbatim_mark>, the number of hotels to consider, and
+<!-- MATH
+ $1 \leq W \leq 13$
+ -->
+<span class="MATH">1 <img src="E_files/11559img2.png" alt="$ \leq$" align="MIDDLE" border="0" height="31" width="18"> <i>W</i> <img src="E_files/11559img2.png" alt="$ \leq$" align="MIDDLE" border="0" height="31" width="18"> 13</span>
+<tex2html_verbatim_mark>, the number of weeks you can choose between.
+Then follow two lines for each of the <span class="MATH"><i>H</i></span>
+<tex2html_verbatim_mark> hotels.  
+The first gives <!-- MATH
+ $1 \leq p \leq 10000$
+ -->
+<span class="MATH">1 <img src="E_files/11559img2.png" alt="$ \leq$" align="MIDDLE" border="0" height="31" width="18"> <i>p</i> <img src="E_files/11559img2.png" alt="$ \leq$" align="MIDDLE" border="0" height="31" width="18"> 10000</span>
+<tex2html_verbatim_mark>, 
+the price for one person staying the weekend at the hotel.  
+The second contains <span class="MATH"><i>W</i></span>
+<tex2html_verbatim_mark> integers, <!-- MATH
+ $0 \leq a \leq 1000$
+ -->
+<span class="MATH">0 <img src="E_files/11559img2.png" alt="$ \leq$" align="MIDDLE" border="0" height="31" width="18"> <i>a</i> <img src="E_files/11559img2.png" alt="$ \leq$" align="MIDDLE" border="0" height="31" width="18"> 1000</span>
+<tex2html_verbatim_mark>, 
+giving the number of available beds for each weekend at the hotel.
+
+</tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001002000000000000000">
+Output</a>&nbsp;</font>
+</h2>
+
+<p>
+For each test case, write to the output the minimum cost of the stay for your group, or ``<tt>stay home</tt>''
+if nothing can be found within the budget, on a line by itself.
+
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001003000000000000000">
+Sample Input</a>&nbsp;</font>
+</h2>
+<pre>3 1000 2 3
+200
+0 2 2
+300
+27 3 20
+5 2000 2 4
+300
+4 3 0 4
+450
+7 8 0 13
+</pre> 
+
+<p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001004000000000000000">
+Sample Output</a>&nbsp;</font>
+</h2>
+
+<p>
+</p><pre>900
+stay home
+</pre> 
+
+<p>
+
+
+</p><p>
+<br></p><hr>
+
+</body></html>

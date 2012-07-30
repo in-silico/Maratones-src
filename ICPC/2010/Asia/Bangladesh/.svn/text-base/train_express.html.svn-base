@@ -1,0 +1,614 @@
+
+<!-- saved from url=(0059)http://uva.onlinejudge.org/contests/252-52411035/11797.html -->
+<HTML xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns="http://www.w3.org/TR/REC-html40"><HEAD><META http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+<META name="ProgId" content="Word.Document">
+<META name="Generator" content="Microsoft Word 11">
+<META name="Originator" content="Microsoft Word 11">
+<LINK rel="File-List" href="http://uva.onlinejudge.org/contests/252-52411035/d_files/filelist.xml">
+<LINK rel="Edit-Time-Data" href="http://uva.onlinejudge.org/contests/252-52411035/d_files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<TITLE>D</TITLE>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Tanaeem </o:Author>
+  <o:LastAuthor>shahriar</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>0</o:TotalTime>
+  <o:Created>2010-06-14T16:08:00Z</o:Created>
+  <o:LastSaved>2010-06-14T16:08:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>459</o:Words>
+  <o:Characters>2620</o:Characters>
+  <o:Company>ACM ICPC</o:Company>
+  <o:Lines>21</o:Lines>
+  <o:Paragraphs>6</o:Paragraphs>
+  <o:CharactersWithSpaces>3073</o:CharactersWithSpaces>
+  <o:Version>11.9999</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:DefaultTableStyle Number="0">Normal</w:DefaultTableStyle>
+  <w:DrawingGridHorizontalSpacing>0 pt</w:DrawingGridHorizontalSpacing>
+  <w:DrawingGridVerticalSpacing>0 pt</w:DrawingGridVerticalSpacing>
+  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>
+  <w:DisplayVerticalDrawingGridEvery>0</w:DisplayVerticalDrawingGridEvery>
+  <w:UseMarginsForDrawingGridOrigin/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DrawingGridHorizontalOrigin>0 pt</w:DrawingGridHorizontalOrigin>
+  <w:DrawingGridVerticalOrigin>0 pt</w:DrawingGridVerticalOrigin>
+  <w:Compatibility>
+   <w:SpaceForUL/>
+   <w:BalanceSingleByteDoubleByteWidth/>
+   <w:DoNotLeaveBackslashAlone/>
+   <w:ULTrailSpace/>
+   <w:AdjustLineHeightInTable/>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:UseWord2002TableStyleRules/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+ </w:LatentStyles>
+</xml><![endif]-->
+<STYLE>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Liberation Serif";
+	mso-font-alt:"MS PMincho";
+	mso-font-charset:128;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:0 0 0 0 0 0;}
+@font-face
+	{font-family:"DejaVu Sans";
+	mso-font-alt:"Arial Unicode MS";
+	mso-font-charset:128;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:0 0 0 0 0 0;}
+@font-face
+	{font-family:"Liberation Sans";
+	mso-font-alt:"Arial Unicode MS";
+	mso-font-charset:128;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:0 0 0 0 0 0;}
+@font-face
+	{font-family:"Courier 10 Pitch";
+	mso-font-alt:"MS Mincho";
+	mso-font-charset:128;
+	mso-generic-font-family:auto;
+	mso-font-pitch:auto;
+	mso-font-signature:0 0 0 0 0 0;}
+@font-face
+	{font-family:"\@Liberation Serif";
+	mso-font-charset:128;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:0 0 0 0 0 0;}
+@font-face
+	{font-family:"\@DejaVu Sans";
+	mso-font-charset:128;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:0 0 0 0 0 0;}
+@font-face
+	{font-family:"\@Liberation Sans";
+	mso-font-charset:128;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:0 0 0 0 0 0;}
+@font-face
+	{font-family:"\@Courier 10 Pitch";
+	mso-font-charset:128;
+	mso-generic-font-family:auto;
+	mso-font-pitch:auto;
+	mso-font-signature:0 0 0 0 0 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:none;
+	mso-hyphenate:none;
+	font-size:12.0pt;
+	font-family:"Liberation Serif";
+	mso-fareast-font-family:"DejaVu Sans";
+	mso-hansi-font-family:"Liberation Serif";
+	mso-bidi-font-family:"DejaVu Sans";
+	mso-font-kerning:.5pt;
+	mso-fareast-language:HI;
+	mso-bidi-language:HI;}
+h2
+	{mso-style-parent:Heading;
+	mso-style-next:"Body Text";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:.4in;
+	text-indent:-.4in;
+	mso-pagination:none;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	mso-list:l0 level2 lfo1;
+	mso-hyphenate:none;
+	tab-stops:list .4in;
+	font-size:14.0pt;
+	font-family:"Liberation Sans";
+	mso-fareast-font-family:"DejaVu Sans";
+	mso-hansi-font-family:"Liberation Sans";
+	mso-bidi-font-family:"DejaVu Sans";
+	mso-font-kerning:.5pt;
+	mso-fareast-language:HI;
+	mso-bidi-language:HI;
+	font-style:italic;}
+p.MsoCaption, li.MsoCaption, div.MsoCaption
+	{margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	mso-pagination:no-line-numbers;
+	mso-hyphenate:none;
+	font-size:12.0pt;
+	font-family:"Liberation Serif";
+	mso-fareast-font-family:"DejaVu Sans";
+	mso-hansi-font-family:"Liberation Serif";
+	mso-bidi-font-family:"DejaVu Sans";
+	mso-font-kerning:.5pt;
+	mso-fareast-language:HI;
+	mso-bidi-language:HI;
+	font-style:italic;}
+p.MsoList, li.MsoList, div.MsoList
+	{mso-style-parent:"Body Text";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	mso-pagination:none;
+	mso-hyphenate:none;
+	font-size:12.0pt;
+	font-family:"Liberation Serif";
+	mso-fareast-font-family:"DejaVu Sans";
+	mso-hansi-font-family:"Liberation Serif";
+	mso-bidi-font-family:"DejaVu Sans";
+	mso-font-kerning:.5pt;
+	mso-fareast-language:HI;
+	mso-bidi-language:HI;}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	mso-pagination:none;
+	mso-hyphenate:none;
+	font-size:12.0pt;
+	font-family:"Liberation Serif";
+	mso-fareast-font-family:"DejaVu Sans";
+	mso-hansi-font-family:"Liberation Serif";
+	mso-bidi-font-family:"DejaVu Sans";
+	mso-font-kerning:.5pt;
+	mso-fareast-language:HI;
+	mso-bidi-language:HI;}
+p.Heading, li.Heading, div.Heading
+	{mso-style-name:Heading;
+	mso-style-next:"Body Text";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	mso-pagination:none;
+	page-break-after:avoid;
+	mso-hyphenate:none;
+	font-size:14.0pt;
+	font-family:"Liberation Sans";
+	mso-fareast-font-family:"DejaVu Sans";
+	mso-hansi-font-family:"Liberation Sans";
+	mso-bidi-font-family:"DejaVu Sans";
+	mso-font-kerning:.5pt;
+	mso-fareast-language:HI;
+	mso-bidi-language:HI;}
+p.Index, li.Index, div.Index
+	{mso-style-name:Index;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:no-line-numbers;
+	mso-hyphenate:none;
+	font-size:12.0pt;
+	font-family:"Liberation Serif";
+	mso-fareast-font-family:"DejaVu Sans";
+	mso-hansi-font-family:"Liberation Serif";
+	mso-bidi-font-family:"DejaVu Sans";
+	mso-font-kerning:.5pt;
+	mso-fareast-language:HI;
+	mso-bidi-language:HI;}
+p.TableContents, li.TableContents, div.TableContents
+	{mso-style-name:"Table Contents";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:no-line-numbers;
+	mso-hyphenate:none;
+	font-size:12.0pt;
+	font-family:"Liberation Serif";
+	mso-fareast-font-family:"DejaVu Sans";
+	mso-hansi-font-family:"Liberation Serif";
+	mso-bidi-font-family:"DejaVu Sans";
+	mso-font-kerning:.5pt;
+	mso-fareast-language:HI;
+	mso-bidi-language:HI;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:56.7pt 56.7pt 56.7pt 56.7pt;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:1;
+	mso-list-template-ids:1;}
+@list l0:level1
+	{mso-level-number-format:none;
+	mso-level-suffix:none;
+	mso-level-text:"";
+	mso-level-tab-stop:.3in;
+	mso-level-number-position:left;
+	margin-left:.3in;
+	text-indent:-.3in;}
+@list l0:level2
+	{mso-level-number-format:none;
+	mso-level-suffix:none;
+	mso-level-text:"";
+	mso-level-tab-stop:.4in;
+	mso-level-number-position:left;
+	margin-left:.4in;
+	text-indent:-.4in;}
+@list l0:level3
+	{mso-level-number-format:none;
+	mso-level-suffix:none;
+	mso-level-text:"";
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	margin-left:.5in;
+	text-indent:-.5in;}
+@list l0:level4
+	{mso-level-number-format:none;
+	mso-level-suffix:none;
+	mso-level-text:"";
+	mso-level-tab-stop:.6in;
+	mso-level-number-position:left;
+	margin-left:.6in;
+	text-indent:-.6in;}
+@list l0:level5
+	{mso-level-number-format:none;
+	mso-level-suffix:none;
+	mso-level-text:"";
+	mso-level-tab-stop:.7in;
+	mso-level-number-position:left;
+	margin-left:.7in;
+	text-indent:-.7in;}
+@list l0:level6
+	{mso-level-number-format:none;
+	mso-level-suffix:none;
+	mso-level-text:"";
+	mso-level-tab-stop:.8in;
+	mso-level-number-position:left;
+	margin-left:.8in;
+	text-indent:-.8in;}
+@list l0:level7
+	{mso-level-number-format:none;
+	mso-level-suffix:none;
+	mso-level-text:"";
+	mso-level-tab-stop:.9in;
+	mso-level-number-position:left;
+	margin-left:.9in;
+	text-indent:-.9in;}
+@list l0:level8
+	{mso-level-number-format:none;
+	mso-level-suffix:none;
+	mso-level-text:"";
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	margin-left:1.0in;
+	text-indent:-1.0in;}
+@list l0:level9
+	{mso-level-number-format:none;
+	mso-level-suffix:none;
+	mso-level-text:"";
+	mso-level-tab-stop:1.1in;
+	mso-level-number-position:left;
+	margin-left:1.1in;
+	text-indent:-1.1in;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</STYLE>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="2050">
+  <o:colormenu v:ext="edit" fillcolor="none [4]" strokecolor="none [1]"
+   shadowcolor="none [2]"/>
+ </o:shapedefaults></xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</HEAD><BODY bgcolor="white" lang="EN-US" style="tab-interval:35.45pt;line-break:strict">
+
+<DIV class="Section1">
+
+<P class="MsoNormal"><O:P>&nbsp;</O:P></P>
+
+<TABLE class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" style="margin-left:2.25pt;border-collapse:collapse;mso-padding-alt:2.75pt 2.75pt 2.75pt 2.75pt">
+ <TBODY><TR style="height:59.05pt">
+  <TD width="90" rowspan="3" style="width:67.6pt;border:solid black 1.0pt;
+  border-right:none;mso-border-top-alt:solid black .1pt;mso-border-left-alt:
+  solid black .1pt;mso-border-bottom-alt:solid black .1pt;background:#B3B3B3;
+  padding:2.75pt 2.75pt 2.75pt 2.75pt;height:59.05pt">
+  <P class="TableContents" align="center" style="text-align:center;layout-grid-mode:
+  char"><B><SPAN style="font-size:72.0pt">D<O:P></O:P></SPAN></B></P>
+  </TD>
+  <TD width="553" colspan="2" style="width:414.5pt;border:solid black 1.0pt;
+  mso-border-alt:solid black .1pt;padding:2.75pt 2.75pt 2.75pt 2.75pt;
+  height:59.05pt">
+  <P class="TableContents" align="center" style="text-align:center;layout-grid-mode:
+  char"><SPAN style="font-size:36.0pt">Drutojan Express<O:P></O:P></SPAN></P>
+  </TD>
+ </TR>
+ <TR style="height:18.55pt">
+  <TD width="279" valign="top" style="width:209.1pt;border-top:none;border-left:
+  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
+  mso-border-left-alt:solid black .1pt;mso-border-bottom-alt:solid black .1pt;
+  padding:2.75pt 2.75pt 2.75pt 2.75pt;height:18.55pt">
+  <P class="TableContents" align="right" style="text-align:right;layout-grid-mode:
+  char"><SPAN style="font-size:10.0pt">Input<O:P></O:P></SPAN></P>
+  </TD>
+  <TD width="274" valign="top" style="width:205.4pt;border:solid black 1.0pt;
+  border-top:none;mso-border-left-alt:solid black .1pt;mso-border-bottom-alt:
+  solid black .1pt;mso-border-right-alt:solid black .1pt;padding:2.75pt 2.75pt 2.75pt 2.75pt;
+  height:18.55pt">
+  <P class="TableContents" style="layout-grid-mode:char"><SPAN style="font-size:
+  10.0pt">Standard Input<O:P></O:P></SPAN></P>
+  </TD>
+ </TR>
+ <TR style="mso-yfti-lastrow:yes;height:1.15pt">
+  <TD width="279" valign="top" style="width:209.1pt;border-top:none;border-left:
+  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
+  mso-border-left-alt:solid black .1pt;mso-border-bottom-alt:solid black .1pt;
+  padding:2.75pt 2.75pt 2.75pt 2.75pt;height:1.15pt">
+  <P class="TableContents" align="right" style="text-align:right;layout-grid-mode:
+  char"><SPAN style="font-size:10.0pt">Output<O:P></O:P></SPAN></P>
+  </TD>
+  <TD width="274" valign="top" style="width:205.4pt;border:solid black 1.0pt;
+  border-top:none;mso-border-left-alt:solid black .1pt;mso-border-bottom-alt:
+  solid black .1pt;mso-border-right-alt:solid black .1pt;padding:2.75pt 2.75pt 2.75pt 2.75pt;
+  height:1.15pt">
+  <P class="TableContents" style="layout-grid-mode:char"><SPAN style="font-size:
+  10.0pt">Standard Output<O:P></O:P></SPAN></P>
+  </TD>
+ </TR>
+</TBODY></TABLE>
+
+<P class="MsoNormal"><O:P>&nbsp;</O:P></P>
+
+<P class="MsoNormal" style="text-align:justify;text-indent:21.75pt"><!--[if gte vml 1]><v:shapetype
+ id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t"
+ path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_s1026" type="#_x0000_t75" style='position:absolute;
+ left:0;text-align:left;margin-left:0;margin-top:0;width:256.4pt;height:170.65pt;
+ z-index:1;mso-wrap-distance-left:7.2pt;mso-wrap-distance-right:0;
+ mso-wrap-distance-bottom:7.2pt;mso-position-horizontal:left' filled="t">
+ <v:fill color2="black"/>
+ <v:imagedata src="d_files/image001.jpg" o:title=""/>
+ <w:wrap type="square" side="largest"/>
+</v:shape><![endif]--><IMG width="342" height="228" src="./s_files/p11797.jpg" align="left" hspace="5" style="margin-left:5px;
+margin-right:-5px;margin-top:0px;margin-bottom:10px" v:shapes="_x0000_s1026">Well,
+5 of the trouble makers are going to Dinajpur by the well known train Drutojan
+Express. The 5 trouble makers – <I>Ja, Sam, Sha, Sid</I> and <I>Tan </I>were
+discussing about how to create trouble in Dinajpur. But after a while they
+themselves got into trouble. Well, let me share the story with you.</P>
+
+<P class="MsoNormal" style="text-align:justify;text-indent:21.75pt">The tickets
+they bought were the cause of the problem. See, 4 of those tickets all shared
+the same compartment while the other ticket was for a different compartment. As
+you can guess, no one was willing to go to the compartment where the single
+seat is.</P>
+
+<P class="MsoNormal" style="text-align:justify;text-indent:21.75pt">After almost
+two hours of quarrel and unmentionable fights, they were exhausted; so they
+came up with a plan. The plan is: each of them will make a list containing
+names of the other persons. Now, if a person goes to the single seat, first he
+will stay there for <B><I>M</I></B> minutes. After that he will exchange his
+seat with the person who is on top of his own list. At this point he will also
+update his list by removing this name from top of his list and add the name at
+the bottom of the list.</P>
+
+<P class="MsoNormal" style="text-align:justify;text-indent:21.75pt">This will go
+on all through their journey. So you are given their lists, the person who is
+on the single seat right now and the total time <B><I>N</I></B> (in minutes)
+for which they would be traveling. For each of them, you have to find the total
+time he will stay in the single seat. You can assume that its takes 2 minutes
+to exchange seats. And you will start time counting from the 0<SUP>th</SUP>
+minute. That means if <B><I>M</I></B> is 5 and the first person who is in the
+single is <I>Sid</I>, then he will exchange after 5 minutes. Then from the 7<SUP>th</SUP>
+minute the next person in his list (<I>Sha</I>) will be in that seat. Remember
+that a person can leave the seat without staying <B><I>M</I></B> minutes if the
+train reaches the destination within <B><I>M</I></B>.</P>
+
+<H2 style="margin-left:0in;text-indent:21.75pt">Input</H2>
+
+<P class="MsoNormal" style="text-align:justify;text-indent:21.75pt;tab-stops:
+24.0pt">The first line of the input will contain an integer <B><I>T </I>(</B><B><SPAN style="mso-fareast-font-family:&quot;Liberation Serif&quot;;mso-bidi-font-family:&quot;Liberation Serif&quot;">&#8804;</SPAN>
+500)</B> denoting the number of cases.</P>
+
+<P class="MsoNormal" style="text-align:justify;text-indent:21.75pt;tab-stops:
+24.0pt">Each case starts with two integers <B><I>M</I> (2</B><B><SPAN style="mso-fareast-font-family:&quot;Liberation Serif&quot;;mso-bidi-font-family:&quot;Liberation Serif&quot;">&#8804;</SPAN><I>M</I></B><B><SPAN style="mso-fareast-font-family:&quot;Liberation Serif&quot;;mso-bidi-font-family:&quot;Liberation Serif&quot;">&#8804;</SPAN>30)</B>
+and <B><I>N</I>(10</B><B><SPAN style="mso-fareast-font-family:&quot;Liberation Serif&quot;;
+mso-bidi-font-family:&quot;Liberation Serif&quot;">&#8804;</SPAN><I>N</I></B><B><SPAN style="mso-fareast-font-family:&quot;Liberation Serif&quot;;mso-bidi-font-family:&quot;Liberation Serif&quot;">&#8804;</SPAN>1000)</B>
+and the name of the person who is in the single seat. Then there will be 5
+lines. Each of the lines represents a list. A list contains and integer <B><I>k</I>
+(1</B><B><SPAN style="mso-fareast-font-family:&quot;Liberation Serif&quot;;mso-bidi-font-family:
+&quot;Liberation Serif&quot;">&#8804;</SPAN><I>k</I></B><B><SPAN style="mso-fareast-font-family:
+&quot;Liberation Serif&quot;;mso-bidi-font-family:&quot;Liberation Serif&quot;">&#8804;</SPAN>20)</B>
+and <B><I>k</I></B> names separated by spaces. That means this list has <B><I>k</I></B>
+members and the names are listed from top to bottom. These 5 lines contain
+lists of <I>Ja, Sam, Sha, Sid </I>and <I>Tan </I>respectively. In a list, a
+name can occur more than once. You can assume no one will put his own name in
+his list.</P>
+
+<H2 style="margin-left:0in;text-indent:21.75pt">Output</H2>
+
+<P class="MsoNormal" style="text-align:justify;text-indent:21.75pt">For each case
+print the the case number in a single line. Then print 5 lines for each person
+(in the order shown below) and total time he will be on the single seat. Check
+samples for details. Report the names as in input.</P>
+
+<TABLE class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" style="margin-left:2.75pt;border-collapse:collapse;mso-padding-alt:2.75pt 2.75pt 2.75pt 2.75pt">
+ <TBODY><TR>
+  <TD width="321" valign="top" style="width:240.9pt;border:solid black 1.0pt;
+  border-right:none;mso-border-top-alt:solid black .1pt;mso-border-left-alt:
+  solid black .1pt;mso-border-bottom-alt:solid black .1pt;padding:2.75pt 2.75pt 2.75pt 2.75pt">
+  <P class="TableContents" style="text-align:justify"><B>Sample Input<O:P></O:P></B></P>
+  </TD>
+  <TD width="321" valign="top" style="width:241.0pt;border:solid black 1.0pt;
+  mso-border-alt:solid black .1pt;padding:2.75pt 2.75pt 2.75pt 2.75pt">
+  <P class="TableContents" style="text-align:justify"><B>Sample Output<O:P></O:P></B></P>
+  </TD>
+ </TR>
+ <TR style="mso-yfti-lastrow:yes">
+  <TD width="321" valign="top" style="width:240.9pt;border-top:none;border-left:
+  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
+  mso-border-left-alt:solid black .1pt;mso-border-bottom-alt:solid black .1pt;
+  padding:2.75pt 2.75pt 2.75pt 2.75pt">
+  <P class="MsoNormal" style="text-align:justify"><SPAN style="font-family:&quot;Courier 10 Pitch&quot;;
+  mso-fareast-font-family:&quot;DejaVu Sans&quot;;mso-hansi-font-family:&quot;Courier 10 Pitch&quot;">1<O:P></O:P></SPAN></P>
+  <P class="MsoNormal" style="text-align:justify"><SPAN style="font-family:&quot;Courier 10 Pitch&quot;;
+  mso-fareast-font-family:&quot;DejaVu Sans&quot;;mso-hansi-font-family:&quot;Courier 10 Pitch&quot;">3
+  11 Ja<O:P></O:P></SPAN></P>
+  <P class="MsoNormal" style="text-align:justify"><SPAN style="font-family:&quot;Courier 10 Pitch&quot;;
+  mso-fareast-font-family:&quot;DejaVu Sans&quot;;mso-hansi-font-family:&quot;Courier 10 Pitch&quot;">5
+  Tan Sid Sam Sha Tan<O:P></O:P></SPAN></P>
+  <P class="MsoNormal" style="text-align:justify"><SPAN style="font-family:&quot;Courier 10 Pitch&quot;;
+  mso-fareast-font-family:&quot;DejaVu Sans&quot;;mso-hansi-font-family:&quot;Courier 10 Pitch&quot;">1
+  Ja<O:P></O:P></SPAN></P>
+  <P class="MsoNormal" style="text-align:justify"><SPAN style="font-family:&quot;Courier 10 Pitch&quot;;
+  mso-fareast-font-family:&quot;DejaVu Sans&quot;;mso-hansi-font-family:&quot;Courier 10 Pitch&quot;">1
+  Ja<O:P></O:P></SPAN></P>
+  <P class="MsoNormal" style="text-align:justify"><SPAN style="font-family:&quot;Courier 10 Pitch&quot;;
+  mso-fareast-font-family:&quot;DejaVu Sans&quot;;mso-hansi-font-family:&quot;Courier 10 Pitch&quot;">1
+  Ja<O:P></O:P></SPAN></P>
+  <P class="MsoNormal" style="text-align:justify"><SPAN style="font-family:&quot;Courier 10 Pitch&quot;;
+  mso-fareast-font-family:&quot;DejaVu Sans&quot;;mso-hansi-font-family:&quot;Courier 10 Pitch&quot;">1
+  Ja<O:P></O:P></SPAN></P>
+  <P class="MsoNormal" style="text-align:justify"><SPAN style="font-family:&quot;Courier 10 Pitch&quot;;
+  mso-fareast-font-family:&quot;DejaVu Sans&quot;;mso-hansi-font-family:&quot;Courier 10 Pitch&quot;"><O:P>&nbsp;</O:P></SPAN></P>
+  </TD>
+  <TD width="321" valign="top" style="width:241.0pt;border:solid black 1.0pt;
+  border-top:none;mso-border-left-alt:solid black .1pt;mso-border-bottom-alt:
+  solid black .1pt;mso-border-right-alt:solid black .1pt;padding:2.75pt 2.75pt 2.75pt 2.75pt">
+  <P class="MsoNormal" style="text-align:justify"><SPAN style="font-family:&quot;Courier 10 Pitch&quot;;
+  mso-fareast-font-family:&quot;DejaVu Sans&quot;;mso-hansi-font-family:&quot;Courier 10 Pitch&quot;">Case
+  1:<O:P></O:P></SPAN></P>
+  <P class="MsoNormal" style="text-align:justify"><SPAN style="font-family:&quot;Courier 10 Pitch&quot;;
+  mso-fareast-font-family:&quot;DejaVu Sans&quot;;mso-hansi-font-family:&quot;Courier 10 Pitch&quot;">Ja
+  4<O:P></O:P></SPAN></P>
+  <P class="MsoNormal" style="text-align:justify"><SPAN style="font-family:&quot;Courier 10 Pitch&quot;;
+  mso-fareast-font-family:&quot;DejaVu Sans&quot;;mso-hansi-font-family:&quot;Courier 10 Pitch&quot;">Sam
+  0<O:P></O:P></SPAN></P>
+  <P class="MsoNormal" style="text-align:justify"><SPAN style="font-family:&quot;Courier 10 Pitch&quot;;
+  mso-fareast-font-family:&quot;DejaVu Sans&quot;;mso-hansi-font-family:&quot;Courier 10 Pitch&quot;">Sha
+  0<O:P></O:P></SPAN></P>
+  <P class="MsoNormal" style="text-align:justify"><SPAN style="font-family:&quot;Courier 10 Pitch&quot;;
+  mso-fareast-font-family:&quot;DejaVu Sans&quot;;mso-hansi-font-family:&quot;Courier 10 Pitch&quot;">Sid
+  0<O:P></O:P></SPAN></P>
+  <P class="MsoNormal" style="text-align:justify"><SPAN style="font-family:&quot;Courier 10 Pitch&quot;;
+  mso-fareast-font-family:&quot;DejaVu Sans&quot;;mso-hansi-font-family:&quot;Courier 10 Pitch&quot;">Tan
+  3<O:P></O:P></SPAN></P>
+  <P class="MsoNormal" style="text-align:justify"><SPAN style="font-family:&quot;Courier 10 Pitch&quot;;
+  mso-fareast-font-family:&quot;DejaVu Sans&quot;;mso-hansi-font-family:&quot;Courier 10 Pitch&quot;"><O:P>&nbsp;</O:P></SPAN></P>
+  </TD>
+ </TR>
+</TBODY></TABLE>
+
+<P class="MsoNormal" style="text-align:justify"><O:P>&nbsp;</O:P></P>
+
+<P class="MsoNormal" style="text-align:justify"><I>Explanation<O:P></O:P></I></P>
+
+<P class="MsoNormal" style="text-align:justify"><I>First 3 minutes Ja was on the
+single seat<O:P></O:P></I></P>
+
+<P class="MsoNormal" style="text-align:justify"><I>After that he exchanged his
+seat with Tan, it took 2 minutes<O:P></O:P></I></P>
+
+<P class="MsoNormal" style="text-align:justify"><I>After that Tan was there for 3
+minutes.<O:P></O:P></I></P>
+
+<P class="MsoNormal" style="text-align:justify"><I>He exchanged with Ja again,
+and it took 2 minutes<O:P></O:P></I></P>
+
+<P class="MsoNormal" style="text-align:justify"><I>Ja stayed for 1 minute and
+they reached the destination. So, Ja was there for 4 minutes and Tan was there
+for 3 minutes.<O:P></O:P></I></P>
+
+<P class="MsoNormal" style="text-align:justify;page-break-before:always"><I><O:P>&nbsp;</O:P></I></P>
+
+<P class="MsoNormal" style="text-align:justify"><I><O:P>&nbsp;</O:P></I></P>
+
+</DIV>
+
+
+
+
+</BODY></HTML>

@@ -1,0 +1,174 @@
+
+<!--Converted with LaTeX2HTML 2008 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Locks and keys</TITLE>
+<META NAME="description" CONTENT="Locks and keys">
+<META NAME="keywords" CONTENT="htmlatex">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2008">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="htmlatex.css">
+
+</HEAD>
+
+<BODY LANG="EN" BGCOLOR=#FFFFFF>
+
+<H1><BR CLEAR=ALL><CENTER><TABLE BGCOLOR=#0000ff><TR><TD><B><FONT SIZE=5 COLOR=#FFff00>&nbsp;<A NAME="SECTION0001000000000000000000">
+Locks and keys</A>&nbsp;</FONT></B></TABLE></CENTER>
+</H1>
+
+<P>
+A wizard is in a labyrinth where there are <SPAN CLASS="MATH"><I>V</I></SPAN> rooms and <SPAN CLASS="MATH"><I>V</I> - 1</SPAN> doors
+connecting some pairs of rooms in both directions, in such a way that there is always a sequence of
+doors one can traverse to go from a room to any other room. Additionally, there are <SPAN CLASS="MATH"><I>C</I></SPAN> locks and <SPAN CLASS="MATH"><I>C</I></SPAN> keys of <SPAN CLASS="MATH"><I>C</I></SPAN> different colours 
+(one of each) in some of the
+doors and rooms of the maze, respectively; each door has at most one lock, and
+there is at most one key placed in each room. It should be an easy matter for the wizard to bypass the lock
+system, were it not for the fact that he forgot his spell book, without
+which his wizardry is utterly useless. The wizard is currently in room <SPAN CLASS="MATH"><I>X</I></SPAN>, and he wants to get his
+spell book, located in room <SPAN CLASS="MATH"><I>Y</I></SPAN>, without taking too long. At every step he may go to an adjacent room through one of the doors. Of course,
+if the door is locked, he needs to be carrying the key of the same colour as the lock (unless, of
+    course, that door has already been unlocked). The wizard can carry only one key at a time
+and after picking up a key it is not possible for him to drop it somewhere in the
+maze in order to take it again afterwards. Once a door has been unlocked, the key is thrown away since it is no
+longer any use.
+
+<P>
+Given the maze and the positions of the <SPAN CLASS="MATH"><I>C</I></SPAN> keys and <SPAN CLASS="MATH"><I>C</I></SPAN> locks, determine how to reach <SPAN CLASS="MATH"><I>Y</I></SPAN> from <SPAN CLASS="MATH"><I>X</I></SPAN>,
+if possible. Any path whose length does not exceed <!-- MATH
+ $4 \cdot (C + 1) \cdot V$
+ -->
+<SPAN CLASS="MATH">4<SUP> . </SUP>(<I>C</I> + 1)<SUP> . </SUP><I>V</I></SPAN> is acceptable.
+
+<P>
+
+<H2><FONT size=4 COLOR=#ff0000><A NAME="SECTION0001001000000000000000">
+Input</A>&nbsp;</FONT>
+</H2>
+
+<P>
+The first line of each case contains four integers: the number <SPAN CLASS="MATH"><I>V</I></SPAN> of rooms in the maze (<!-- MATH
+ $1 \le V
+\le 1\,500$
+ -->
+<SPAN CLASS="MATH">1<IMG
+ WIDTH="18" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="4962img1.png"
+ ALT="$ \le$"><I>V</I><IMG
+ WIDTH="18" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="4962img1.png"
+ ALT="$ \le$">1&nbsp;500</SPAN>), the number <SPAN CLASS="MATH"><I>C</I></SPAN> of locks (<!-- MATH
+ $0 \le C < V$
+ -->
+<SPAN CLASS="MATH">0<IMG
+ WIDTH="18" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="4962img1.png"
+ ALT="$ \le$"><I>C</I> &lt; <I>V</I></SPAN>), and rooms <SPAN CLASS="MATH"><I>X</I></SPAN> and <SPAN CLASS="MATH"><I>Y</I></SPAN> numbered
+<!-- MATH
+ $0,1,\ldots,V-1$
+ -->
+<SPAN CLASS="MATH">0, 1,..., <I>V</I> - 1</SPAN>. Then comes a (possibly empty) line with <SPAN CLASS="MATH"><I>C</I></SPAN> integers indicating the location of
+each of the keys, in order of increasing colour. The next <SPAN CLASS="MATH"><I>V</I> - 1</SPAN> lines describe the maze: each
+contains three integers <SPAN CLASS="MATH"><I>A</I>&nbsp;<I>B</I>&nbsp;<I>L</I></SPAN>, meaning that there is a door between rooms <SPAN CLASS="MATH"><I>A</I></SPAN> and <SPAN CLASS="MATH"><I>B</I></SPAN> which can
+be unlocked with the key of colour <SPAN CLASS="MATH"><I>L</I></SPAN>, if <!-- MATH
+ $0 \le L < C$
+ -->
+<SPAN CLASS="MATH">0<IMG
+ WIDTH="18" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="4962img1.png"
+ ALT="$ \le$"><I>L</I> &lt; <I>C</I></SPAN>; a value of <SPAN CLASS="MATH">-1</SPAN> for <SPAN CLASS="MATH"><I>L</I></SPAN> indicates that no
+lock is needed.
+
+<P>
+The last line has <!-- MATH
+ $V, C, X, Y = 0, 0, 0, 0$
+ -->
+<SPAN CLASS="MATH"><I>V</I>, <I>C</I>, <I>X</I>, <I>Y</I> = 0, 0, 0, 0</SPAN>.
+
+<P>
+
+<H2><FONT size=4 COLOR=#ff0000><A NAME="SECTION0001002000000000000000">
+Output</A>&nbsp;</FONT>
+</H2>
+
+<P>
+There is one line of output per test case. If there is no solution, output `<TT>Impossible</TT>'. Otherwise
+print the full path corresponding to your solution in the format <SPAN CLASS="MATH"><I>L</I></SPAN>:<!-- MATH
+ $\,V_0 \ldots V_L$
+ -->
+<SPAN CLASS="MATH">&nbsp;<I>V</I><SUB>0</SUB>...<I>V</I><SUB>L</SUB></SPAN>, where <!-- MATH
+ $L
+\le 4 (C + 1) V$
+ -->
+<SPAN CLASS="MATH"><I>L</I><IMG
+ WIDTH="18" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="4962img1.png"
+ ALT="$ \le$">4(<I>C</I> + 1)<I>V</I></SPAN> is the length of a path from <SPAN CLASS="MATH"><I>X</I></SPAN> to <SPAN CLASS="MATH"><I>Y</I></SPAN>,
+and <!-- MATH
+ $X = V_0, V_1, \ldots, V_{L-1}, V_L = Y$
+ -->
+<SPAN CLASS="MATH"><I>X</I> = <I>V</I><SUB>0</SUB>, <I>V</I><SUB>1</SUB>,..., <I>V</I><SUB>L-1</SUB>, <I>V</I><SUB>L</SUB> = <I>Y</I></SPAN> is the sequence of <SPAN CLASS="MATH"><I>L</I> + 1</SPAN> vertices visited in the right order.
+A single space must precede each vertex in the path; see sample output for clarification.
+
+<P>
+
+<H2><FONT size=4 COLOR=#ff0000><A NAME="SECTION0001003000000000000000">
+Sample Input</A>&nbsp;</FONT>
+</H2>
+
+<P>
+<PRE>
+1 0 0 0
+
+
+3 1 0 2
+1
+0 1 -1
+0 2 0
+
+3 2 0 2
+1 2
+0 1 1
+0 2 0
+
+5 3 0 4
+2 0 3
+0 1 0
+0 2 -1
+1 3 1
+2 4 2
+
+0 0 0 0
+</PRE> 
+
+<P>
+
+<H2><FONT size=4 COLOR=#ff0000><A NAME="SECTION0001004000000000000000">
+Sample Output</A>&nbsp;</FONT>
+</H2>
+
+<P>
+<PRE>
+0: 0
+3: 0 1 0 2
+Impossible
+10: 0 2 0 1 0 1 3 1 0 2 4
+</PRE> 
+
+<P>
+
+
+<P>
+<BR><HR>
+
+</BODY>
+</HTML>
+</HTML>

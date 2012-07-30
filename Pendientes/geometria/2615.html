@@ -1,0 +1,135 @@
+
+<!-- saved from url=(0056)http://livearchive.onlinejudge.org/external/26/2615.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"></head><body><p>
+Nails and Rubber Bands. That is the suggestive name of a game played by a group of
+children (all of them offspring of geometry teachers). The children fix a number of
+nails on a plank of wood, randomly placed. Then they choose one of the nails to be
+the Origin, and a number <span class="MATH"><i>B</i></span> of rubber bands.  The challenge is to use the <span class="MATH"><i>B</i></span> rubber
+bands to wrap the nails so that:
+
+</p><p>
+</p><dl compact="">
+<dt>(i).</dt>
+<dd>each rubber band wraps a subset of the nails
+</dd>
+<dt>(ii).</dt>
+<dd>all nails are inside some wrapping
+</dd>
+<dt>(iii).</dt>
+<dd>wrappings do not overlap each other except at the Origin nail, which is touched
+by all rubber bands
+</dd>
+<dt>(iv).</dt>
+<dd>rubber bands must form wrappings which are convex polygons with at least three
+corners
+</dd>
+<dt>(v).</dt>
+<dd>the total area inside the wrappings is the smallest among all possible ways of
+wrapping the nails.
+</dd>
+</dl>
+
+<p>
+An instance of the game is shown in Figure 1.
+
+</p><p>
+</p><div align="CENTER">
+<!-- MATH
+ $\epsfbox{p2615.eps}$
+ -->
+<img width="423" height="335" align="BOTTOM" border="0" src="./2615_files/p2615.gif" alt="\epsfbox{p2615.eps}">
+</div>
+<p>
+</p><div align="CENTER"></div>
+<p>
+<br>
+</p><div align="CENTER">Figure 1: A game with 19 nails and 2 rubber bands
+
+</div>
+
+<p>
+
+</p><h2><font size="4" color="#ff0000"><a name="SECTION0001001000000000000000">
+Input</a>&nbsp;</font>
+</h2>
+
+<p>
+Your program should solve several instances of the game. Each game description starts
+with a line containing two integers <span class="MATH"><i>B</i></span> and <span class="MATH"><i>N</i></span>, indicating respectively the number of
+rubber bands and the number of nails (<!-- MATH
+ $2 \leq B \leq 50$
+ -->
+<span class="MATH">2 <img width="18" height="30" align="MIDDLE" border="0" src="./2615_files/2615img2.gif" alt="$ \leq$"> <i>B</i> <img width="18" height="30" align="MIDDLE" border="0" src="./2615_files/2615img2.gif" alt="$ \leq$"> 50</span> and <!-- MATH
+ $2B+1 \leq N \leq 101$
+ -->
+<span class="MATH">2<i>B</i> + 1 <img width="18" height="30" align="MIDDLE" border="0" src="./2615_files/2615img2.gif" alt="$ \leq$"> <i>N</i> <img width="18" height="30" align="MIDDLE" border="0" src="./2615_files/2615img2.gif" alt="$ \leq$"> 101</span>).
+The following <span class="MATH"><i>N</i></span> lines describe the position of the nails, each line containing two
+integers <span class="MATH"><i>X</i></span> and <span class="MATH"><i>Y</i></span> (<!-- MATH
+ $­10000 \leq X, Y \leq 10000$
+ -->
+<span class="MATH">­10000 <img width="18" height="30" align="MIDDLE" border="0" src="./2615_files/2615img2.gif" alt="$ \leq$"> <i>X</i>, <i>Y</i> <img width="18" height="30" align="MIDDLE" border="0" src="./2615_files/2615img2.gif" alt="$ \leq$"> 10000</span>). The origin is the first nail
+in the input. The end of input is indicated by <span class="MATH"><i>B</i> = <i>N</i> = 0</span>.
+
+</p><p>
+In all instances in the input:
+
+</p><p>
+
+</p><ul>
+<li>no two nails are in the same point
+</li>
+<li>no three nails are in the same line
+</li>
+<li>the origin nail does not belong to the convex hull of all nails (that is, if you
+use one rubber band to wrap all nails, it does not touch the origin nail)
+</li>
+</ul>
+
+<p>
+
+</p><h2><font size="4" color="#ff0000"><a name="SECTION0001002000000000000000">
+Output</a>&nbsp;</font>
+</h2>
+
+<p>
+For each game in the input your program should output one line, describing the smallest
+total area inside the wrappings. The area must be printed as a real number with two-digit
+precision, and the last decimal digit must be rounded. The input will not contain test
+cases where differences in rounding are significant.
+
+</p><p>
+
+</p><h2><font size="4" color="#ff0000"><a name="SECTION0001003000000000000000">
+Sample Input</a>&nbsp;</font>
+</h2>
+
+<p>
+</p><pre>2 5
+0 0
+9 4
+-8 8
+-10 -2
+4 -8
+2 6
+0 0
+3 6
+-5 7
+-4 -6
+10 -10
+3 5
+0 0
+</pre>
+
+<p>
+
+</p><h2><font size="4" color="#ff0000"><a name="SECTION0001004000000000000000">
+Sample Output</a>&nbsp;</font>
+</h2>
+
+<p>
+</p><pre>92.00
+74.00
+</pre>
+
+<p>
+</p></body></html>

@@ -1,0 +1,119 @@
+<html><head><title>4951 - Stock Prices</title></head><body><table cellpadding=3 cellspacing=0 border=1 align=center><tr valign=center><td ROWSPAN=2 align=center valign=center><font size=5 color=0000A0><b><img src="icono.gif"></b></font></td><td COLSPAN=5 width=500 align=center><font size=5 color=0000A0><b>4951 - Stock Prices</b></font><br><a href="http://acmicpc-live-archive.uva.es/nuevoportal/region.php?r=nw&year=2010"><b>Europe - Northwestern - 2010/2011</b></a></font></td></tr><tr valign=center><td width=100>&nbsp;</td><td width=100>&nbsp;</td><td width=100 align=center><a href="http://acmicpc-live-archive.uva.es/nuevoportal/mailer.php?problem=4951"><b>Submit</b></a></td><td width=100>&nbsp;</td><td width=100 align=center><a href="http://acmicpc-live-archive.uva.es/nuevoportal/rankprob.php?p=4951"><b>Ranking</b></a></td></tr></table><p>&nbsp;</p><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+           "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<meta name="GENERATOR" content="TtH 3.89">
+ <style type="text/css"> div.p { margin-top: 7pt;}</style>
+ <style type="text/css"><!--
+ td div.comp { margin-top: -0.6ex; margin-bottom: -1ex;}
+ td div.comb { margin-top: -0.6ex; margin-bottom: -.6ex;}
+ td div.hrcomp { line-height: 0.9; margin-top: -0.8ex; margin-bottom: -1ex;}
+ td div.norm {line-height:normal;}
+ span.roman {font-family: serif; font-style: normal; font-weight: normal;} 
+ span.overacc2 {position: relative;  left: .8em; top: -1.2ex;}
+ span.overacc1 {position: relative;  left: .6em; top: -1.2ex;} --></style>
+ 
+
+<title>H - Stock Prices</title>
+
+ <h2><a name="tth_sEc1">H</a>&nbsp;&nbsp;Stock Prices</h2>
+
+<div class="p"><!----></div>
+In this problem we deal with the calculation of stock prices. You need
+to know the following things about stock prices:
+
+<ul>
+<li> The <em>ask price</em> is the lowest price at which someone is willing to sell a share of a stock.
+<div class="p"><!----></div>
+</li>
+
+<li> The <em>bid price</em> is the highest price at which someone is willing to buy a share of a stock.
+<div class="p"><!----></div>
+</li>
+
+<li> The <em>stock price</em> is the price at which the last deal was established.
+<div class="p"><!----></div>
+</li>
+</ul>
+Whenever the bid price is greater than or equal to the ask
+price, a deal is established. A buy order offering the bid price is
+matched with a sell order demanding the ask price, and shares are
+exchanged at the rate of the ask price until either the sell order or the buy
+order (or both) is fulfilled (i.e., the buyer wants no more stocks, or the
+seller wants to sell no more stocks). You will be given a list of
+orders (either buy or sell) and you have to calculate, after each order, the
+current ask price, bid price and stock price.
+
+<div class="p"><!----></div>
+
+<h3>Input</h3>
+On the first line a positive integer: the number of test cases, at
+most 100. After that per test case:
+
+<div class="p"><!----></div>
+
+<ul>
+<li> One line with an integer n (1  &#8804; n  &#8804; 1&nbsp;000): the number of orders.
+<div class="p"><!----></div>
+</li>
+
+<li> n lines of the form "<em>order_type</em><tt>&nbsp;</tt>x<tt>&nbsp;shares&nbsp;at&nbsp;</tt>y",
+where <em>order_type</em> is either "<tt>buy</tt>" or "<tt>sell</tt>", x (1 &#8804; x  &#8804; 1&nbsp;000) is the number of shares of a stock someone wishes
+to buy or to sell, and y (1  &#8804; y  &#8804; 1&nbsp;000) is the desired price.
+<div class="p"><!----></div>
+</li>
+</ul>
+
+<div class="p"><!----></div>
+
+<h3>Output</h3>
+Per test case:
+
+<ul>
+<li> n lines, each of the form "a<sub>i</sub><tt>&nbsp;</tt>b<sub>i</sub><tt>&nbsp;</tt>s<sub>i</sub>", where
+a<sub>i</sub>, b<sub>i</sub> and s<sub>i</sub> are the current ask, bid and stock prices, respectively,
+after the i-th order has been processed and all possible deals have taken place.
+Whenever a price is not defined, output "<tt>-</tt>" instead of the price.
+<div class="p"><!----></div>
+</li>
+</ul>
+
+<div class="p"><!----></div>
+
+<h3>Sample in- and output</h3>
+
+<table border="1">
+<tr><td width="0"><b>Input</b> </td><td width="0"><b>Output</b> </td></tr>
+<tr><td width="0" valign="top">
+<pre>2
+6
+buy&nbsp;10&nbsp;shares&nbsp;at&nbsp;100
+sell&nbsp;1&nbsp;shares&nbsp;at&nbsp;120
+sell&nbsp;20&nbsp;shares&nbsp;at&nbsp;110
+buy&nbsp;30&nbsp;shares&nbsp;at&nbsp;110
+sell&nbsp;10&nbsp;shares&nbsp;at&nbsp;99
+buy&nbsp;1&nbsp;shares&nbsp;at&nbsp;120
+6
+sell&nbsp;10&nbsp;shares&nbsp;at&nbsp;100
+buy&nbsp;1&nbsp;shares&nbsp;at&nbsp;80
+buy&nbsp;20&nbsp;shares&nbsp;at&nbsp;90
+sell&nbsp;30&nbsp;shares&nbsp;at&nbsp;90
+buy&nbsp;10&nbsp;shares&nbsp;at&nbsp;101
+sell&nbsp;1&nbsp;shares&nbsp;at&nbsp;80
+</pre>
+</td><td width="0" valign="top">
+<pre>-&nbsp;100&nbsp;-
+120&nbsp;100&nbsp;-
+110&nbsp;100&nbsp;-
+120&nbsp;110&nbsp;110
+120&nbsp;100&nbsp;99
+-&nbsp;100&nbsp;120
+100&nbsp;-&nbsp;-
+100&nbsp;80&nbsp;-
+100&nbsp;90&nbsp;-
+90&nbsp;80&nbsp;90
+100&nbsp;80&nbsp;90
+100&nbsp;-&nbsp;80
+</pre>
+</td></tr></table>
+</html>
+<hr><ADDRESS>Northwestern 2010-2011</ADDRESS><p></body></html>

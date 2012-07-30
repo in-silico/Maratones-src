@@ -1,0 +1,114 @@
+<html>
+
+<head>
+<meta HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=utf-8">
+<title>Electoral Districts</title>
+<meta NAME="CREATED" CONTENT="0;0">
+<meta NAME="CHANGED" CONTENT="20100417;11075500">
+<meta NAME="ProgId" CONTENT="FrontPage.Editor.Document">
+<meta NAME="CHANGEDBY" CONTENT="Domingo Gimenez">
+</head>
+
+<body LANG="en-US" DIR="LTR">
+<div align="center"><center>
+
+<table border="0" bgcolor="#0060F0">
+  <tr>
+    <td><font color="#C0FFFF" size="5"><b>&nbsp;H - Electoral Districts&nbsp;</b></font></td>
+  </tr>
+</TBODY>
+</table>
+</center></div>
+
+<h2><a name="SECTION1"><font color="#0070e8">Background</font></a></h2>
+
+<p>In a certain democracy, the party in the government is reorganizing the electoral 
+districts in order to benefit them in the next election.</p>
+
+<p>One delegate is elected for each district. And, as the regime is <em>de facto</em> a 
+two-party system, they just need one more vote than the opposition for each district.</p>
+
+<h2><a name="SECTION1"><font color="#0070e8">The Problem</font></a></h2>
+
+<p>The country is divided into a square mesh of NxN zones; these zones are grouped into 
+electoral districts. There are N districts, and each district is composed by N zones. The 
+zones of a district are adjacent, that is, we can reach all the zones of a same district 
+by moving to the left, right, up or down.</p>
+
+<p>Suppose the party in the government is A, and the party in the opposition is B. From 
+previous elections, we know the number of votes for each party in each zone. Two NxN 
+matrices are available, one with the number of votes for party A, and another one for the 
+votes for party B.</p>
+
+<p>For each district, we take the sum of the votes of its zones. Then, the party with more 
+total votes in that district gains a delegate. If the number of votes is equal for A and 
+B, then no delegate is assigned.</p>
+
+<p>Party A has hired you to compute the largest possible difference they can obtain --in 
+number of delegates-- with an adequate arrangement of the districts.</p>
+
+<h2 CLASS="western"><a NAME="SECTION0001003000000000000000"></a><font color="#0070e8">The 
+Input</font></h2>
+
+<p>The input begins with a line where the number of test cases (T) is indicated. The data 
+for each test case appear in successive lines. For each test case, the first line contains 
+the dimension of the country (N, with maximum value 5, and the country has N by N zones). 
+Following, there are 2N lines, each line with N integers between 1 and 1000, separated by 
+a space. The first N lines contain the votes for party A, and the other N lines the votes 
+for party B.</p>
+
+<h2 CLASS="western"><a NAME="SECTION0001004000000000000000"></a><font color="#0070e8">The 
+Output</font></h2>
+
+<p>The output consists of T lines, one for each test case. <span
+STYLE="font-style: normal">For each case, the maximum achievable difference between the 
+number of delegates obtained by party A with respect to party B is represented.</span></p>
+
+<h2 CLASS="western"><a NAME="SECTION0001005000000000000000"></a><font color="#0070e8">Sample 
+Input</font></h2>
+
+<pre>4
+2
+2 3
+2 4
+3 1
+2 3
+3
+2 3 4
+1 3 2
+2 3 5
+3 4 1
+3 2 1
+2 1 3
+3
+1 2 1
+2 1 2
+1 2 1
+2 1 2
+1 2 1
+2 1 2
+3
+1 1 1
+1 1 1
+1 1 1
+2 2 2
+2 2 2
+2 2 2</pre>
+
+<h2 CLASS="western"><a NAME="SECTION0001006000000000000000"></a><font color="#0070e8">Sample 
+Output</font></h2>
+
+<pre>2
+2
+1
+-3</pre>
+
+<hr>
+
+<p align="right"><font color="#000040"><small><small><a href="http://dis.um.es/contest"
+target="_blank">OMP'10</a><br>
+<a href="http://www.um.es/informatica" target="_blank">Facultad de Informatica<br>
+</a><a href="http://www.um.es" target="_blank">Universidad de Murcia (SPAIN)</a></small></small></p>
+</font>
+</body>
+</html>

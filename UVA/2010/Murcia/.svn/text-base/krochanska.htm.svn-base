@@ -1,0 +1,131 @@
+
+<!-- saved from url=(0059)http://uva.onlinejudge.org/contests/250-0601c47b/11792.html -->
+<HTML><HEAD><META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<META name="autor" content="GinesGM, Murcia 11/05/10">
+<META name="dedicated to" content="all the smart people of the planet... ;-) like Dom Adams and those who broke the walls of totalitarianism">
+<TITLE>Krochanska is Here!</TITLE>
+</HEAD><BODY lang="EN">
+<DIV align="center"><CENTER>
+
+<TABLE border="0" bgcolor="#0060F0">
+<TBODY>
+  <TR>
+    <TD><FONT color="#C0FFFF" size="5"><B>&nbsp;G - Krochanska is Here!&nbsp;</B></FONT></TD>
+  </TR>
+</TBODY>
+</TABLE>
+</CENTER></DIV>
+
+<H2><A name="SECTION1"><FONT color="#0070e8">Background</FONT></A></H2>
+
+<P>This is a problem about spies and counter-spies in the old days of the Iron Curtain.
+CONTROL, the secret intelligence agency of the free world, must fight against KAOS, the
+international organization of evil.</P>
+
+<P>CONTROL agents 82 through 85 have all died attempting to deliver the payroll for
+Control's freelance agents located behind the Iron Curtain. They all were killed by the mysterious
+and sinister KAOS agent Cirilo Krochanska, while traveling aboard the Orient Express. You
+are Maxwell Smart, agent 86, and you must board the train, make contact with agent B-12,
+give him the encrypted message "tnih sevig cilc thgir", deliver the payroll, and
+avoid becoming Krochanska's fifth victim!</P>
+
+<P>But, where is Krochanska? We know he always travel by train; he is in some important
+train station in Europe, and is ready to reach immediately any destination where he is
+required.</P>
+
+<P align="center"><IMG src="./Krochanska is Here!_files/p11792.jpg" width="384" height="287" alt="krochanska.jpg (25697 bytes)"><BR>
+<EM>If you do a bit of espionage, you will discover here that Cirilo Krochanska is...<!-- a dog. Pues si, Krochanska es un perro a las
+ordenes de un malvado agente de KAOS. Si has sido capaz de descubrir este misterio, estas de suerte, solo tienes que tirar un poco
+mas del hilo...--></EM></P>
+
+<H2><A name="SECTION1"><FONT color="#0070e8">The Problem</FONT></A></H2>
+
+<P>The railway network of Europe consists of a number of lines. Each line goes between two
+different stations; and there are also some intermediate stations uniformly distributed in
+each line. For example, if we enumerate the stations from 1 to 13, we can have the
+following three lines: 
+
+</P><UL>
+  <LI><STRONG>Line 1.</STRONG> 1 - 2 - 3 - 4 - 5 - 6 - 7.</LI>
+  <LI><STRONG>Line 2.</STRONG> 8 - 9 - 4 - 10 - 13.</LI>
+  <LI><STRONG>Line 3</STRONG>. 11 - 2 - 12 - 9 - 6 - 7.</LI>
+</UL>
+
+<P>Trains travel in both directions of the lines. The time to travel from a station to the
+following (or the previous) station of the line is always 2 hours. As you can observe,
+some stations are used by different lines --we call them the <EM>important stations</EM>--,
+while other stations are only used by one line --the <EM>secondary stations</EM>--.</P>
+
+<P>We believe Krochanska is situated in an important station where he can travel faster to
+any other station. In particular, he tries to minimize the <STRONG>average</STRONG> of the
+minimum times from his station to the rest of important stations. You can assume that
+there is no loss of time to switch from one line to another at a station.</P>
+
+<P>You have to find out where Cirilo Krochanska is.</P>
+
+<H2><A name="SECTION2"><FONT color="#0070e8">The Input</FONT></A></H2>
+
+<P>The input will contain several test cases. The first line indicates the number of test
+cases.</P>
+
+<P>For each test case, the first line contains two integers: <EM>N</EM> and <EM>S</EM>. <EM>N</EM>
+is the total number of existing stations, and <EM>S</EM> is the number of lines. Stations
+are numbered from 1 to <EM>N</EM>; <EM>N</EM> is not greater than 10000; and <EM>S</EM> is
+not greater than 100. Next, we have <EM>S</EM> lines, one for each train line. These lines
+consist of a list of stations, separated by blank spaces, ending with a 0.</P>
+
+<P>There will be between 1 and 100 important stations, inclusive. There is always a path
+between any pair of stations.</P>
+
+<H2><A name="SECTION2"><FONT color="#0070e8">The Output</FONT></A></H2>
+
+<P>For each test case, you have to output the number of the resulting station, in the
+following format:</P>
+
+<P><CODE>Krochanska is in: <EM>X</EM></CODE></P>
+
+<P>where <EM>X</EM> is the number of the station. If there are more than one important
+station with the minimum distance, then you have to output the one with the smallest
+number.</P>
+
+<H2><A name="SECTION3"><FONT color="#0070e8">Sample Input</FONT></A></H2>
+
+<PRE>4
+13 3
+1 2 3 4 5 6 7 0
+8 9 4 10 13 0
+11 2 12 9 6 7 0
+6 2
+2 5 3 6 1 4 0
+4 1 6 3 5 2 0
+5 2
+1 2 3 4 5 0
+3 5 1 4 2 0
+7 2
+3 5 1 2 4 7 6 0
+3 6 1 0</PRE>
+
+<H2><A name="SECTION4"><FONT color="#0070e8">Sample Output</FONT></A></H2>
+
+<PRE><CODE>Krochanska is in: </CODE>9
+<CODE>Krochanska is in: </CODE>3
+<CODE>Krochanska is in: </CODE>4
+<CODE>Krochanska is in: </CODE>6
+</PRE>
+<!-- Y aqui va la deseada pista!!!
+La resolucion de este ejercicio es muy sencilla. Solo se trata de aplicar el algoritmo de Floyd, pero no sobre todas las estaciones
+sino sobre el grafo de las estaciones importantes. Para ello, habra que comprobar primero que estaciones son usadas mas de una vez.
+Por ejemplo, se puede hacer mediante un array en el que se vaya contando el numero de veces que aparece cada numero de estacion.
+Luego se crea un grafo con los nodos que aparezcan mas de una vez. Recorre las lineas originales y toma la diferencia entre cada par
+de estaciones importantes sucesivas; ese sera el coste de las aristas. Despues aplica el algoritmo de Floyd a ese grafo...
+y el resto es trivial, verdad? :-) -->
+
+<HR>
+
+<P align="right"><FONT color="#000040"><SMALL><SMALL><A href="http://dis.um.es/contest" target="_blank">OMP'10</A><BR>
+<A href="http://www.um.es/informatica" target="_blank">Facultad de Informatica<BR>
+</A><A href="http://www.um.es/" target="_blank">Universidad de Murcia (SPAIN)</A></SMALL></SMALL></FONT></P><FONT color="#000040">
+</FONT>
+
+
+</BODY></HTML>

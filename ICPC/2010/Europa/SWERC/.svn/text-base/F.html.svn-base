@@ -1,0 +1,161 @@
+<html><head><title>4959 - Jumping monkey</title></head><body><table cellpadding=3 cellspacing=0 border=1 align=center><tr valign=center><td ROWSPAN=2 align=center valign=center><font size=5 color=0000A0><b><img src="icono.gif"></b></font></td><td COLSPAN=5 width=500 align=center><font size=5 color=0000A0><b>4959 - Jumping monkey</b></font><br><a href="http://acmicpc-live-archive.uva.es/nuevoportal/region.php?r=sw&year=2010"><b>Europe - Southwestern - 2010/2011</b></a></font></td></tr><tr valign=center><td width=100 align=center><a href="http://acmicpc-live-archive.uva.es/nuevoportal/data/p4959.pdf"><b>PDF</b></a></td><td width=100>&nbsp;</td><td width=100 align=center><a href="http://acmicpc-live-archive.uva.es/nuevoportal/mailer.php?problem=4959"><b>Submit</b></a></td><td width=100>&nbsp;</td><td width=100 align=center><a href="http://acmicpc-live-archive.uva.es/nuevoportal/rankprob.php?p=4959"><b>Ranking</b></a></td></tr></table><p>&nbsp;</p>
+<!--Converted with LaTeX2HTML 2008 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Jumping monkey</TITLE>
+<META NAME="description" CONTENT="Jumping monkey">
+<META NAME="keywords" CONTENT="htmlatex">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2008">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="htmlatex.css">
+
+</HEAD>
+
+<BODY LANG="EN" BGCOLOR=#FFFFFF>
+
+<H1><BR CLEAR=ALL><CENTER><TABLE BGCOLOR=#0000ff><TR><TD><B><FONT SIZE=5 COLOR=#FFff00>&nbsp;<A NAME="SECTION0001000000000000000000">
+Jumping monkey</A>&nbsp;</FONT></B></TABLE></CENTER>
+</H1>
+
+<P>
+You are a hunter chasing a monkey in the forest, trying to shoot it down with your all-powerful
+automatic machine gun. The monkey is hiding somewhere behind the branches of one of the trees, out of your sight. You can aim
+at one of the trees and shoot; your
+bullets are capable of going through the branches and killing the monkey instantly if it happens to
+be in that tree. If it isn't, the monkey takes advantage of the time it takes you to reload and
+takes a leap into a neighbouring tree without you noticing. It never stays in the same place after a shot. You would like to find out 
+whether there is an strategy that
+allows you to capture the monkey for sure, irrespective of its initial location and
+subsequent jumps. If so, you need to determine the shortest sequence of shots guaranteeing this.
+
+<P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ $\epsfbox{p4959.eps}$
+ -->
+<IMG
+ WIDTH="601" HEIGHT="230" ALIGN="BOTTOM" BORDER="0"
+ SRC="p4959.jpg"
+ ALT="\epsfbox{p4959.eps}">
+</DIV>
+<P>
+<DIV ALIGN="CENTER">Figure 2
+
+</DIV>
+
+<P>
+As an example, consider the situation in which there are only two neighboring trees in the forest
+(left hand side of Figure 2). It is then possible to make sure you capture the monkey by shooting twice at
+the same tree. Your first shot succeeds if the monkey happened to be there in the first place.
+Otherwise, the monkey was behind the other tree and it
+will necessarily have moved when you shoot for the second time.
+
+<P>
+However, depending on the shape of the forest it may not be possible for you to ensure victory. One example of this
+is if there are three trees, all connected to one another (right hand side of Figure 2). No matter where you aim at, there are always two possible locations for the monkey at any given moment.
+(Note that here we are
+concerned with the worst-case scenario where the monkey may consistently guess your next target tree).
+
+<P>
+
+<H2><FONT size=4 COLOR=#ff0000><A NAME="SECTION0001001000000000000000">
+Input</A>&nbsp;</FONT>
+</H2>
+
+<P>
+The input consists of several test cases, separated by single blank lines. Each test case
+begins with a line containing two integers <SPAN CLASS="MATH"><I>n</I></SPAN> and <SPAN CLASS="MATH"><I>m</I></SPAN> (<!-- MATH
+ $1 \le n \le 21$
+ -->
+<SPAN CLASS="MATH">1<IMG
+ WIDTH="18" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="4959img2.png"
+ ALT="$ \le$"><I>n</I><IMG
+ WIDTH="18" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="4959img2.png"
+ ALT="$ \le$">21</SPAN>); <SPAN CLASS="MATH"><I>n</I></SPAN> is the number of trees in the forest, and <SPAN CLASS="MATH"><I>m</I></SPAN> is the number of adjacency relations between trees. 
+Each of the following <SPAN CLASS="MATH"><I>m</I></SPAN> lines contains two distinct integers between <SPAN CLASS="MATH">0</SPAN> and <SPAN CLASS="MATH"><I>n</I> - 1</SPAN> (inclusive), the
+identifiers of the trees in an adjacent pair. The order of both trees within a pair carries no
+meaning, and no pair appears more than once. You may further assume that no tree is adjacent to itself, and
+there is always a path between any two trees in the forest. 
+
+<P>
+The test cases will finish with a line containing only two zeros (also preceded with a blank line).
+
+<P>
+
+<H2><FONT size=4 COLOR=#ff0000><A NAME="SECTION0001002000000000000000">
+Output</A>&nbsp;</FONT>
+</H2>
+
+<P>
+Print a line for each test case. The line should contain the single word `<TT>Impossible</TT>' if the
+task is impossible. Otherwise, it must contain the shortest sequence of shots with the required
+property, in the format <SPAN CLASS="MATH"><I>L</I></SPAN>:<!-- MATH
+ $\ V_1 V_2 \ldots V_L$
+ -->
+<SPAN CLASS="MATH">&nbsp;<I>V</I><SUB>1</SUB><I>V</I><SUB>2</SUB>...<I>V</I><SUB>L</SUB></SPAN>, where <SPAN CLASS="MATH"><I>L</I></SPAN> is the length of the sequence, and
+<!-- MATH
+ $V_1, V_2,
+\ldots, V_L$
+ -->
+<SPAN CLASS="MATH"><I>V</I><SUB>1</SUB>, <I>V</I><SUB>2</SUB>,..., <I>V</I><SUB>L</SUB></SPAN> are space-separated integers containing the identifiers of the trees to shoot at in the right order.
+If several shortest sequences exist, print the lexicographically smallest one.
+(A sequence is smaller than another in lexicographic order if the first element on which they differ
+is smaller in the first one).
+
+<P>
+
+<H2><FONT size=4 COLOR=#ff0000><A NAME="SECTION0001003000000000000000">
+Sample Input</A>&nbsp;</FONT>
+</H2>
+
+<P>
+<PRE>
+2 1
+0 1
+
+3 3
+0 1
+1 2
+2 0
+
+4 3
+0 1
+2 3
+1 3
+
+0 0
+</PRE> 
+
+<P>
+
+<H2><FONT size=4 COLOR=#ff0000><A NAME="SECTION0001004000000000000000">
+Sample Output</A>&nbsp;</FONT>
+</H2>
+
+<P>
+<PRE>
+2: 0 0
+Impossible
+4: 1 3 3 1
+</PRE> 
+
+<P>
+
+
+<P>
+<BR><HR>
+
+</BODY>
+</HTML>
+</HTML>
+<hr><ADDRESS>Southwestern 2010-2011</ADDRESS><p><b>Problemsetter:</b> Marçal Garolera<br></body></html>

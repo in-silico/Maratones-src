@@ -1,0 +1,103 @@
+
+<!-- saved from url=(0059)http://uva.onlinejudge.org/contests/250-0601c47b/11787.html -->
+<HTML><HEAD><META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<TITLE>Numeral Hieroglyphs</TITLE>
+</HEAD><BODY>
+<DIV align="center"><CENTER>
+
+<TABLE class="MsoNormalTable" border="0" cellpadding="0" style="background: #0060F0">
+  <TBODY><TR>
+    <TD style="padding: .75pt"><P class="MsoNormal"><FONT color="#C0FFFF" size="5"><B>&nbsp;B
+    - Numeral Hieroglyphs&nbsp;</B></FONT></P></TD>
+  </TR>
+</TBODY></TABLE>
+</CENTER></DIV>
+
+<H2><SPAN style="color: #0070E8">Background</SPAN></H2>
+
+<P class="MsoNormal" style="text-align: justify; line-height: normal"><SPAN style="">Egyptians
+had a writing system based on hieroglyphs from around 3000 BC. Hieroglyphs are small
+drawings representing words. Besides, Egyptians had a base 10 system of hieroglyphs for
+numerals. That is, they had separate symbols for one unit (a bar), ten units (an inverted
+‘U’), one hundred (a spiral), one thousand (a paper plant), ten thousand (a
+finger), one hundred thousand (a tadpole) and one million (a man kneeling).</SPAN></P>
+
+<P>These are the <B>numeral hieroglyphs</B>:</P>
+
+<P class="MsoNormal" align="center" style="text-align: center"><SPAN style="line-height: 115%; "><IMG border="0" src="./Numeral Hieroglyphs_files/p11787a.gif" width="312" height="119"></SPAN></P>
+
+<P class="MsoNormal" style="text-align: justify; line-height: normal"><SPAN style="">To make
+up number 276, for example, fifteen symbols were required: two "hundred"
+symbols, seven "ten" symbols, and six "unit" symbols. Number 276 would
+appear as:</SPAN></P>
+
+<P align="center"><SPAN style=""><IMG border="0" src="./Numeral Hieroglyphs_files/p11787b.gif" v:shapes="_x0000_s1027" width="224" height="36"></SPAN></P>
+
+<P><SPAN style="">Number 4622 would be represented as:</SPAN></P>
+
+<P align="center"><SPAN style=""><IMG border="0" src="./Numeral Hieroglyphs_files/p11787c.gif" v:shapes="_x0000_s1027" width="296" height="67"></SPAN></P>
+
+<P><SPAN style="line-height: 115%; ">As you can see, Egyptians wrote ordered symbols,
+according to its value, from left to right as well as from right to left.</SPAN></P>
+
+<H2><SPAN style="color: #0070E8">The Problem</SPAN></H2>
+
+<P><SPAN style="line-height: 115%; ">You have to convert numeral hieroglyphs into numbers.
+For that, we will use the following code:</SPAN></P>
+
+<P align="center"><SPAN style=""><IMG border="0" src="./Numeral Hieroglyphs_files/p11787d.gif" v:shapes="_x0000_s1027" width="309" height="88"></SPAN></P>
+
+<P><SPAN style="line-height: 115%; ">So, we could represent 276 as SSUUUUUUUBBBBBB or
+BBBBBBUUUUUUUSS.</SPAN></P>
+
+<P><SPAN style="line-height: 115%; ">You cannot write more than nine times each character.</SPAN></P>
+
+<H2><SPAN style="color: #0070E8">The <A name="SECTION0001001000000000000000">Input</A></SPAN></H2>
+
+<P><SPAN style="line-height: 115%; ">The first line of the input contains an integer,<EM>&nbsp;n</EM>,
+indicating the number of test cases. For each test case, one line appears, that contains a
+combination of <I>m</I> characters belonging to the following set {‘B’,
+‘U’, ‘S’, ‘P’, ‘F’, ‘T’, ’M’},
+where 1&lt;=<I>m</I>&lt;=500, representing, or not, possible numeral hieroglyphs.</SPAN></P>
+
+<H2><SPAN style="color: #0070E8">The Output</SPAN></H2>
+
+<P><SPAN style="line-height: 115%; ">For each combination of characters you must write
+either the corresponding number or the word "error" if one of the two following
+cases occurs: (a) the input is not ordered, or (b) there are more than nine equal
+characters.</SPAN></P>
+
+<H2 style="text-align: justify"><SPAN style="color: #0070E8">Sample Input</SPAN></H2>
+
+<PRE>8
+PPPSUB
+BUSPPP
+PPPUUUPPP
+BUSPFTM
+MMMMMMMMMM
+MMMMTTTUBBBBB
+BBPPPPPPPFTTT
+MMMMMMMMMTTTTTTTTTFFFFFFFFFPPPPPPPPPSSSSSSSSSUUUUUUUUUBBBBBBBBB
+</PRE>
+
+<H2 style="text-align: justify"><SPAN style="color: #0070E8">Sample Output</SPAN></H2>
+
+<PRE>3111
+3111
+error
+1111111
+error
+4300015
+317002
+9999999
+</PRE>
+
+<HR>
+
+<P align="right"><FONT color="#000040"><SMALL><SMALL><A href="http://dis.um.es/contest" target="_blank">OMP'10</A><BR>
+<A href="http://www.um.es/informatica" target="_blank">Facultad de Informatica<BR>
+</A><A href="http://www.um.es/" target="_blank">Universidad de Murcia (SPAIN)</A></SMALL></SMALL></FONT></P><FONT color="#000040">
+</FONT>
+
+
+</BODY></HTML>

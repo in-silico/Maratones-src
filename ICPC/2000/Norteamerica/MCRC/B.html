@@ -1,0 +1,71 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<HTML><HEAD><TITLE>Problem B: Easier Done than Said?</TITLE></HEAD>
+<BODY>
+
+<H1 ALIGN=CENTER>Problem B: Easier Done than Said?</H1>
+
+<CENTER><TABLE>
+<TR><TD>Source file:</TD><TD><TT>say.</TT>{<TT>c</TT>, <TT>cpp</TT>, <TT>java</TT>, <TT>pas</TT>}</TD></TR>
+<TR><TD>Input file:</TD><TD><TT>say.in</TT></TD></TR>
+<TR><TD>Output file:</TD><TD><TT>say.out</TT></TD></TR>
+</TABLE></CENTER>
+
+<P>Password security is a tricky thing.  Users prefer simple passwords that
+are easy to remember (like <I>buddy</I>), but such passwords are often insecure.
+Some sites use random computer-generated passwords (like <I>xvtpzyo</I>), but
+users have a hard time remembering them and sometimes leave them written on
+notes stuck to their computer.  One potential solution is to generate
+&#34;pronounceable&#34; passwords that are relatively secure but still easy to
+remember.</P>
+
+<P>FnordCom is developing such a password generator.  You work in the
+quality control department, and it's your job to test the generator
+and make sure that the passwords are acceptable.  To be acceptable, a
+password must satisfy these three rules:</P>
+
+<OL>
+<LI>It must contain at least one vowel.</LI>
+<LI>It cannot contain three consecutive vowels or three consecutive
+consonants.</LI>
+<LI>It cannot contain two consecutive occurrences of the same
+letter, except for '<TT>ee</TT>' or '<TT>oo</TT>'.</LI>
+</OL>
+
+<P>(For the purposes of this problem, the vowels are '<TT>a</TT>', '<TT>e</TT>',
+'<TT>i</TT>', '<TT>o</TT>', and '<TT>u</TT>'; all other letters are consonants.)  Note that
+these rules are not perfect; there are many common/pronounceable words that
+are not acceptable.</P>
+
+<P>The input consists of one or more potential passwords, one per line,
+followed by a line containing only the word '<TT>end</TT>' that signals the
+end of the
+file.  Each password is at least one and at most twenty letters long and
+consists only of lowercase letters.  For each password, output whether or not
+it is acceptable, using the precise format shown in the example.</P>
+
+<P><B>Example input:</B></P>
+
+<BLOCKQUOTE><PRE>a
+tv
+ptoui
+bontres
+zoggax
+wiinq
+eep
+houctuh
+end
+</PRE></BLOCKQUOTE>
+
+<P><B>Example output:</B></P>
+
+<BLOCKQUOTE><PRE>&lt;a&gt; is acceptable.
+&lt;tv&gt; is not acceptable.
+&lt;ptoui&gt; is not acceptable.
+&lt;bontres&gt; is not acceptable.
+&lt;zoggax&gt; is not acceptable.
+&lt;wiinq&gt; is not acceptable.
+&lt;eep&gt; is acceptable.
+&lt;houctuh&gt; is acceptable.
+</PRE></BLOCKQUOTE>
+<P><SMALL><I>Last modified Fri Oct 27 15:16:38 2000
+</I></SMALL></BODY></HTML>

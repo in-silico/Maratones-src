@@ -1,0 +1,104 @@
+
+<!-- saved from url=(0059)http://uva.onlinejudge.org/contests/250-0601c47b/11790.html -->
+<HTML><HEAD><META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<META name="autor" content="GinesGM, Murcia 9/05/10">
+<META name="dedicated to" content="este se lo dedico a nuestros amables patrocinadores... es de bien nacidos ser agradecidos">
+<TITLE>Murcia's Skyline</TITLE>
+</HEAD><BODY lang="EN">
+<DIV align="center"><CENTER>
+
+<TABLE border="0" bgcolor="#0060F0">
+<TBODY>
+  <TR>
+    <TD><FONT color="#C0FFFF" size="5"><B>&nbsp;E - Murcia's Skyline&nbsp;</B></FONT></TD>
+  </TR>
+</TBODY>
+</TABLE>
+</CENTER></DIV>
+
+<H2><A name="SECTION1"><FONT color="#0070e8">Background</FONT></A></H2>
+
+<P>Murcia's skyline is growing up very fast. Since the 15th century, it used to be
+dominated by the profile of its Baroque Cathedral. But nowadays, new skyscrapers are
+rising in Murcian <EM>huerta</EM>.</P>
+
+<P align="center"><IMG src="./Murcia's Skyline_files/p11790a.jpg" width="458" height="192" alt="skyline.jpg (26607 bytes)"></P>
+
+<P>Some people say that if look at the skyline from left to right, you can observe and
+increasing profile; but other people say the profile is decreasing.</P>
+
+<H2><A name="SECTION1"><FONT color="#0070e8">The Problem</FONT></A></H2>
+
+<P>Looking at Murcia's skyline from left to right, we have a series of <EM>N</EM>
+buildings. Each building has its own height and width. You have to discover if the skyline
+is increasing or decreasing.</P>
+
+<P>We say the skyline is <STRONG>increasing</STRONG> if the longest increasing subsequence
+of buildings is bigger or equal than the longest decreasing subsequence of buildings; in
+other case, we say it is <STRONG>decreasing</STRONG>. A <STRONG>subsequence</STRONG> is a
+subset of the original sequence, in the same order. The <STRONG>length</STRONG> of a
+subsequence of buildings is the sum of the widths of its elements.</P>
+
+<P>For example, assuming we have six buildings of heights: 10, 100, 50, 30, 80, 10; and
+widths: 50, 10, 10, 15, 20, 10; then we have an increasing subsequence of 3 buildings and
+total length 85, and a decreasing subsequence of 1 building and total length 50 (also,
+there is a decreasing subsequence of 4 buildings and length 45). So, in this case, we say
+that the skyline is increasing. You can see this example below.</P>
+
+<P align="center"><IMG src="./Murcia's Skyline_files/p11790b.png" width="273" height="235" alt="sample.png (3055 bytes)"></P>
+
+<H2><A name="SECTION2"><FONT color="#0070e8">The Input</FONT></A></H2>
+
+<P>The first line of the input contains an integer indicating the number of test cases.</P>
+
+<P>For each test case, the first line contains a single integer, <EM>N</EM>, indicating
+the number of buildings of the skyline. Then, there are two lines, each with <EM>N</EM>
+integers separated by blank spaces. The first line indicates the heights of the buildings,
+from left to right. The second line indicates the widths of the buildings, also from left
+to right.</P>
+
+<H2><A name="SECTION2"><FONT color="#0070e8">The Output</FONT></A></H2>
+
+<P>For each test case, the output should contain a line. If the skyline is increasing, the
+format will be:</P>
+
+<P><CODE>Case <EM>i</EM>. Increasing (<EM>A</EM>). Decreasing (<EM>B</EM>).</CODE></P>
+
+<P>If the skyline is decreasing, the format will be:</P>
+
+<P><CODE>Case <EM>i</EM>. Decreasing (<EM>B</EM>). Increasing (<EM>A</EM>).</CODE></P>
+
+<P>where <EM>i</EM> is the number of the corresponding test case (starting with 1), <EM>A</EM>
+is the length of the longest increasing subsequence, and <EM>B</EM> is the length of the
+longest decreasing subsequence.</P>
+
+<H2><A name="SECTION3"><FONT color="#0070e8">Sample Input</FONT></A></H2>
+
+<PRE>3
+6
+10 100 50 30 80 10
+50 10 10 15 20 10
+4
+30 20 20 10
+20 30 40 50
+3
+80 80 80
+15 25 20
+</PRE>
+
+<H2><A name="SECTION4"><FONT color="#0070e8">Sample Output</FONT></A></H2>
+
+<PRE>Case 1. Increasing (85). Decreasing (50).
+Case 2. Decreasing (110). Increasing (50).
+Case 3. Increasing (25). Decreasing (25).
+</PRE>
+
+<HR>
+
+<P align="right"><FONT color="#000040"><SMALL><SMALL><A href="http://dis.um.es/contest" target="_blank">OMP'10</A><BR>
+<A href="http://www.um.es/informatica" target="_blank">Facultad de Informatica<BR>
+</A><A href="http://www.um.es/" target="_blank">Universidad de Murcia (SPAIN)</A></SMALL></SMALL></FONT></P><FONT color="#000040">
+</FONT>
+
+
+</BODY></HTML>

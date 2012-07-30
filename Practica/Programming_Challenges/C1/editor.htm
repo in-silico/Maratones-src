@@ -1,0 +1,112 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0035)http://acm.uva.es/p/v102/10267.html -->
+<HTML><HEAD><TITLE>Problem E: Graphical Editor</TITLE>
+<META content="text/html; charset=windows-1252" http-equiv=Content-Type>
+<META name=GENERATOR content="MSHTML 8.00.7100.4129"></HEAD>
+<BODY lang=EN bgColor=#ffffff>
+<H1><BR clear=all>
+<CENTER>
+<TABLE bgColor=#0060f0>
+  <TBODY>
+  <TR>
+    <TD><B><FONT color=#c0ffff size=5>&nbsp;Problem E: Graphical 
+      Editor</FONT>&nbsp;</B></TR></TBODY></TABLE></CENTER></H1>
+<P>
+<H2><FONT color=#0070e8><A name="Graphical&#10;Editor">Problem</A></FONT></H2>
+<P>The simple graphical editor deals with a rectangular table <I>M×N 
+(1&lt;=M,N&lt;=250)</I>. Each pixel of the table has its colour. The picture is 
+formed from this square pixels. 
+<P>The problem is to write a program, which simulates an interactive work of the 
+graphical editor. </U></U>
+<H2><FONT color=#0070e8>Input</FONT></H2>
+<P>Input consists of the editor commands, one per line. Each command is 
+represented by one Latin capital placed in the very beginning of the line. If 
+the command supposes parameters, all the parameters will be given in the same 
+line separated by space. As the parameters there may be: the coordinates of the 
+pixel - two integers, the first one is the column number and belongs to 
+<I>1..M,</I> the second one is the row number and belongs to <I>1..N,</I> the 
+origin is in the upper left corner of the table; the colour - the Latin capital; 
+file name - in MSDOS 8.3 format.
+<P>The editor deals with the following commands:
+<P>
+<CENTER>
+<TABLE border=1 cellSpacing=1 cellPadding=5>
+  <TBODY>
+  <TR>
+    <TD>I&nbsp;M&nbsp;N </TD>
+    <TD>Creates a new table <I>M×N.</I> All the pixels are colored in 
+      white&nbsp;<I>(O).</I> </TD>
+  <TR>
+    <TD>C </TD>
+    <TD>Clears the table. The size remains the same. All the pixels became 
+      white&nbsp;<I>(O).</I> </TD>
+  <TR>
+    <TD>L&nbsp;X&nbsp;Y&nbsp;C </TD>
+    <TD>Colors the pixel with coordinates <I>(X,Y)</I> in 
+      colour&nbsp;<I>C.</I> </TD>
+  <TR>
+    <TD>V&nbsp;X&nbsp;Y1&nbsp;Y2&nbsp;C </TD>
+    <TD>Draws the vertical segment in the column <I>X</I> between the rows 
+      <I>Y1</I> and <I>Y2</I> inclusive in colour&nbsp;<I>C.</I> </TD>
+  <TR>
+    <TD>H&nbsp;X1&nbsp;X2&nbsp;Y&nbsp;C </TD>
+    <TD>Draws the horizontal segment in the row <I>Y </I>between the columns 
+      <I>X1</I> and <I>X2</I> inclusive in colour&nbsp;<I>C.</I> </TD>
+  <TR>
+    <TD>K&nbsp;X1&nbsp;Y1&nbsp;X2&nbsp;Y2&nbsp;C </TD>
+    <TD>Draws the filled rectangle in colour <I>C</I>. <I>(X1,Y1)</I> is the 
+      upper left corner, <I>(X2,Y2)</I> is the lower right corner of the 
+      rectangle. </TD>
+  <TR>
+    <TD>F&nbsp;X&nbsp;Y&nbsp;C </TD>
+    <TD>Fills the region with the colour <I>C</I>. The region <I>R</I> to be 
+      filled is defined as follows. The pixel&nbsp;<I>(X,Y)</I> belongs to this 
+      region. The other pixel belongs to the region&nbsp;<I>R</I> if and only if 
+      it has the same colour as pixel&nbsp;<I>(X,Y)</I> and a common side with 
+      any pixel which belongs to this region. </TD></TR>
+  <TR>
+    <TD>S Name </TD>
+    <TD>Writes the picture in the file <I>Name.</I> </TD>
+  <TR>
+    <TD>X </TD>
+    <TD>Terminates the session.</I> </TD></TR></TBODY></TABLE></CENTER>
+<H2><FONT color=#0070e8>Output</FONT></H2>
+<P>Every time the command <I>S NAME</I> meets, you should output the file name 
+<I>NAME</I> and the current table, row by row. Each row is represented by a 
+pixels' colours series, see the output sample. 
+<H2><FONT color=#0070e8>Errors</FONT></H2>
+<P>If as a command there will be a character different from <I>I, C, L, V, H, K, 
+F, S, X,</I> the editor should ignore the whole line and pass to the next 
+command.
+<P>In case of other errors the program behaviour is unpredictable. 
+<H2><FONT color=#0070e8>Sample Input</FONT></H2>
+<P><PRE>I 5 6
+L 2 3 A
+S one.bmp
+G 2 3 J
+F 3 3 J
+V 2 3 4 W
+H 3 4 2 Z
+S two.bmp
+X
+</PRE>
+<P>
+<H2><FONT color=#0070e8>Sample Output</A></FONT></H2>
+<P><PRE>one.bmp
+OOOOO
+OOOOO
+OAOOO
+OOOOO
+OOOOO
+OOOOO
+two.bmp
+JJJJJ
+JJZZJ
+JWJJJ
+JWJJJ
+JJJJJ
+JJJJJ
+<SPAN style="COLOR: windowtext; mso-bidi-font-size: 13.5pt">
+<HR align=center SIZE=2 width="100%">
+<SPAN style="COLOR: windowtext; mso-bidi-font-size: 13.5pt"> </SPAN>
+<H4>Alexander Denisjuk, 2002</H4> </PRE></SPAN></BODY></HTML>

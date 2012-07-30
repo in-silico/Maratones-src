@@ -1,0 +1,104 @@
+
+<!-- saved from url=(0059)http://uva.onlinejudge.org/contests/250-0601c47b/11786.html -->
+<HTML><HEAD><META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<META name="autor" content="GinesGM, Murcia 7/05/10... so, traitors never play hangman...">
+<META name="dedicated" content="to Pablo, David y Maria">
+
+<TITLE>Global Raining at Bididibus</TITLE>
+</HEAD><BODY lang="EN">
+<DIV align="center"><CENTER>
+
+<TABLE border="0" bgcolor="#0060F0">
+<TBODY>
+  <TR>
+    <TD><FONT color="#C0FFFF" size="5"><B>&nbsp;A - Global Raining at Bididibus&nbsp;</B></FONT></TD>
+  </TR>
+</TBODY>
+</TABLE>
+</CENTER></DIV>
+
+<H2><A name="SECTION1"><FONT color="#0070e8">Background</FONT></A></H2>
+
+<P>Bididibus is an ancient two-dimensional universe populated by the Bididibusians.
+Bididibusians have their own 2D water, 2D mountains, 1D television, and even an amazing
+new technology of 2D cinemas!</P>
+
+<P>These days, some Bididibusian scholars are warning the public about the risks of <EM>global
+raining</EM>. Such climate catastrophe would fill with water all the valleys of the
+universe.</P>
+
+<H2><A name="SECTION1"><FONT color="#0070e8">The Problem</FONT></A></H2>
+
+<P>Bididibus consists of blocks with uniform width and height. Bididibusian orography is
+described by a series of symbols, from left to right, indicating that the land rises one
+unit (represented by "<CODE>/</CODE>"), descends one unit (represented by "<CODE>\</CODE>"),
+or it is flat (represented by "<CODE>_</CODE>").</P>
+
+<P>For example, we can have a 2D universe like this:</P>
+
+<PRE>              _
+             / \
+            /   \__/\_
+    /\_   _/          \   _
+ /\/   \_/             \_/ \    /\
+/                           \/\/</PRE>
+
+<P>It goes without saying that native geographers are big fans of ASCII art. They also use
+a simplified representation, where each column (from left to right) is replaced by the
+symbol it contains. For example, the simplified representation of the previous universe
+would be:</P>
+
+<PRE>//\//\_\_/_///_\\__/\_\\_/_\\/\//\</PRE>
+
+<P>After the global rain, water would fill all the blocks of the valleys. If we represent
+water areas in blue, we would have the following:</P>
+
+<P><IMG src="./Global Raining at Bididibus_files/p11786.png" width="495" height="89" alt="bididibus.png"></P>
+
+<P>Observe that a block with "<CODE>/</CODE>" or "<CODE>\</CODE>"
+partially filled with water corresponds to 1/2 units of water. A block completely filled
+with water corresponds to 1 unit of water. For example, in the previous universe we have a
+total of 21 units of water.</P>
+
+<P>Given a simplified representation of a universe, your task is to compute the units of
+water that we would have after the global rain.</P>
+
+<H2><A name="SECTION2"><FONT color="#0070e8">The Input</FONT></A></H2>
+
+<P>The first line of the input contains an integer indicating the number of test cases.</P>
+
+<P>For each test case, there is a line which can contain three possible symbols: &nbsp;
+"<CODE>/</CODE>", "<CODE>\</CODE>", "<CODE>_</CODE>". There
+will be at most 10000 symbols in each line.</P>
+
+<H2><A name="SECTION2"><FONT color="#0070e8">The Output</FONT></A></H2>
+
+<P>For each test case, the output should contain a single integer indicating the units of
+water of the corresponding case.</P>
+
+<H2><A name="SECTION3"><FONT color="#0070e8">Sample Input</FONT></A></H2>
+
+<PRE>4
+//\//\_\_/_///_\\__/\_\\_/_\\/\//\
+////\\\\\\\\
+\/
+\\\\\\\\\\//////////
+</PRE>
+
+<H2><A name="SECTION4"><FONT color="#0070e8">Sample Output</FONT></A></H2>
+
+<PRE>21
+0
+1
+100
+</PRE>
+
+<HR>
+
+<P align="right"><FONT color="#000040"><SMALL><SMALL><A href="http://dis.um.es/contest" target="_blank">OMP'10</A><BR>
+<A href="http://www.um.es/informatica" target="_blank">Facultad de Informatica<BR>
+</A><A href="http://www.um.es/" target="_blank">Universidad de Murcia (SPAIN)</A></SMALL></SMALL></FONT></P><FONT color="#000040">
+</FONT>
+
+
+</BODY></HTML>

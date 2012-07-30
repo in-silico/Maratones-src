@@ -1,0 +1,93 @@
+<html><head><title>4946 - High Score</title></head><body><table cellpadding=3 cellspacing=0 border=1 align=center><tr valign=center><td ROWSPAN=2 align=center valign=center><font size=5 color=0000A0><b><img src="icono.gif"></b></font></td><td COLSPAN=5 width=500 align=center><font size=5 color=0000A0><b>4946 - High Score</b></font><br><a href="http://acmicpc-live-archive.uva.es/nuevoportal/region.php?r=nw&year=2010"><b>Europe - Northwestern - 2010/2011</b></a></font></td></tr><tr valign=center><td width=100>&nbsp;</td><td width=100>&nbsp;</td><td width=100 align=center><a href="http://acmicpc-live-archive.uva.es/nuevoportal/mailer.php?problem=4946"><b>Submit</b></a></td><td width=100>&nbsp;</td><td width=100 align=center><a href="http://acmicpc-live-archive.uva.es/nuevoportal/rankprob.php?p=4946"><b>Ranking</b></a></td></tr></table><p>&nbsp;</p><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+           "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<meta name="GENERATOR" content="TtH 3.89">
+ <style type="text/css"> div.p { margin-top: 7pt;}</style>
+ <style type="text/css"><!--
+ td div.comp { margin-top: -0.6ex; margin-bottom: -1ex;}
+ td div.comb { margin-top: -0.6ex; margin-bottom: -.6ex;}
+ td div.hrcomp { line-height: 0.9; margin-top: -0.8ex; margin-bottom: -1ex;}
+ td div.norm {line-height:normal;}
+ span.roman {font-family: serif; font-style: normal; font-weight: normal;} 
+ span.overacc2 {position: relative;  left: .8em; top: -1.2ex;}
+ span.overacc1 {position: relative;  left: .6em; top: -1.2ex;} --></style>
+ 
+
+<title>C - High Score</title>
+
+ <h2><a name="tth_sEc1">C</a>&nbsp;&nbsp;High Score</h2>
+
+<div class="p"><!----></div>
+You've just been playing a video game in which you had to move a worm
+through a maze using a joystick. You got the high score, and now you
+have to enter your name using this joystick. This works as follows.
+
+<div class="p"><!----></div>
+The initial name displayed on the screen is a string consisting only
+of `<tt>A</tt>' characters. Initially the first letter of the string is
+selected. When you move the joystick forward, the selected letter is
+changed to the letter that immediately follows it in the alphabet. When you move the
+joystick backward, the selected letter is changed to the letter that immediately
+precedes it in the alphabet. The alphabet wraps around, so the letter following `<tt>Z</tt>'
+is `<tt>A</tt>' and the letter preceding `<tt>A</tt>' is `<tt>Z</tt>'.
+
+<div class="p"><!----></div>
+Moving the joystick left or right changes the selection one step to
+the left or right, respectively. The selection also wraps around, so
+moving left when the first letter is selected will select the last
+letter and vice versa.
+
+<div class="p"><!----></div>
+Because you would like to spend as little time as possible on entering
+your name, you want to know the smallest possible number of joystick
+moves needed to do this. Given the name you want to enter, write a
+program that calculates the minimum number of moves needed.  You may
+assume that the length of the initial string is the same as the length of the name
+that you want to enter. Furthermore, it does not matter which letter
+is selected at the end of the process.
+
+<div class="p"><!----></div>
+
+<h3>Input</h3>
+On the first line a positive integer: the number of test cases, at
+most 100. After that per test case:
+
+<div class="p"><!----></div>
+
+<ul>
+<li> One line with a string s (1  &#8804; length(s)  &#8804; 1&nbsp;000) consisting of uppercase letters: the name that you want to
+enter.
+<div class="p"><!----></div>
+</li>
+</ul>
+
+<div class="p"><!----></div>
+
+<h3>Output</h3>
+Per test case:
+
+<ul>
+<li>One line with an integer: the minimum number of joystick moves
+needed.
+<div class="p"><!----></div>
+</li>
+</ul>
+
+<div class="p"><!----></div>
+
+<h3>Sample in- and output</h3>
+
+<table border="1">
+<tr><td width="0"><b>Input</b> </td><td width="0"><b>Output</b> </td></tr>
+<tr><td width="0" valign="top"><pre>2
+JEROEN
+JAN
+</pre>
+</td><td width="0" valign="top">
+<pre>56
+23
+</pre>
+</td></tr></table>
+
+</html>
+<hr><ADDRESS>Northwestern 2010-2011</ADDRESS><p></body></html>

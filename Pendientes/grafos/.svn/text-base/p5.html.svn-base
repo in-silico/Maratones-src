@@ -1,0 +1,116 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+           "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<meta name="GENERATOR" content="TtH 3.89">
+ <style type="text/css"> div.p { margin-top: 7pt;}</style>
+ <style type="text/css"><!--
+ td div.comp { margin-top: -0.6ex; margin-bottom: -1ex;}
+ td div.comb { margin-top: -0.6ex; margin-bottom: -.6ex;}
+ td div.hrcomp { line-height: 0.9; margin-top: -0.8ex; margin-bottom: -1ex;}
+ td div.norm {line-height:normal;}
+ span.roman {font-family: serif; font-style: normal; font-weight: normal;} 
+ span.overacc2 {position: relative;  left: .8em; top: -1.2ex;}
+ span.overacc1 {position: relative;  left: .6em; top: -1.2ex;} --></style>
+ 
+
+<title>F - Risk</title>
+
+ <h2><a name="tth_sEc1">F</a>&nbsp;&nbsp;Risk</h2>
+
+<div class="p"><!----></div>
+Risk is a board game played on a world map. This world is divided into
+regions by borders. Each region is controlled by a player (either you
+or one of your opponents). Any region that you control contains a
+positive number of your armies.
+
+<div class="p"><!----></div>
+In each turn, you are allowed to move your armies. Each of your armies
+may either stay where it is, or move from a region to a bordering
+region under your control. The movements are performed one by one, in
+an order of your choice. At all times, each region must contain at
+least one army.
+
+<div class="p"><!----></div>
+For strategic purposes, it is important to move your armies to regions
+that border your opponents' regions and minimize the number of armies
+on your regions that are totally surrounded by other regions under
+your control. You want your weakest link, i.e., the border region with
+the minimum number of armies, to be as strong as possible. What is the
+maximum number of armies that can be placed on it after one turn?
+
+<div class="p"><!----></div>
+
+<h3>Input</h3>
+On the first line a positive integer: the number of test cases, at
+most 100. After that per test case:
+
+<div class="p"><!----></div>
+
+<ul>
+<li> One line with an integer n (1 &#8804; n &#8804; 100): the number of
+	regions.
+<div class="p"><!----></div>
+</li>
+
+<li> One line with n integers a<sub>i</sub> (0 &#8804; a<sub>i</sub> &#8804; 100): the number
+	of your armies on each region. A number 0 indicates that a region
+	is controlled by your opponents, while a positive number indicates
+	that it is under your control.
+<div class="p"><!----></div>
+</li>
+
+<li> n lines with n characters, where each character is either `<tt>Y</tt>' or
+	`<tt>N</tt>'. The i-th character of the j-th line is `<tt>Y</tt>' if
+	regions i and j border, and `<tt>N</tt>' otherwise. This
+	relationship is symmetric and the i-th character of the i-th
+	line will always be `<tt>N</tt>'.
+<div class="p"><!----></div>
+</li>
+</ul>
+
+<div class="p"><!----></div>
+In every test case, you control at least one region, and your opponents control at least one
+region. Furthermore, at least one of your regions borders at least one
+of your opponents' regions.
+
+<div class="p"><!----></div>
+
+<h3>Output</h3>
+Per test case:
+
+<ul>
+<li>One line with an integer: the maximum number of armies on your weakest
+border region after one turn of moving.
+<div class="p"><!----></div>
+</li>
+</ul>
+
+<div class="p"><!----></div>
+
+<h3>Sample in- and output</h3>
+
+<table border="1">
+<tr><td width="0"><b>Input</b> </td><td width="0"><b>Output</b> </td></tr>
+<tr><td width="0" valign="top">
+<pre>2
+3
+1&nbsp;1&nbsp;0
+NYN
+YNY
+NYN
+7
+7&nbsp;3&nbsp;3&nbsp;2&nbsp;0&nbsp;0&nbsp;5
+NYNNNNN
+YNYYNNN
+NYNYYNN
+NYYNYNN
+NNYYNNN
+NNNNNNY
+NNNNNYN
+</pre>
+</td><td width="0" valign="top">
+<pre>1
+4
+</pre>
+</td></tr></table>
+</html>

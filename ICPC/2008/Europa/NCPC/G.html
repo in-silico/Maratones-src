@@ -1,0 +1,143 @@
+<html><head>
+<!--Converted with LaTeX2HTML 2K.1beta (1.48)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+
+
+<title>Getting Gold</title>
+<meta name="description" content="Getting Gold">
+<meta name="keywords" content="htmlatex">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta name="Generator" content="LaTeX2HTML v2K.1beta">
+<meta http-equiv="Content-Style-Type" content="text/css">
+
+<link rel="STYLESHEET" href="G_files/htmlatex.html">
+
+</head><body bgcolor="#ffffff" lang="EN">
+
+<h1><br clear="ALL"><center><table bgcolor="#0000ff"><tbody><tr><td><b><font color="#ffff00" size="5">&nbsp;<a name="SECTION0001000000000000000000">
+Getting Gold</a>&nbsp;</font></b></td></tr></tbody></table></center>
+</h1>
+
+<p>
+</p><div align="CENTER">
+<!-- MATH
+ $\epsfbox{p115xx.eps}$
+ -->
+<img src="G_files/p11561.jpg" alt="\epsfbox{p115xx.eps}" align="right" border="0" height="250" width="250">
+<tex2html_verbatim_mark>
+</tex2html_verbatim_mark></div>
+
+<p>
+We're building an old-school back-to-basics computer game. It's a very simple
+text based adventure game where you walk around and try to find treasure,
+avoiding falling into traps. The game is played on a rectangular grid and the
+player gets very limited information about her surroundings.
+
+</p><p>
+The game will consist of the player moving around on the grid for as
+long as she likes (or until she falls into a trap). The player can
+move up, down, left and right (but not diagonally). She will pick up
+gold if she walks into the same square as the gold is. If the player
+stands next to (i.e., immediately up, down, left, or right of) one or more
+traps, she will ``sense a draft'' but will not know from what direction the
+draft comes, or how many traps she's near. If she tries to walk into a square
+containing a wall, she will notice that there is a wall in that direction and
+remain in the position where she was.
+
+</p><p>
+For scoring purposes, we want to show the player how much gold she could have
+gotten safely. That is, how much gold can a player get playing with an optimal
+strategy and always being sure that the square she walked into was safe. The
+player does not have access to the map and the maps are randomly generated for
+each game so she has no previous knowledge of the game.
+
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001001000000000000000">
+Input</a>&nbsp;</font>
+</h2>
+The input file contains several test cases, each of them    as described below.
+
+<p>
+The first line of input contains two positive integers <span class="MATH"><i>W</i></span>
+<tex2html_verbatim_mark> and <span class="MATH"><i>H</i></span>
+<tex2html_verbatim_mark>,
+neither of them smaller than <span class="MATH">3</span>
+<tex2html_verbatim_mark> or larger than <span class="MATH">50</span>
+<tex2html_verbatim_mark>, giving the width and the
+height of the map, respectively.  The next <span class="MATH"><i>H</i></span>
+<tex2html_verbatim_mark> lines contain <span class="MATH"><i>W</i></span>
+<tex2html_verbatim_mark> characters
+each, giving the map.  The symbols that may occur in a map are as follows:
+
+</tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></tex2html_verbatim_mark></p><p>
+<table cols="3">
+<col align="LEFT"><col align="CENTER"><col align="LEFT">
+<tbody><tr><td align="LEFT" nowrap="nowrap" valign="BASELINE">
+<tt>P</tt> </td><td align="CENTER" nowrap="nowrap" valign="BASELINE"> - </td><td align="LEFT" nowrap="nowrap" valign="BASELINE"> the player's starting position </td></tr>
+<tr><td align="LEFT" nowrap="nowrap" valign="BASELINE"> 
+<tt>G</tt> </td><td align="CENTER" nowrap="nowrap" valign="BASELINE"> - </td><td align="LEFT" nowrap="nowrap" valign="BASELINE"> a piece of gold </td></tr>
+<tr><td align="LEFT" nowrap="nowrap" valign="BASELINE"> 
+<tt>T</tt> </td><td align="CENTER" nowrap="nowrap" valign="BASELINE"> - </td><td align="LEFT" nowrap="nowrap" valign="BASELINE"> a trap </td></tr>
+<tr><td align="LEFT" nowrap="nowrap" valign="BASELINE"> 
+<tt>#</tt> </td><td align="CENTER" nowrap="nowrap" valign="BASELINE"> - </td><td align="LEFT" nowrap="nowrap" valign="BASELINE"> a wall </td></tr>
+<tr><td align="LEFT" nowrap="nowrap" valign="BASELINE"> 
+<tt>.</tt> </td><td align="CENTER" nowrap="nowrap" valign="BASELINE"> - </td><td align="LEFT" nowrap="nowrap" valign="BASELINE"> normal floor
+</td></tr>
+</tbody></table>
+
+</p><p>
+There will be exactly one '<tt>P</tt>' in the map, and the border of
+the map will always contain walls.
+
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001002000000000000000">
+Output</a>&nbsp;</font>
+</h2>
+
+<p>
+For each test case, write to the output the number of pieces of gold the player can
+get without risking falling into a trap, on a line by itself.
+
+</p><p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001003000000000000000">
+Sample Input</a>&nbsp;</font>
+</h2>
+<pre>7 4
+#######
+#P.GTG#
+#..TGG#
+#######
+8 6
+########
+#...GTG#
+#..PG.G#
+#...G#G#
+#..TG.G#
+########
+</pre> 
+
+<p>
+
+</p><h2><font color="#ff0000" size="4"><a name="SECTION0001004000000000000000">
+Sample Output</a>&nbsp;</font>
+</h2>
+<pre>1
+4
+</pre> 
+
+<p>
+
+
+</p><p>
+<br></p><hr>
+
+</body></html>

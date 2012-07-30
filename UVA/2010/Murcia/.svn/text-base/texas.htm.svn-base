@@ -1,0 +1,162 @@
+
+<!-- saved from url=(0059)http://uva.onlinejudge.org/contests/250-0601c47b/11789.html -->
+<HTML><HEAD><META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+<TITLE>Texas Hold'em Poker Solitaire</TITLE>
+</HEAD><BODY bgcolor="#FFFFFF" lang="EN">
+<DIV align="center"><CENTER>
+
+<TABLE border="0" bgcolor="#0060F0">
+<TBODY>
+  <TR>
+    <TD><B><FONT color="#C0FFFF" size="5">&nbsp;D - Texas Hold'em Poker Solitaire</FONT>&nbsp;</B></TD>
+  </TR>
+</TBODY>
+</TABLE>
+</CENTER></DIV>
+
+<H2><FONT color="#0070E8">Background</FONT></H2>
+
+<P>John Anthony Good usually meets his friends on Fridays to have a poker night. They play
+Texas Hold'em poker which is, nowadays, the most popular poker game. In Texas Hold'em,
+each player may use any combination of his two face-down cards and the five face-up
+community cards to make a poker hand. The player can use his two cards, just one, or none
+of them to make the best hand.</P>
+
+<P>A poker deck is comprised of 52 cards, organized in four suits ("Spades",
+"Hearts", "Diamonds", and "Clubs") and 13 values ('2', '3',
+'4', '5', '6', '7', '8', '9', 'T', 'J', 'Q', 'K', and 'A', ordered from lowest to
+highest).</P>
+
+<P>The hands that a player can make are the following ones (from highest to lowest): 
+
+</P><OL>
+  <LI><B>Straight Flush</B>: five cards in sequence, all of the same suit. Example: <B>6H 7H
+    8H 9H TH</B>. Note that the Ace can play low. Example: <B>AS 2S 3S 4S 5S</B>. Two hands
+    containing a Straight Flush are compared by their highest card. The first example beats
+    the second one. </LI>
+  <LI><B>Four of a Kind</B>: four cards of the same value. Example: <B>AS AD AH AC 3S</B>.
+    Hands are compared by the value of the four equal card values and, in case of tie, by the
+    value of the remaining card. </LI>
+  <LI><B>Full House</B>: three cards of the same value and two cards of another. Example: <B>7C
+    7S 7D KH KS</B>. Hands are compared by the value of the three equal card values and, in
+    case of tie, by the value of the pair. </LI>
+  <LI><B>Flush</B>: five cards of the same suit. Example: <B>5D AD KD 7D QD</B>. Hands are
+    compared by their highest card; in case of tie, by the second highest one, and so on. </LI>
+  <LI><B>Straight</B>: five cards in sequence. Example: <B>TH JD QC KD AS</B>. Note that the
+    Ace can also play low. </LI>
+  <LI><B>Three of a Kind</B>: three cards of the same value. Example: <B>QS QH QC 2D 3C</B>.
+    Hands are compared by the value of the three equal card values and, in case of tie, by the
+    highest value of the remaining cards, and so on. </LI>
+  <LI><B>Two Pair</B>: two cards of the same value, plus two cards of another value (that
+    match each other but not the first pair). Example: <B>2C 2H 6C 6S 4D</B>. Hands are
+    compared by the highest pair and, in case of tie, by the other pair. If both are the same,
+    hands are compared by the remaining card. </LI>
+  <LI><B>One Pair</B>: two cards of the same value. Example: <B>2C 2H 4H QH KD</B>. Hands are
+    compared by the pair, and then by the highest remaining card, and so on. </LI>
+  <LI><B>High Cards</B>: none of the previous hands. Example: <B>3H 7D JD QD AC</B>. Hands are
+    compared by their highest card, in case of tie, by the second highest one, and so on. </LI>
+</OL>
+
+<P>John Anthony and his friends bet 5 euros each night and he always loses his money,
+sometimes because he thinks that he has a lower hand than he actually has. Particularly,
+he has serious problems when his hand is a straight.</P>
+
+<H2><FONT color="#0070E8">The Problem</FONT></H2>
+
+<P>In order to improve his poker skills, John Anthony has made up a solitaire card game.
+He shuffles the deck and puts 49 cards from the 52-card deck faced-up on the table
+compounding a 7x7-card square. For example, you can have the following case:</P>
+
+<PRE>2C KC 3D 7S 7H 5D 6D
+2H 7D 4H 4S TS 3H 8S
+3S 5H AD 5S 6S 3C 9C
+9S JC QC KD JH KS QS
+6C 8H AC 2S 6H AH KH
+TC AS 9H QD 7C 4C 8C
+TH 2D JS 9D 8D 5C JD
+</PRE>
+
+<P>Then, he checks the seven rows (starting from top to bottom), the seven columns
+(starting from left to right), and the two diagonals (first, the one starting in the
+top-left corner and, then, the diagonal starting in the bottom-left corner). For each one
+of these sixteen sets of seven cards he tries to select the combination of five cards that
+comprise the highest possible hand (as in Texas Hold'em).</P>
+
+<P>Now, he is asking you to write a program that helps him to check if the hand that he
+finds is the highest one.</P>
+
+<H2><FONT color="#0070E8">The Input</FONT></H2>
+
+<P>The input consists of a first line with a number indicating the number of test cases.
+Then the test cases are separated by a new line. Each test case consists of seven lines
+with seven cards each one separated by blank spaces. Each card is represented by his value
+(first) and his suit (second) without spaces between them.</P>
+
+<H2><FONT color="#0070E8">The Output</FONT></H2>
+
+<P>For each input case, you must print a line with the following information. First, the
+line with the seven cards that include the best hand in the same order that they appear
+(rows and diagonals from left to right, and columns from top to bottom). Then two blank
+spaces, and the five cards that give the highest hand in the same order that they appear
+in the line. Finally, two blank spaces more and the name of the hand ("High
+Cards", "One Pair", "Two Pair", "Three of a Kind",
+"Straight", "Flush", "Full House", "Four of a
+Kind", "Straight Flush"). In case of two hands with the same score, the
+hand that should be printed is the first one in the order in which the square and the
+cards are checked by John Anthony.</P>
+
+<H2><FONT color="#0070E8">Sample Input</FONT></H2>
+
+<PRE>4
+
+9H 4H TD 5H QC 7H KC
+7S TS JS 8S 6D 2C 5C
+QD 5S 7D KH 4S 8D 2H
+TH AD QH 3D KD 9C 4D
+5D 9S 8H JH AH 3S 6C
+JC 7C AS 6H TC KS 8C
+6S QS 2S 4C 9D AC JD
+
+2C KC 3D 7S 7H 5D 6D
+2H 7D 4H 4S TS 3H 8S
+3S 5H AD 5S 6S 3C 9C
+9S JC QC KD JH KS QS
+6C 8H AC 2S 6H AH KH
+TC AS 9H QD 7C 4C 8C
+TH 2D JS 9D 8D 5C JD
+
+9D AS KS KD AC 8D TH
+AH JS 9H TC 2C QH 5S
+7D JH 8C 3H 7C 5H 6H
+5C 8S TS 2D QC KH 2H
+JC 4H 4D 8H 2S 4C 3S
+9C TD 9S 3C 7H 3D QS
+KC 4S AD JD 6S 7S QD
+
+6H JH 4H AC 5H TS 7D
+AH 6S 5S 6C 4C 5D 8S
+JC 8H AD 9S TC 9D 4D
+8D 7C 6D 3D 8C KC 7H
+4S TD 5C JD QD KD QS
+9C TH 3C 2S AS QC 3H
+2C 9H 3S 2D JS 7S KS
+</PRE>
+
+<H2><FONT color="#0070E8">Sample Output</FONT></H2>
+
+<PRE>TH AD QH 3D KD 9C 4D  TH AD QH KD 9C  High Cards
+6C 8H AC 2S 6H AH KH  6C AC 6H AH KH  Two Pair
+JC 4H 4D 8H 2S 4C 3S  JC 4H 4D 8H 4C  Three of a Kind
+JH 6S 8H 7C TD TH 9H  JH 8H 7C TD 9H  Straight
+</PRE>
+
+<HR>
+
+<P align="right"><FONT color="#000040"><SMALL><SMALL><A href="http://dis.um.es/contest" target="_blank">OMP'10</A><BR>
+<A href="http://www.um.es/informatica" target="_blank">Facultad de Informatica<BR>
+</A><A href="http://www.um.es/" target="_blank">Universidad de Murcia (SPAIN)</A></SMALL></SMALL></FONT></P><FONT color="#000040">
+</FONT>
+
+
+</BODY></HTML>

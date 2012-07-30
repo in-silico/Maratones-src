@@ -1,0 +1,130 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+           "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<meta name="GENERATOR" content="TtH 3.89">
+ <style type="text/css"> div.p { margin-top: 7pt;}</style>
+ <style type="text/css"><!--
+ td div.comp { margin-top: -0.6ex; margin-bottom: -1ex;}
+ td div.comb { margin-top: -0.6ex; margin-bottom: -.6ex;}
+ td div.hrcomp { line-height: 0.9; margin-top: -0.8ex; margin-bottom: -1ex;}
+ td div.norm {line-height:normal;}
+ span.roman {font-family: serif; font-style: normal; font-weight: normal;} 
+ span.overacc2 {position: relative;  left: .8em; top: -1.2ex;}
+ span.overacc1 {position: relative;  left: .6em; top: -1.2ex;} --></style>
+ 
+
+<title>G - Selling Land</title>
+
+ <h2><a name="tth_sEc1">G</a>&nbsp;&nbsp;Selling Land</h2>
+
+<div class="p"><!----></div>
+As you may know, the country of Absurdistan is full of
+abnormalities. For example, the whole country can be divided into unit
+squares that are either grass or swamp. Also, the country is famous
+for its incapable bureaucrats. If you want to buy a piece of land
+(called a parcel), you can only buy a rectangular area, because they
+cannot handle other shapes. The price of the parcel is determined by them and is
+proportional to the perimeter of the parcel, since the bureaucrats are
+unable to multiply integers and thus cannot calculate the area of the
+parcel.
+
+<div class="p"><!----></div>
+Per owns a parcel in Absurdistan surrounded by swamp and he wants to
+sell it, possibly in parts, to some buyers. When he sells a
+rectangular part of his land, he is obliged to announce this to the
+local bureaucrats. They will first tell him the price he is supposed
+to sell it for. Then they will write down the name of the new owner
+and the coordinates of the south-east corner of the parcel being
+sold. If somebody else already owns a parcel with a south-east corner
+at the same spot, the bureaucrats will deny the change of ownership.
+
+<div class="p"><!----></div>
+Per realizes that he can easily trick the system. He can sell
+overlapping areas, because bureaucrats only check whether the
+south-east corners are identical. However, nobody wants to buy a
+parcel containing swamp.
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<center><img src="images/p6_1.png" /></center>
+  
+<center>Figure 1: In this example, dark squares represent swamp. Per may, for example, sell three overlapping
+  grey areas, with dimensions 2&times;1, 2&times;4 and 4&times;1 respectively.
+  The total perimeter is 6 + 12 + 10=28. Note that he can get
+  more money by selling even more land. This figure corresponds to the case in the 
+  sample input.</center>
+
+<div class="p"><!----></div>
+Now Per would like to know how many parcels of each perimeter he
+needs to sell in order to maximize his profit. Can you help him? You
+may assume that he can always find a buyer for each piece of land, as
+long as it doesn't contain any swamps. Also, Per is sure that no
+square within his parcel is owned by somebody else.
+
+<div class="p"><!----></div>
+
+<h3>Input</h3>
+On the first line a positive integer: the number of test cases, at
+most 100. After that per test case:
+
+<div class="p"><!----></div>
+
+<ul>
+<li> One line with two integers n and m (1 &#8804; n, m  &#8804; 1&nbsp;000):
+the dimensions of Per's parcel.
+<div class="p"><!----></div>
+</li>
+
+<li> n lines, each with m characters. Each character is either `<tt>#</tt>' or `<tt>.</tt>'. The
+j-th character on the i-th line is a `<tt>#</tt>' if position (i, j)
+is a swamp, and `<tt>.</tt>' if it is grass. The north-west corner of
+Per's parcel has coordinates (1, 1), and the south-east corner has
+coordinates (n,m).
+<div class="p"><!----></div>
+</li>
+</ul>
+
+<div class="p"><!----></div>
+
+<h3>Output</h3>
+Per test case:
+
+<ul>
+<li> Zero or more lines containing a complete list of how many
+parcels of each perimeter Per needs to sell in order to maximize his
+profit. More specifically, if Per should sell p<sub>i</sub> parcels of
+perimeter i in the optimal solution, output a single line
+"p<sub>i</sub><tt>&nbsp;x&nbsp;</tt>i". The lines should be sorted in increasing order
+of i. No two lines should have the same value of i, and you should
+not output lines with p<sub>i</sub>=0.
+<div class="p"><!----></div>
+</li>
+</ul>
+
+<div class="p"><!----></div>
+
+<h3>Sample in- and output</h3>
+
+<table border="1">
+<tr><td width="0"><b>Input</b> </td><td width="0"><b>Output</b> </td></tr>
+<tr><td width="0" valign="top">
+<pre>1
+6&nbsp;5
+..#.#
+.#...
+#..##
+...#.
+#....
+#..#.
+</pre>
+</td><td width="0" valign="top">
+<pre>6&nbsp;x&nbsp;4
+5&nbsp;x&nbsp;6
+5&nbsp;x&nbsp;8
+3&nbsp;x&nbsp;10
+1&nbsp;x&nbsp;12
+</pre>
+</td></tr></table>
+</html>

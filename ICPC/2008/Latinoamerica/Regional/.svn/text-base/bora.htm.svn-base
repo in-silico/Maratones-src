@@ -1,0 +1,166 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0070)http://acmicpc-live-archive.uva.es/nuevoportal/data/problem.php -->
+<HTML><HEAD><TITLE>4219 - Bora Bora</TITLE>
+<META content="text/html; charset=windows-1252" http-equiv=Content-Type>
+<META name=GENERATOR content="MSHTML 8.00.7600.16490"></HEAD>
+<BODY>
+<TABLE border=1 cellSpacing=0 cellPadding=3 align=center>
+  <TBODY>
+  <TR vAlign=center>
+    <TD vAlign=center rowSpan=2 align=middle><FONT color=#0000a0 
+      size=5><B><IMG src="problem_files/icono.gif"></B></FONT></TD>
+    <TD width=500 colSpan=5 align=middle><FONT color=#0000a0 size=5><B>4219 - 
+      Bora Bora</B></FONT><BR><A 
+      href="http://acmicpc-live-archive.uva.es/nuevoportal/region.php?r=sa&amp;year=2008"><B>Latin 
+      America - South America - 2008/2009</B></A></FONT></TD></TR>
+  <TR vAlign=center>
+    <TD width=100 align=middle><A 
+      href="http://acmicpc-live-archive.uva.es/nuevoportal/data/p4219.pdf"><B>PDF</B></A></TD>
+    <TD width=100>&nbsp;</TD>
+    <TD width=100 align=middle><A 
+      href="http://acmicpc-live-archive.uva.es/nuevoportal/mailer.php?problem=4219"><B>Submit</B></A></TD>
+    <TD width=100>&nbsp;</TD>
+    <TD width=100 align=middle><A 
+      href="http://acmicpc-live-archive.uva.es/nuevoportal/rankprob.php?p=4219"><B>Ranking</B></A></TD></TR></TBODY></TABLE>
+<P>&nbsp;</P><!--h1 align="center">Bora Bora</h1-->
+<P>Bora Bora is a simple card game for children, invented in the South Pacific 
+Island of the same name. Two or more players can play, using a deck of standard 
+cards. Cards have the usual ranks: Ace, 2, 3, 4, 5, 6, 7, 8, 9, 10, Jack, Queen 
+and King. Each card has also one of four suits: Clubs, Diamonds, Hearts and 
+Spades. 
+<P>Players sit on a circle around the table and play by turns. The next player 
+to play may be the one to the left (clockwise direction) or to the right 
+(counter-clockwise direction) of the current player, depending on the cards 
+played, as we will see. At the start, the direction of play is clockwise. 
+<P>The deck is shuffled and each player is dealt a hand of cards. The remaining 
+of the deck is placed, face down, on the table; this is called the 
+<EM>stock</EM> pile. Then the first (topmost) card is removed from the stock and 
+placed on the table, face up, starting another pile, called the <EM>discard</EM> 
+pile. 
+<P>The objective of the game is for a player to discard all his cards. At each 
+turn, a player discards at most one card. A card can be discarded only if it has 
+the same rank or the same suit as the topmost card on the discard pile. A player 
+discards a card by placing it, face up, in the discard pile (this card becomes 
+the topmost). If a player does not have a suitable card to discard on his turn, 
+he must draw one card from the stock and add it to his hand; if he can discard 
+that card, he does so, otherwise he does nothing else and his turn ends. A 
+player always discards the highest valued card he possibly can. The 
+<EM>value</EM> of a card is determined first by the card rank and then by the 
+card suit. The rank order is the rank itself (Ace is the lowest, King is the 
+highest), and the suit order is, from lowest to highest, Clubs, Diamonds, Hearts 
+and Spades. Therefore, the highest valued card is the King of Spades and the 
+lowest valued card is the Ace of Clubs. As an example, a Queen of Diamonds has a 
+higher value than a Jack (any suit) but has a lower value than a Queen of 
+Hearts. 
+<P>Some of the discarded cards affect the play, as follows: 
+<P>
+<UL>
+  <LI>when a Queen is discarded, the direction of play is reversed: if the 
+  direction is clockwise, it changes to counter-clockwise, and 
+  vice-versa;<BR><BR>
+  <LI>when a Seven is discarded, the next player to play must draw two cards 
+  from the stock (the number of cards in his hand increases by two), and misses 
+  his turn (does not discard any card);<BR><BR>
+  <LI>when an Ace is discarded, the next player to play must draw one card from 
+  the stock (the number of cards in his hand increases by one), and misses his 
+  turn (does not discard any card);<BR><BR>
+  <LI>when a Jack is discarded, the next player to play misses his turn (does 
+  not discard any card).<BR><BR></LI></UL>
+<P>Notice that the penalty for the first card in the discard pile (the card draw 
+from the stock at the beginning) is applied to the first player to play. For 
+example, if the first player to play is <I>p</I> and the first card on the 
+discard pile is an Ace, player <I>p</I> draws a card from the stock and does not 
+discard any card on his first turn. Also notice that if the first card is a 
+Queen, the direction of play is reversed to counter-clockwise, but the first 
+player to play remains the same. 
+<P>The winner is the player who first discards all his cards (the game ends 
+after the winner discards his last card). 
+<P>Given the description of the shuffled deck and the number of players, write a 
+program to determine who will win the game. 
+<P>
+<H3>Input</H3>The input contains several test cases. The first line of a test 
+case contains three integers <I>P</I>, <I>M</I> and <I>N</I>, separated by 
+single spaces, indicating respectively the number of players (2 &#8804; <I>P</I> &#8804; 
+10), the number of cards distributed to each of the players at the beginning of 
+the game (1 &#8804; <I>M</I> &#8804; 11) and the total number of cards in the shuffled deck 
+(3 &#8804; <I>N</I> &#8804; 300). Each of the next <I>N</I> lines contains the description 
+of one card. A card is described by one integer <I>X</I> and one character 
+<I>S</I>, separated by one space, representing respectively the card rank and 
+the card suite. Card ranks are mapped to integers from 1 to 13 (Ace is 1, Jack 
+is 11, Queen is 12 and King is 13). Card suits are designated by the suit's 
+first letter: '<TT>C</TT>' (Clubs), '<TT>D</TT>' (Diamonds), '<TT>H</TT>' 
+(Hearts) or '<TT>S</TT>' (Spades). 
+<P>Players are identified by numbers from 1 to <I>P</I>, and sit on a circle, in 
+clockwise direction, 1, 2 …<I>P</I>, 1. The first <I>P</I>×<I>M</I> cards of the 
+deck are dealt to the players: the first <I>M</I> cards to the first player 
+(player 1), the next <I>M</I> to the second player (player 2), and so on. After 
+dealing the cards to the players, the next card on the deck - the (<I>P</I> 
+×<I>M</I> + 1)-th card - is used to start the discard pile, and the remaining 
+cards form the stock. The (<I>P</I> ×<I>M</I> + 2)-th card to appear on the 
+input is the topmost card on the stock, and the last card to appear on the input 
+(the <I>N</I>-th card) is the bottommost card of the stock (the last card that 
+can be drawn). Player 1 is always the first to play (even when the card used to 
+start the discard pile is a Queen). All test cases have one winner, and in all 
+test cases the number of cards in the deck is sufficient for playing to the end 
+of the game. 
+<P>The end of input is indicated by a line containing only three zeros, 
+separated by single spaces. 
+<P>
+<H3>Output</H3>
+<P>For each test case in the input, your program must print a single line, 
+containing the number of the player who wins the game. 
+<P>
+<TABLE border=1 cellPadding=10 width="100%">
+  <TBODY>
+  <TR>
+    <TD vAlign=top width="50%"><B>Sample input</B<BR><PRE>2 2 10
+1 D
+7 D
+1 S
+3 C
+13 D
+1 S
+5 H
+12 D
+7 S
+2 C
+3 2 11
+1 S
+7 D
+11 D
+3 D
+7 D
+3 S
+11 C
+8 C
+9 H
+6 H
+9 S
+3 3 16
+1 H
+10 C
+13 D
+7 C
+10 H
+2 S
+2 C
+10 S
+8 S
+12 H
+11 C
+1 C
+1 C
+4 S
+5 D
+6 S
+0 0 0
+</PRE></B></TD>
+    <TD vAlign=top width="50%"><B>Output for the sample input</B<BR><PRE>1
+3
+2
+</PRE></B></TD></TR></TBODY></TABLE>
+<P><FONT size=-2>ACM ICPC :: South American Regional 2008</FONT> 
+<HR>
+
+<ADDRESS>South America 2008-2009</ADDRESS>
+<P></P></BODY></HTML>

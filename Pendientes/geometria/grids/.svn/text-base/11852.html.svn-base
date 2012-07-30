@@ -1,0 +1,49 @@
+<html>
+<h2>Problem D: Knight's Trip</h2>
+
+<img src="p11852.png" align=right>
+
+In chess, each move of a knight consists of moving by two squares
+horizontally and one square vertically, or by one square horizontally
+and two squares vertically. A knight making one move from location (0,0) of an
+infinite chess board would end up at one of the following eight locations:
+(1,2), 
+(-1,2), 
+(1,-2), 
+(-1,-2), 
+(2,1),
+(-2,1),
+(2,-1),
+(-2,-1).
+<p>
+Starting from location (0,0), what is the minimum number of moves required
+for a knight to get to some other arbitrary location (x,y)?
+
+<h3>Input Specification</h3>
+Each line of input contains two integers <i>x</i> and <i>y</i>, each with
+absolute value at most one billion. The integers designate a location
+(<i>x</i>,<i>y</i>) on the infinite chess board.
+The final line contains the word <tt>END</tt>.
+
+<h3>Sample Input</h3>
+
+<pre>
+1 2
+2 4
+END
+</pre>
+
+<h3>Output Specification</h3>
+For each location in the input, output a line containing one integer,
+the minimum number of moves required for a knight to move from
+(0,0) to (<i>x</i>, <i>y</i>).
+
+<h3>Output for Sample Input</h3>
+<pre>
+1
+2
+</pre>
+
+<hr>
+<i>Ond&#345;ej Lhot&aacute;k</i>
+</html>

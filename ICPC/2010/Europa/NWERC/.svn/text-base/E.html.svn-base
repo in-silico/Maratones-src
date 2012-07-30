@@ -1,0 +1,118 @@
+<html><head><title>4948 - Rankings</title></head><body><table cellpadding=3 cellspacing=0 border=1 align=center><tr valign=center><td ROWSPAN=2 align=center valign=center><font size=5 color=0000A0><b><img src="icono.gif"></b></font></td><td COLSPAN=5 width=500 align=center><font size=5 color=0000A0><b>4948 - Rankings</b></font><br><a href="http://acmicpc-live-archive.uva.es/nuevoportal/region.php?r=nw&year=2010"><b>Europe - Northwestern - 2010/2011</b></a></font></td></tr><tr valign=center><td width=100>&nbsp;</td><td width=100>&nbsp;</td><td width=100 align=center><a href="http://acmicpc-live-archive.uva.es/nuevoportal/mailer.php?problem=4948"><b>Submit</b></a></td><td width=100>&nbsp;</td><td width=100 align=center><a href="http://acmicpc-live-archive.uva.es/nuevoportal/rankprob.php?p=4948"><b>Ranking</b></a></td></tr></table><p>&nbsp;</p><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+           "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<meta name="GENERATOR" content="TtH 3.89">
+ <style type="text/css"> div.p { margin-top: 7pt;}</style>
+ <style type="text/css"><!--
+ td div.comp { margin-top: -0.6ex; margin-bottom: -1ex;}
+ td div.comb { margin-top: -0.6ex; margin-bottom: -.6ex;}
+ td div.hrcomp { line-height: 0.9; margin-top: -0.8ex; margin-bottom: -1ex;}
+ td div.norm {line-height:normal;}
+ span.roman {font-family: serif; font-style: normal; font-weight: normal;} 
+ span.overacc2 {position: relative;  left: .8em; top: -1.2ex;}
+ span.overacc1 {position: relative;  left: .6em; top: -1.2ex;} --></style>
+ 
+
+<title>E - Rankings</title>
+
+ <h2><a name="tth_sEc1">E</a>&nbsp;&nbsp;Rankings</h2>
+
+<div class="p"><!----></div>
+There are n teams (labelled from 1 to n) who take part in a programming competition every
+year, and at the end they are ranked in order of merit. The rankings
+for last year are known. This year, the jury wants to make the event
+less competitive, and decides not to publish such a ranking list
+(since teams near the bottom might get disheartened). Instead, they
+will produce a complete list of pairs of teams whose relative rank
+order has changed from last year to this year. For example, if team 13
+placed above team 6 last year, but team 6 placed above team 13 this
+year, the pair (6, 13) is announced. This would enable teams to track
+their progress against a particular opposing team, but not give them a
+clear sense of where they stand overall.
+
+<div class="p"><!----></div>
+Of course, this isn't going to stop your team from trying to determine the 
+overall ranking list. Given last year's rankings and a complete list of the 
+pairs of teams whose relative rank order has changed, reconstruct as much of 
+this year's standings as possible. It is possible that the jury might have
+made an error, so if the data given is inconsistent with any possible ranking 
+list for this year, you should also detect this.
+
+<div class="p"><!----></div>
+
+<h3>Input</h3>
+On the first line a positive integer: the number of test cases, at
+most 100. After that per test case:
+
+<div class="p"><!----></div>
+
+<ul>
+<li> One line with an integer n (2 &#8804; n &#8804; 500): the number of teams.
+<div class="p"><!----></div>
+</li>
+
+<li> One line with n integers t<sub>i</sub> (1 &#8804; t<sub>i</sub> &#8804; n): the rankings
+for last year, from best team to worst team. t<sub>i</sub> represents the team who came in position i
+(1-indexed) on the ranklist. All the t<sub>i</sub> will be distinct.
+<div class="p"><!----></div>
+</li>
+
+<li> One line with an integer m (0 &#8804; m &#8804; 25&nbsp;000): the number of pairs whose relative rank
+   order has changed.
+<div class="p"><!----></div>
+</li>
+
+<li> m lines with two integers a<sub>i</sub> and b<sub>i</sub> (1 &#8804; a<sub>i</sub>  &lt;  b<sub>i</sub>  &#8804;  n) each: a pair of teams whose relative rank order has
+   changed. Each such pair will be mentioned exactly once.
+<div class="p"><!----></div>
+</li>
+</ul>
+
+<div class="p"><!----></div>
+
+<h3>Output</h3>
+Per test case:
+
+<ul>
+<li> One line with n integers: the rankings for this year, from
+  best to worst, where the i-th term (1-indexed) represents the team
+  in position i. If this team cannot be determined with certainty,
+  the integer should be replaced with a `<tt>?</tt>' character. If the
+  data for a particular test case is inconsistent with any possible
+  ranking list for this year, the line must contain
+  "<tt>IMPOSSIBLE</tt>" instead.
+<div class="p"><!----></div>
+</li>
+</ul>
+
+<div class="p"><!----></div>
+
+<h3>Sample in- and output</h3>
+
+<table border="1">
+<tr><td width="0"><b>Input</b> </td><td width="0"><b>Output</b> </td></tr>
+<tr><td width="0" valign="top">
+<pre>3
+5
+5&nbsp;4&nbsp;3&nbsp;2&nbsp;1
+2
+2&nbsp;4
+3&nbsp;4
+3
+2&nbsp;3&nbsp;1
+0
+4
+1&nbsp;2&nbsp;3&nbsp;4
+3
+1&nbsp;2
+3&nbsp;4
+2&nbsp;3
+</pre>
+</td><td width="0" valign="top">
+<pre>5&nbsp;3&nbsp;2&nbsp;4&nbsp;1
+2&nbsp;3&nbsp;1
+IMPOSSIBLE
+</pre>
+</td></tr></table>
+</html>
+<hr><ADDRESS>Northwestern 2010-2011</ADDRESS><p></body></html>
